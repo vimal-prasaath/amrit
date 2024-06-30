@@ -6,3 +6,8 @@ export { default as DoctorCard } from "./DoctorCard";
 export { default as ServiceCard } from "./ServiceCard";
 export { default as WhyUs } from "./WhyUs";
 export { default as OurServiceCard } from "./OurServiceCard";
+export { default as About } from "./About";
+export { default as EyeCare } from "./EyeCare";
+export { default as Blog } from "./Blog";
+export { default as OurServices } from "./OurServices";
+export { default as OurDoctors } from "./OurDoctors";

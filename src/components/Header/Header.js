@@ -1,8 +1,9 @@
 import React from "react";
-import { Box, Typography, Divider, Button, Paper } from "@mui/material";
+import { Box, Typography, Divider, Button, Paper, Link } from "@mui/material";
 import logo from "assets/images/logo.svg";
 import watsapp from "assets/images/watsapp.svg";
 import call from "assets/images/call.svg";
+import { Link as RouterLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -26,7 +27,14 @@ const Header = () => {
         display="flex"
         justifyContent="space-between"
       >
-        <img src={logo} alt="logo" />
+        <Link
+          component={RouterLink}
+          to="/"
+          sx={{ textDecoration: "none" }}
+          color={"common.black"}
+        >
+          <img src={logo} alt="logo" />
+        </Link>
         <Box display="flex">
           <Box display="flex" mr={4} alignItems="center">
             <img src={watsapp} width="40px" alt="watsapp" />
@@ -60,21 +68,57 @@ const Header = () => {
         // elevation={9}
       >
         <Box display="flex" alignItems="center">
-          <Typography component="span" mr={3.5}>
-            Centre of excellence
-          </Typography>
-          <Typography component="span" mr={3.5}>
-            Eye Care
-          </Typography>
-          <Typography component="span" mr={3.5}>
-            Our Doctors
-          </Typography>
-          <Typography component="span" mr={3.5}>
-            International
-          </Typography>
-          <Typography component="span" mr={3.5}>
-            Contact Us
-          </Typography>
+          <Link
+            component={RouterLink}
+            to="/"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={3.5}>
+              Centre of excellence
+            </Typography>
+          </Link>
+
+          <Link
+            component={RouterLink}
+            to="/eyecare"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={3.5}>
+              Eye Care
+            </Typography>
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={3.5}>
+              Our Doctors
+            </Typography>
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={3.5}>
+              International
+            </Typography>
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={3.5}>
+              Contact Us
+            </Typography>
+          </Link>
         </Box>
         <Box>
           <Button

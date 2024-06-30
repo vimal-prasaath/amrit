@@ -2,6 +2,7 @@ export const palette = {
   primary: {
     main: "#2EAD9F",
     contrastText: "#fff",
+    light: "#96D6CF",
   },
   secondary: {
     main: "#D94136",
@@ -37,10 +38,6 @@ export const textVariants = {
     letterSpacing: "normal",
   },
   subtitle2: {
-    lineHeight: 1.5,
-    letterSpacing: "normal",
-  },
-  body1: {
     lineHeight: 1.5,
     letterSpacing: "normal",
   },
