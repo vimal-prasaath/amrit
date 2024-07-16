@@ -1,11 +1,12 @@
 import { Box, Divider, Typography } from "@mui/material";
 import { Slope } from "./DoctorCard.styled";
 import avatar from "assets/images/background/avatar.jpeg";
+import book from "assets/images/background/book.png";
 
-const DoctorCard = () => {
+const DoctorCard = ({ detailView }) => {
   return (
     <Box
-      width="23.75rem"
+      width={detailView ? "18.75rem" : "23.75rem"}
       sx={{
         boxShadow: "0 0 12px 0 rgba(153, 153, 153, 0.2)",
         borderRadius: "0.75rem",
@@ -36,6 +37,16 @@ const DoctorCard = () => {
           </Typography>
         </Box>
       </Box>
+      {detailView && (
+        <Box>
+          <img
+            src={book}
+            alt="book"
+            width="100%"
+            style={{ marginBottom: "-0.5rem", cursor: "pointer" }}
+          />
+        </Box>
+      )}
     </Box>
   );
 };

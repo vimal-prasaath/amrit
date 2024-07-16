@@ -1,5 +1,6 @@
-import { Box, Grid, Typography, Button } from "@mui/material";
+import { Box, Grid, Typography, Button, Link } from "@mui/material";
 import eyeCare from "assets/images/background/eyeCare.png";
+import { Link as RouterLink } from "react-router-dom";
 
 const EyeCareCard = () => {
   return (
@@ -37,7 +38,14 @@ const EyeCareCard = () => {
         fringilla accumsan, risus sem sollicitudin lacus.
       </Typography>
       <Box textAlign="center" pt={3}>
-        <Button variant="outlined">Read More</Button>
+        <Link
+          component={RouterLink}
+          to="/eyecare-internal"
+          sx={{ textDecoration: "none" }}
+          color={"common.black"}
+        >
+          <Button variant="outlined">Read More</Button>
+        </Link>
       </Box>
     </Box>
   );

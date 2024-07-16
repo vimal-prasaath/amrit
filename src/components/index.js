@@ -11,3 +11,4 @@ export { default as EyeCare } from "./EyeCare";
 export { default as Blog } from "./Blog";
 export { default as OurServices } from "./OurServices";
 export { default as OurDoctors } from "./OurDoctors";
+export { default as VerticalBtnGroup } from "./VerticalBtnGroup";
