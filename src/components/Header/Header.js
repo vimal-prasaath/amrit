@@ -21,7 +21,7 @@ const Header = () => {
       </Box>
       <Box
         borderBottom={1}
-        borderColor="divider"
+        borderColor="#f3f3f3"
         py={1.5}
         px={10}
         display="flex"
