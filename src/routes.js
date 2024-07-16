@@ -1,5 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Main, Home, EyeCareDetails, EyeCareInternal, Blog } from "views";
+import {
+  Main,
+  Home,
+  EyeCareDetails,
+  EyeCareInternal,
+  Blog,
+  ContactUs,
+} from "views";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: <Blog />,
+      },
+      {
+        path: "contact",
+        element: <ContactUs />,
       },
     ],
   },

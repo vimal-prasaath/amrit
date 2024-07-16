@@ -111,7 +111,7 @@ const Header = () => {
           </Link>
           <Link
             component={RouterLink}
-            to="/"
+            to="/contact"
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
