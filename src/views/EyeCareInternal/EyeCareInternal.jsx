@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
 import { Banner, Details } from "./components";
 
-const EyeCareInternal = () => {
+const EyeCareInternal = ({ doctorView }) => {
   return (
     <Box>
       <Banner />
-      <Details />
+      <Details doctorView={doctorView} />
     </Box>
   );
 };

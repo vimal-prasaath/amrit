@@ -14,7 +14,12 @@ const OurDoctors = ({ detailView }) => {
           Our Team of Dedicated Doctors
         </Typography>
       )}
-      <Box display="flex" flexWrap="wrap" px={detailView ? 0 : 6} py={5}>
+      <Box
+        display="flex"
+        flexWrap="wrap"
+        px={detailView ? 0 : 6}
+        py={detailView ? 0 : 5}
+      >
         <Box px={1.5} mb={2}>
           <DoctorCard detailView={detailView} />
         </Box>

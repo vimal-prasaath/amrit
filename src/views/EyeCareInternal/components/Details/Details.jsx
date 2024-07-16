@@ -6,8 +6,8 @@ import internalReach from "assets/images/background/internal-reach.png";
 import { ToggleBtn } from "./ToggleBtn.styled.js";
 import { useState } from "react";
 
-const Details = () => {
-  const [view, setView] = useState(1);
+const Details = ({ doctorView }) => {
+  const [view, setView] = useState(doctorView ? 2 : 1);
 
   const handleChange = (event, nextView) => {
     if (nextView !== null) {
@@ -93,15 +93,17 @@ const Details = () => {
         </Box>
       </Box>
       <Box pl={5} flexGrow={1}>
-        <ToggleButtonGroup
-          value={view}
-          exclusive
-          onChange={handleChange}
-          sx={{ pt: 2 }}
-        >
-          <ToggleBtn value={1}>Overview</ToggleBtn>
-          <ToggleBtn value={2}>Our Doctors</ToggleBtn>
-        </ToggleButtonGroup>
+        {!doctorView && (
+          <ToggleButtonGroup
+            value={view}
+            exclusive
+            onChange={handleChange}
+            sx={{ pt: 2 }}
+          >
+            <ToggleBtn value={1}>Overview</ToggleBtn>
+            <ToggleBtn value={2}>Our Doctors</ToggleBtn>
+          </ToggleButtonGroup>
+        )}
         {view === 1 ? overview : doctors}
         <Box py={4}>
           <img src={internalContact} alt="intrnal" width="100%" />

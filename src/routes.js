@@ -18,6 +18,10 @@ const router = createBrowserRouter([
         path: "eyecare-internal",
         element: <EyeCareInternal />,
       },
+      {
+        path: "our-doctor",
+        element: <EyeCareInternal doctorView />,
+      },
     ],
   },
 ]);
