@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Main, Home, EyeCareDetails, EyeCareInternal } from "views";
+import { Main, Home, EyeCareDetails, EyeCareInternal, Blog } from "views";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "our-doctor",
         element: <EyeCareInternal doctorView />,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
       },
     ],
   },

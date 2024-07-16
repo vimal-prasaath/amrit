@@ -1,5 +1,6 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Link } from "@mui/material";
 import blogImg from "assets/images/background/blogImg.png";
+import { Link as RouterLink } from "react-router-dom";
 
 const DetailedBlog = () => {
   return (
@@ -61,13 +62,20 @@ const Blog = () => {
         </Box>
       </Box>
       <Box textAlign="center" pt={3}>
-        <Button
-          variant="contained"
-          color="primary"
-          sx={{ mr: 2.5, py: 1.25, minWidth: "12.5rem" }}
+        <Link
+          component={RouterLink}
+          to="/blog"
+          sx={{ textDecoration: "none" }}
+          color={"common.black"}
         >
-          Read More
-        </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{ mr: 2.5, py: 1.25, minWidth: "12.5rem" }}
+          >
+            Read More
+          </Button>
+        </Link>
       </Box>
     </Box>
   );
