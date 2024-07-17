@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { BannerContainer } from "./Banner.styled";
 import eyecare from "assets/images/banners/eyecare.png";
 
-const Banner = () => {
+const Banner = ({ banner }) => {
   return (
     <>
       <BannerContainer
@@ -12,7 +12,16 @@ const Banner = () => {
         justifyContent="center"
         flexDirection="column"
       >
-        <Typography fontSize="3.125rem">BEST EYE CARE</Typography>
+        {banner.map((item, index) => (
+          <Typography
+            key={index + "banner"}
+            fontSize="4.375rem"
+            fontWeight="bold"
+          >
+            {item}
+          </Typography>
+        ))}
+        {/* <Typography fontSize="3.125rem">BEST EYE CARE</Typography>
         <Typography fontSize="4.375rem" fontWeight="bold">
           HOSPITAL IN CHENNAI
         </Typography>
@@ -21,7 +30,7 @@ const Banner = () => {
         </Typography>
         <Typography component="span" fontSize="4.375rem" fontWeight="bold">
           Life Changing Procedure
-        </Typography>
+        </Typography> */}
       </BannerContainer>
     </>
   );

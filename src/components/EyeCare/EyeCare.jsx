@@ -2,7 +2,7 @@ import { Box, Grid, Typography, Button, Link } from "@mui/material";
 import eyeCare from "assets/images/background/eyeCare.png";
 import { Link as RouterLink } from "react-router-dom";
 
-const EyeCareCard = () => {
+const EyeCareCard = ({ data, id }) => {
   return (
     <Box
       p={3}
@@ -26,21 +26,19 @@ const EyeCareCard = () => {
           alignItems="center"
           justifyContent="center"
         >
-          1
+          {id}
         </Box>
       </Box>
       <Typography variant="subtitle1" my={2} fontWeight={600}>
-        ReLEx SMILE - Specs Removal
+        {data.label}
       </Typography>
       <Typography variant="body2" color="#999">
-        Yorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-        molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-        fringilla accumsan, risus sem sollicitudin lacus.
+        {data.content}
       </Typography>
       <Box textAlign="center" pt={3}>
         <Link
           component={RouterLink}
-          to="/eyecare-internal"
+          to={`/eyecare-internal/${data.id}`}
           sx={{ textDecoration: "none" }}
           color={"common.black"}
         >
@@ -51,7 +49,7 @@ const EyeCareCard = () => {
   );
 };
 
-const EyeCare = () => {
+const EyeCare = ({ services }) => {
   return (
     <Box py={10} px={8} bgcolor={"#f6f6f6"}>
       <Typography
@@ -63,18 +61,11 @@ const EyeCare = () => {
         Super-Specialty Eye Care
       </Typography>
       <Grid container spacing={4} pt={8}>
-        <Grid item xs={6} md={4} lg={3}>
-          <EyeCareCard />
-        </Grid>
-        <Grid item xs={6} md={4} lg={3}>
-          <EyeCareCard />
-        </Grid>
-        <Grid item xs={6} md={4} lg={3}>
-          <EyeCareCard />
-        </Grid>
-        <Grid item xs={6} md={4} lg={3}>
-          <EyeCareCard />
-        </Grid>
+        {services.map((item, index) => (
+          <Grid key={index + "service"} item xs={6} md={4} lg={3}>
+            <EyeCareCard data={item} id={index + 1} />
+          </Grid>
+        ))}
       </Grid>
     </Box>
   );

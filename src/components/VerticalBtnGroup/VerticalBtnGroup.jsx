@@ -2,13 +2,17 @@ import { useState } from "react";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { Box, Typography } from "@mui/material";
 import { ToggleBtn } from "./ToggleBtn.styled";
+import { useParams, useNavigate } from "react-router";
 
-const VerticalBtnGroup = () => {
-  const [view, setView] = useState("list");
+const VerticalBtnGroup = ({ links }) => {
+  const { id } = useParams();
+  const [view, setView] = useState(id);
+  const navigate = useNavigate();
 
   const handleChange = (event, nextView) => {
     if (nextView !== null) {
       setView(nextView);
+      navigate(`/eyecare-internal/${nextView}`);
     }
   };
 
@@ -40,21 +44,11 @@ const VerticalBtnGroup = () => {
         fullWidth
         sx={{ pt: 2 }}
       >
-        <Typography variant="body2" mb={3}>
-          Specs Removal Procedures
-        </Typography>
-        <ToggleBtn value="list">Siilk</ToggleBtn>
-        <ToggleBtn value="module">Siilk Pro</ToggleBtn>
-        <ToggleBtn value="quilt">Contura Lasik</ToggleBtn>
-        <ToggleBtn value="list2">Siilk</ToggleBtn>
-        <ToggleBtn value="module2">Siilk Pro</ToggleBtn>
-        <ToggleBtn value="quilt2">Contura Lasik</ToggleBtn>
-        <ToggleBtn value="list3">Siilk</ToggleBtn>
-        <ToggleBtn value="module3">Siilk Pro</ToggleBtn>
-        <ToggleBtn value="quilt3">Contura Lasik</ToggleBtn>
-        <ToggleBtn value="list4">Siilk</ToggleBtn>
-        <ToggleBtn value="module4">Siilk Pro</ToggleBtn>
-        <ToggleBtn value="quilt4">Contura Lasik</ToggleBtn>
+        {links.map((item) => (
+          <ToggleBtn key={item.id} value={item.id}>
+            {item.label}
+          </ToggleBtn>
+        ))}
       </ToggleButtonGroup>
     </Box>
   );

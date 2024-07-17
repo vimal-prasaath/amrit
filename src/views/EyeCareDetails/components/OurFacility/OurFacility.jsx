@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 
 import service from "assets/images/background/eyeservice.png";
 
-const OurFacility = () => {
+const OurFacility = ({ facility }) => {
   return (
     <Box
       py={10}
@@ -36,17 +36,13 @@ const OurFacility = () => {
             mb={2}
             textTransform="uppercase"
           >
-            Freedom from Glasses in 9min
+            {facility.mainHeader}
           </Typography>
           <Typography fontSize={"2rem"} textTransform="uppercase" mb={4}>
-            Life Changing Procedure (Silk Pro)
+            {facility.subHeader}
           </Typography>
           <Typography variant="h6" color="#777" lineHeight={2}>
-            Seconds Discover the groundbreaking Specs Removal Silk Pro, a swift
-            and painless procedure that can change your life in just 9 seconds.
-            Say goodbye to glasses and enjoy the freedom of crystal-clear vision
-            with this innovative treatment. Transform your daily life with the
-            precision and ease of Silk Pro.
+            {facility.content}
           </Typography>
         </Box>
       </Box>

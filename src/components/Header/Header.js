@@ -129,7 +129,7 @@ const Header = () => {
             Book Health Check-Up
           </Button>
           <Button variant="contained" color="secondary" sx={{ py: 1.25 }}>
-            Book an Appointment
+            Emergency Call
           </Button>
         </Box>
       </Box>

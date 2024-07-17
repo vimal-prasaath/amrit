@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <EyeCareDetails />,
       },
       {
-        path: "eyecare-internal",
+        path: "eyecare-internal/:id",
         element: <EyeCareInternal />,
       },
       {

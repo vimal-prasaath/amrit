@@ -5,8 +5,9 @@ import internalContact from "assets/images/background/internal-contact.png";
 import internalReach from "assets/images/background/internal-reach.png";
 import { ToggleBtn } from "./ToggleBtn.styled.js";
 import { useState } from "react";
+import check from "assets/images/check.svg";
 
-const Details = ({ doctorView }) => {
+const Details = ({ doctorView, data, links }) => {
   const [view, setView] = useState(doctorView ? 2 : 1);
 
   const handleChange = (event, nextView) => {
@@ -15,79 +16,53 @@ const Details = ({ doctorView }) => {
     }
   };
 
-  const overview = (
-    <>
-      <Typography fontSize="2.75rem" fontWeight="bold" mb={3}>
-        SMILE (Small Incision Lenticule Extraction) Eye Surgery for Vision
-        Correction
+  const overviewContent = data.map((item, index) => (
+    <Box key={index + "section"}>
+      <Typography
+        fontSize={index === 0 ? "2.75rem" : "2.25rem"}
+        fontWeight="bold"
+        mt={3}
+        mb={1}
+      >
+        {item.header}
       </Typography>
       <Typography color="#777" variant="h6" lineHeight="2">
-        Lorem ipsum dolor sit amet consectur adipisicing elit sed do eiusmod
-        tempor incidunt labore dolore magna aliqua enim minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. duis aute irure dolor in reprehend erit in voluptate velit
-        esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat cupid
-        atat non proident sunt in culpa qui officia deserunt mollit anim id est
-        laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium totam rem aper i am eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt Neque porro quisquam est qui dolorem ipsum
-        quia dolor sit amet consectetur adipisci velit sed quia non numquam eius
-        mod
+        {item.content}
       </Typography>
-      <Box py={4}>
-        <img src={internalImg} alt="img" width="100%" />
-      </Box>
-      <Typography fontSize="2.25rem" fontWeight="bold" mb={3}>
-        Eye conditions that can be treated with SMILE surgery
-      </Typography>
-      <Typography color="#777" variant="h6" lineHeight="2" mb={3}>
-        Lorem ipsum dolor sit amet consectur adipisicing elit sed do eiusmod
-        tempor incidunt labore dolore magna aliqua enim minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. duis aute irure dolor in reprehend erit in voluptate velit
-        esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat cupid
-        atat non proident sunt in culpa qui officia deserunt mollit anim id est
-        laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium totam rem aper i am eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt Neque porro quisquam est qui dolorem ipsum
-        quia dolor sit amet consectetur adipisci velit sed quia non numquam eius
-        mod
-      </Typography>
-
-      <Typography fontSize="2.25rem" fontWeight="bold" mb={3}>
-        How safe is the SMILE procedure?
-      </Typography>
-      <Typography color="#777" variant="h6" lineHeight="2" mb={3}>
-        Lorem ipsum dolor sit amet consectur adipisicing elit sed do eiusmod
-        tempor incidunt labore dolore magna aliqua enim minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. duis aute irure dolor in reprehend erit in voluptate velit
-        esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat cupid
-        atat non proident sunt in culpa qui officia deserunt mollit anim id est
-        laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium totam rem aper i am eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt Neque porro quisquam est qui dolorem ipsum
-        quia dolor sit amet consectetur adipisci velit sed quia non numquam eius
-        mod
-      </Typography>
-    </>
-  );
+      {item?.points?.map((point, idex) => (
+        <Typography
+          key={idex + index + "section"}
+          color="#777"
+          variant="h6"
+          lineHeight="2"
+        >
+          {" "}
+          <img src={check} alt="bullet" style={{ marginRight: "0.5rem" }} />
+          {point.split(":")?.map((text, i) => (
+            <Typography
+              fontWeight={i === 0 ? "bold" : "normal"}
+              key={idex + index + i + "section"}
+              component={"span"}
+            >
+              {text} {point.split(":").length > 1 && i === 0 ? ":" : ""}
+            </Typography>
+          ))}
+        </Typography>
+      ))}
+      {index === 0 && (
+        <Box py={4}>
+          <img src={internalImg} alt="img" width="100%" />
+        </Box>
+      )}
+    </Box>
+  ));
 
   const doctors = <OurDoctors detailView />;
 
   return (
     <Box px={10} py={5} display="flex">
       <Box>
-        <VerticalBtnGroup />
+        <VerticalBtnGroup links={links} />
         <Box py={4} maxWidth="24.5rem" minWidth="24.5rem">
           <img src={internalReach} alt="internalReach" width="100%" />
         </Box>
@@ -104,7 +79,7 @@ const Details = ({ doctorView }) => {
             <ToggleBtn value={2}>Our Doctors</ToggleBtn>
           </ToggleButtonGroup>
         )}
-        {view === 1 ? overview : doctors}
+        {view === 1 ? overviewContent : doctors}
         <Box py={4}>
           <img src={internalContact} alt="intrnal" width="100%" />
         </Box>

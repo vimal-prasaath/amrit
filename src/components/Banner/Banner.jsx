@@ -2,6 +2,9 @@ import { Typography, Box } from "@mui/material";
 import { BannerContainer } from "./Banner.styled";
 import homeBanner from "assets/images/banners/home.jpeg";
 
+import ambulance from "assets/images/ambulance.svg";
+import pediatricas from "assets/images/pediatrics.svg";
+
 const Banner = () => {
   return (
     <>
@@ -55,11 +58,29 @@ const Banner = () => {
           },
         }}
       >
-        <Typography variant="h5" flexGrow={1} textAlign="end">
+        <Typography
+          variant="h5"
+          flexGrow={1}
+          textAlign="end"
+          pr={6}
+          position="relative"
+        >
           24 hrs ICU Ambulance
+          <img
+            src={ambulance}
+            width="30"
+            alt="ambulance"
+            style={{ position: "absolute", right: 0 }}
+          />
         </Typography>
         <Box flexGrow={2}></Box>
-        <Typography variant="h5" flexGrow={1}>
+        <Typography variant="h5" flexGrow={1} pl={6} position="relative">
+          <img
+            src={pediatricas}
+            width="25px"
+            alt="pediatricas"
+            style={{ position: "absolute", left: 0, top: "-3px" }}
+          />
           24 hrs ICU Pediatrics
         </Typography>
       </Box>

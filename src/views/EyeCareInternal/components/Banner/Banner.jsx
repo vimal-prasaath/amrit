@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { BannerContainer } from "./Banner.styled";
 import eyecare from "assets/images/banners/internal.png";
 
-const Banner = () => {
+const Banner = ({ text }) => {
   return (
     <>
       <BannerContainer
@@ -13,7 +13,7 @@ const Banner = () => {
         flexDirection="column"
       >
         <Typography fontSize="3.125rem" fontWeight={600}>
-          GYNECOLOGY
+          {text}
         </Typography>
       </BannerContainer>
     </>
