@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 export const Slope = styled(Box)(() => ({
   position: "absolute",
   width: "98%",
-  height: "100px",
+  height: "6.25rem",
   background: "white",
   top: "-2rem",
   right: 0,

@@ -4,6 +4,7 @@ import homeBanner from "assets/images/banners/home.jpeg";
 
 import ambulance from "assets/images/ambulance.svg";
 import pediatricas from "assets/images/pediatrics.svg";
+import { BookAppointment } from "components";
 
 const Banner = () => {
   return (
@@ -73,7 +74,11 @@ const Banner = () => {
             style={{ position: "absolute", right: 0 }}
           />
         </Typography>
-        <Box flexGrow={2}></Box>
+        <Box flexGrow={2} position="relative" minWidth={"50rem"}>
+          <Box position="absolute" width={"100%"} bottom={"-10rem"}>
+            <BookAppointment />
+          </Box>
+        </Box>
         <Typography variant="h5" flexGrow={1} pl={6} position="relative">
           <img
             src={pediatricas}

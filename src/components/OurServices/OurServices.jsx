@@ -6,10 +6,23 @@ import opinon from "assets/images/opinon.svg";
 import checkup from "assets/images/health.svg";
 import eye from "assets/images/eye.svg";
 
+import bgpattern from "assets/images/background/bg-pattern.png";
+import bgpatternRight from "assets/images/background/bg-pattern-right.png";
+
 const OurServices = () => {
   return (
-    <Box py={10} px={18} textAlign="center">
-      <Typography fontSize={"3.125rem"} fontWeight="bold" mb={2}>
+    <Box
+      pb={10}
+      pt={26}
+      px={18}
+      textAlign="center"
+      sx={{
+        background: `url(${bgpattern}) no-repeat, url(${bgpatternRight}) no-repeat`,
+        backgroundSize: "35rem, 35rem",
+        backgroundPosition: "left bottom, right bottom",
+      }}
+    >
+      <Typography variant="subHeader" mb={2}>
         Our Services
       </Typography>
       <Grid container spacing={4} pt={8}>

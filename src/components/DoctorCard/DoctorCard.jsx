@@ -1,7 +1,8 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Button, Divider, Typography } from "@mui/material";
 import { Slope } from "./DoctorCard.styled";
 import avatar from "assets/images/background/avatar.jpeg";
 import book from "assets/images/background/book.png";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const DoctorCard = ({ detailView }) => {
   return (
@@ -24,9 +25,39 @@ const DoctorCard = ({ detailView }) => {
       ></Box>
       <Box position="relative" width="100%">
         <Slope></Slope>
-        <Box p={2} position="relative" zIndex={1} bgcolor={"common.white"}>
-          <Typography variant="h6" mb={0.25} fontWeight="bold">
+        <Box
+          p={2}
+          position="relative"
+          zIndex={1}
+          bgcolor={"common.white"}
+          sx={{
+            borderBottomLeftRadius: "0.75rem",
+            borderBottomRightRadius: "0.75rem",
+          }}
+        >
+          <Typography
+            variant="h6"
+            mb={0.25}
+            fontWeight="bold"
+            display={"flex"}
+            justifyContent={"space-between"}
+          >
             Dr. M. Sohanraj
+            <Button sx={{ p: 0, minWidth: "0", borderRadius: "50%" }}>
+              <Box
+                bgcolor={"primary.main"}
+                borderRadius={"50%"}
+                color={"common.white"}
+                p={1}
+                width={"2rem"}
+                height={"2rem"}
+                display="flex"
+                alignItems={"center"}
+                justifyContent="center"
+              >
+                <ArrowForwardIosIcon fontSize="small" color="inherit" />
+              </Box>
+            </Button>
           </Typography>
           <Typography variant="body2" color="#999" mb={1}>
             Director & Eye Specialist

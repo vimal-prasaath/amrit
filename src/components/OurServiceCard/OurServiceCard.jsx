@@ -6,7 +6,9 @@ const OurServiceCard = ({ header, description, icon }) => {
       boxShadow={"0 0 10px 0 rgba(153, 153, 153, 0.2)"}
       p={4}
       mt={6}
+      height={"calc(100% - 3rem)"}
       borderRadius={"1rem"}
+      bgcolor={"common.white"}
     >
       <Box
         width="6.25rem"
@@ -22,7 +24,7 @@ const OurServiceCard = ({ header, description, icon }) => {
         alignItems="center"
         justifyContent="center"
       >
-        <img src={icon} alt="icon" />
+        <img src={icon} alt="icon" width={"100%"} />
       </Box>
       <Typography variant="subtitle1" fontWeight="bold" mt={-6}>
         {header}

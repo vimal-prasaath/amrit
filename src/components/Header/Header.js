@@ -123,12 +123,9 @@ const Header = () => {
         <Box>
           <Button
             variant="contained"
-            color="primary"
-            sx={{ mr: 2.5, py: 1.25 }}
+            color="secondary"
+            sx={{ py: 1.25, minWidth: "14rem" }}
           >
-            Book Health Check-Up
-          </Button>
-          <Button variant="contained" color="secondary" sx={{ py: 1.25 }}>
             Emergency Call
           </Button>
         </Box>

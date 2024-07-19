@@ -41,4 +41,19 @@ export const textVariants = {
     lineHeight: 1.5,
     letterSpacing: "normal",
   },
+  subHeader: {
+    fontSize: "3.125rem",
+    position: "relative",
+    fontWeight: "bold",
+    "&:after": {
+      content: "' '",
+      position: "absolute",
+      bottom: "-0.375rem",
+      left: "0.25rem",
+      width: "30%",
+      height: "0.25rem",
+      backgroundColor: "#2EAD9F",
+      borderRadius: "1rem",
+    },
+  },
 };

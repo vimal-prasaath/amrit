@@ -10,9 +10,11 @@ const OurDoctors = ({ detailView }) => {
   return (
     <Box {...containerProps}>
       {!detailView && (
-        <Typography textAlign="center" fontSize={"3.125rem"} fontWeight="bold">
-          Our Team of Dedicated Doctors
-        </Typography>
+        <Box textAlign={"center"}>
+          <Typography textAlign="center" variant="subHeader">
+            Our Team of Dedicated Doctors
+          </Typography>
+        </Box>
       )}
       <Box
         display="flex"

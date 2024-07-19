@@ -4,6 +4,8 @@ import gradient from "assets/images/background/gradientbg.jpeg";
 import ourservice1 from "assets/images/background/ourservice.png";
 import ourservice2 from "assets/images/background/ourservice2.png";
 
+import EastIcon from "@mui/icons-material/East";
+
 const OurFacility = () => {
   return (
     <Box
@@ -50,7 +52,21 @@ const OurFacility = () => {
             precision and ease of Silk Pro.
           </Typography>
           <Box>
-            <Button color="primary" variant="text">
+            <Button color="primary" variant="text" sx={{ px: 0 }}>
+              <Box
+                bgcolor={"primary.main"}
+                borderRadius={"0.5rem"}
+                color={"common.white"}
+                p={1}
+                width={"2.5rem"}
+                height={"2.5rem"}
+                display="flex"
+                alignItems={"center"}
+                justifyContent="center"
+                mr={1.5}
+              >
+                <EastIcon fontSize="small" color="inherit" />
+              </Box>
               Learn more
             </Button>
           </Box>
@@ -82,7 +98,21 @@ const OurFacility = () => {
             most advanced technology available.
           </Typography>
           <Box>
-            <Button color="primary" variant="text">
+            <Button color="primary" variant="text" sx={{ px: 0 }}>
+              <Box
+                bgcolor={"primary.main"}
+                borderRadius={"0.5rem"}
+                color={"common.white"}
+                p={1}
+                width={"2.5rem"}
+                height={"2.5rem"}
+                display="flex"
+                alignItems={"center"}
+                justifyContent="center"
+                mr={1.5}
+              >
+                <EastIcon fontSize="small" color="inherit" />
+              </Box>
               Learn more
             </Button>
           </Box>

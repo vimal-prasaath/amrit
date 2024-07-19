@@ -1,6 +1,6 @@
 import { Box, Typography, Grid } from "@mui/material";
 import { WhyUs } from "components";
-import whyAmrit from "assets/images/background/why.jpeg";
+import whyAmrit from "assets/images/background/why.png";
 import experience from "assets/images/experience.svg";
 import happyface from "assets/images/happyface.svg";
 import doc from "assets/images/doctors.svg";

@@ -4,14 +4,12 @@ import { ServiceCard } from "components";
 const OurExcellence = () => {
   return (
     <Box py={4} px={10}>
-      <Typography
-        textAlign="center"
-        fontSize={"3.125rem"}
-        fontWeight="bold"
-        mb={4}
-      >
-        Our Centers of Excellence
-      </Typography>
+      <Box textAlign="center">
+        <Typography variant="subHeader" mb={4}>
+          Our Centers of Excellence
+        </Typography>
+      </Box>
+
       <Grid container spacing={2}>
         <Grid item xs={6} md={4} lg={3}>
           <ServiceCard text={"Ophthalmology"} />
