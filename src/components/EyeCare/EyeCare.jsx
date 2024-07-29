@@ -8,6 +8,7 @@ const EyeCareCard = ({ data, id, departmentId }) => {
       p={3}
       borderRadius={"1.75rem"}
       boxShadow={"0 0 10px 0 rgba(153, 153, 153, 0.2)"}
+      height={"100%"}
     >
       <Box
         sx={{
