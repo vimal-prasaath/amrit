@@ -1,7 +1,14 @@
+import banner from "assets/images/banners/home/ortho.png";
+import aboutus from "assets/images/banners/about/ortho.png";
+import facility from "assets/images/banners/facility/ortho.png";
+import info from "assets/images/banners/info/ortho.png";
+
 export const data = {
   id: "ortho",
   label: "Orthopedic",
   banner: ["Expert Orthopedic Care", "Restoring Mobility", "Enhancing Lives"],
+  bannerImg: banner,
+  aboutImg: aboutus,
   about: [
     {
       text: "40+",
@@ -20,6 +27,14 @@ export const data = {
       subText: "Specs Removed",
     },
   ],
+  facilityImg: facility,
+  infoImg: info,
+  info: {
+    heder: "SMART KNEE REPLACEMENT",
+    subheader: "Get Back to Routine in 2-3 Weeks",
+    point1: "Painless Surgery, Low Complication",
+    point2: "Quick Recovery, Swift Discharge",
+  },
   facility: {
     mainHeader: "Regain Your Quality of Life",
     subHeader: "Move Towards a Pain-Free Future",

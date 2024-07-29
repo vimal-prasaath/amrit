@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { Banner, Details } from "./components";
 import { useParams } from "react-router";
 import { departmentinternal } from "views/EyeCareDetails/internal-data";
+import { Testimonial } from "components";
 
 const EyeCareInternal = ({ doctorView }) => {
   const { id, departId } = useParams();
@@ -17,6 +18,7 @@ const EyeCareInternal = ({ doctorView }) => {
         links={list}
         departId={departId}
       />
+      <Testimonial />
     </Box>
   );
 };

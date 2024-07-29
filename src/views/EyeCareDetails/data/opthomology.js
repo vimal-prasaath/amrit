@@ -1,7 +1,14 @@
+import eyecare from "assets/images/banners/home/optho.png";
+import aboutus from "assets/images/banners/about/optho.png";
+import facility from "assets/images/banners/facility/optho.png";
+import info from "assets/images/banners/info/optho.png";
+
 export const data = {
   id: "department",
   label: "Ophthalmology",
   banner: ["Expert Eye Care", "Restoring Vision", "Transforming Lives"],
+  bannerImg: eyecare,
+  aboutImg: aboutus,
   about: [
     {
       text: "40+",
@@ -20,6 +27,14 @@ export const data = {
       subText: "Specs Removed",
     },
   ],
+  facilityImg: facility,
+  infoImg: info,
+  info: {
+    heder: "Powered By",
+    subheader: "Artificial Intelligence",
+    point1: "NO BLADE, NO PAIN",
+    point2: "NO STITCH, NO INJECTION",
+  },
   facility: {
     mainHeader: "Freedom From Glasses In Just 9 Seconds",
     subHeader: "Smile Pro Surgery can be life changing",

@@ -1,6 +1,12 @@
 import { Box } from "@mui/material";
 
-import { Banner, JoinUs, OurDoctors, OurServices } from "components";
+import {
+  Banner,
+  JoinUs,
+  OurDoctors,
+  OurServices,
+  Testimonial,
+} from "components";
 
 import { WhyAmrit, OurExcellence, OurFacility } from "./components";
 
@@ -14,6 +20,7 @@ const Home = () => {
       <OurExcellence />
       <OurDoctors />
       <JoinUs />
+      <Testimonial />
     </Box>
   );
 };

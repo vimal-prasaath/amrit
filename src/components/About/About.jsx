@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from "@mui/material";
-import aboutus from "assets/images/background/about.png";
 
 const AboutItem = ({ text, subtext }) => (
   <Box textAlign="center">
@@ -10,11 +9,11 @@ const AboutItem = ({ text, subtext }) => (
   </Box>
 );
 
-const About = ({ about }) => {
+const About = ({ about, aboutImg }) => {
   return (
     <Box
       px={10}
-      sx={{ background: `url(${aboutus}) no-repeat`, backgroundSize: "cover" }}
+      sx={{ background: `url(${aboutImg}) no-repeat`, backgroundSize: "cover" }}
       color="common.white"
     >
       <Grid container spacing={2} py={4}>

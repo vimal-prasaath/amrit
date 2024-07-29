@@ -1,8 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
-import service from "assets/images/background/eyeservice.png";
-
-const OurFacility = ({ facility }) => {
+const OurFacility = ({ facility, facilityImg }) => {
   return (
     <Box
       py={10}
@@ -16,7 +14,7 @@ const OurFacility = ({ facility }) => {
       <Box display="flex">
         <Box width="50%" height="37.5rem">
           <img
-            src={service}
+            src={facilityImg}
             width="100%"
             height="100%"
             alt="service"

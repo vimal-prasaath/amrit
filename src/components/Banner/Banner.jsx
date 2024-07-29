@@ -66,7 +66,7 @@ const Banner = () => {
           pr={6}
           position="relative"
         >
-          24 hrs ICU Ambulance
+          24 hrs Emergency
           <img
             src={ambulance}
             width="30"
@@ -86,7 +86,7 @@ const Banner = () => {
             alt="pediatricas"
             style={{ position: "absolute", left: 0, top: "-3px" }}
           />
-          24 hrs ICU Pediatrics
+          24 hrs ICU
         </Typography>
       </Box>
     </>
