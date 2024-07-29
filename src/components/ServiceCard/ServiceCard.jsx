@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import service from "assets/images/service.svg";
 
-const ServiceCard = ({ text }) => {
+const ServiceCard = ({ text, image }) => {
   // const bgcolor = active
   //   ? "linear-gradient(90deg, rgba(46,173,159,0.1) 0%, rgba(217,65,54,0.1) 100%)"
   //   : "#f5f5f5";
@@ -40,7 +39,7 @@ const ServiceCard = ({ text }) => {
         boxShadow={"0 0 12px 0 rgba(153, 153, 153, 0.2)"}
         className="icon"
       >
-        <img src={service} alt="service" width="100%" />
+        <img src={image} alt="service" width="100%" />
       </Box>
       <Typography pl={3} variant="h5">
         {text}

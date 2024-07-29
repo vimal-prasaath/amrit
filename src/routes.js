@@ -8,6 +8,11 @@ import {
   ContactUs,
 } from "views";
 
+export const departmentConstants = {
+  OPTHOMOLOGY: "opthomology",
+  ORTHO: "ortho",
+};
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,11 +23,11 @@ const router = createBrowserRouter([
         index: true,
       },
       {
-        path: "eyecare",
+        path: "department/:departmentId",
         element: <EyeCareDetails />,
       },
       {
-        path: "eyecare-internal/:id",
+        path: "department-internal/:departId/:id",
         element: <EyeCareInternal />,
       },
       {

@@ -1,12 +1,12 @@
 import { Typography } from "@mui/material";
 import { BannerContainer } from "./Banner.styled";
-import eyecare from "assets/images/banners/internal.png";
+import department from "assets/images/banners/internal.png";
 
 const Banner = ({ text }) => {
   return (
     <>
       <BannerContainer
-        image={eyecare}
+        image={department}
         px={10}
         display="flex"
         justifyContent="center"

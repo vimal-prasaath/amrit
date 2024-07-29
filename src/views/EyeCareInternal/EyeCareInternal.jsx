@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
 import { Banner, Details } from "./components";
 import { useParams } from "react-router";
-import { internalData, opthomology } from "views/EyeCareDetails/opthomology";
+import { departmentinternal } from "views/EyeCareDetails/internal-data";
 
 const EyeCareInternal = ({ doctorView }) => {
-  const { id } = useParams();
-
+  const { id, departId } = useParams();
+  const { internalData, list } = departmentinternal[departId];
   const pageData = internalData.find((item) => item.id === id);
 
   return (
@@ -14,7 +14,8 @@ const EyeCareInternal = ({ doctorView }) => {
       <Details
         data={pageData.data}
         doctorView={doctorView}
-        links={opthomology}
+        links={list}
+        departId={departId}
       />
     </Box>
   );

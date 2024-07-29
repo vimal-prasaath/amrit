@@ -2,7 +2,7 @@ import { Box, Grid, Typography, Button, Link } from "@mui/material";
 import eyeCare from "assets/images/background/eyeCare.png";
 import { Link as RouterLink } from "react-router-dom";
 
-const EyeCareCard = ({ data, id }) => {
+const EyeCareCard = ({ data, id, departmentId }) => {
   return (
     <Box
       p={3}
@@ -38,7 +38,7 @@ const EyeCareCard = ({ data, id }) => {
       <Box textAlign="center" pt={3}>
         <Link
           component={RouterLink}
-          to={`/eyecare-internal/${data.id}`}
+          to={`/department-internal/${departmentId}/${data.id}`}
           sx={{ textDecoration: "none" }}
           color={"common.black"}
         >
@@ -49,7 +49,7 @@ const EyeCareCard = ({ data, id }) => {
   );
 };
 
-const EyeCare = ({ services }) => {
+const EyeCare = ({ services, departmentId, serviceHeader }) => {
   return (
     <Box py={10} px={8} bgcolor={"#f6f6f6"}>
       <Typography
@@ -58,12 +58,16 @@ const EyeCare = ({ services }) => {
         mb={2}
         textAlign="center"
       >
-        Super-Specialty Eye Care
+        {serviceHeader}
       </Typography>
       <Grid container spacing={4} pt={8}>
         {services.map((item, index) => (
           <Grid key={index + "service"} item xs={6} md={4} lg={3}>
-            <EyeCareCard data={item} id={index + 1} />
+            <EyeCareCard
+              data={item}
+              id={index + 1}
+              departmentId={departmentId}
+            />
           </Grid>
         ))}
       </Grid>

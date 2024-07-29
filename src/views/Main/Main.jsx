@@ -1,5 +1,5 @@
 import { Header, Footer } from "components";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -7,6 +7,7 @@ const Main = () => {
       <Header />
       <Outlet />
       <Footer />
+      <ScrollRestoration />
     </>
   );
 };

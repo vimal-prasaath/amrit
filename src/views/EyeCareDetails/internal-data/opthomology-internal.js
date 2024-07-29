@@ -354,7 +354,7 @@ export const internalData = [
   },
 ];
 
-export const opthomology = [
+export const list = [
   {
     id: "smileProSurgery",
     label: "Smile Pro Surgery",
@@ -411,3 +411,5 @@ export const opthomology = [
     content: "datamap",
   },
 ];
+
+export const opthomologyInternal = { list, internalData };

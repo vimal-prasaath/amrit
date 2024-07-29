@@ -7,7 +7,7 @@ import { ToggleBtn } from "./ToggleBtn.styled.js";
 import { useState } from "react";
 import check from "assets/images/check.svg";
 
-const Details = ({ doctorView, data, links }) => {
+const Details = ({ doctorView, data, links, departId }) => {
   const [view, setView] = useState(doctorView ? 2 : 1);
 
   const handleChange = (event, nextView) => {
@@ -26,9 +26,11 @@ const Details = ({ doctorView, data, links }) => {
       >
         {item.header}
       </Typography>
-      <Typography color="#777" variant="h6" lineHeight="2">
-        {item.content}
-      </Typography>
+      {item?.content && (
+        <Typography color="#777" variant="h6" lineHeight="2">
+          {item.content}
+        </Typography>
+      )}
       {item?.points?.map((point, idex) => (
         <Typography
           key={idex + index + "section"}
@@ -62,7 +64,7 @@ const Details = ({ doctorView, data, links }) => {
   return (
     <Box px={10} py={5} display="flex">
       <Box>
-        <VerticalBtnGroup links={links} />
+        <VerticalBtnGroup links={links} departId={departId} />
         <Box py={4} maxWidth="24.5rem" minWidth="24.5rem">
           <img src={internalReach} alt="internalReach" width="100%" />
         </Box>
