@@ -11,6 +11,8 @@ import {
 export const departmentConstants = {
   OPTHOMOLOGY: "opthomology",
   ORTHO: "ortho",
+  PEDIATRICS: "pediatrics",
+  GYNO: "gyno",
 };
 
 const router = createBrowserRouter([
