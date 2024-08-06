@@ -21,17 +21,20 @@ const EyeCareDetails = () => {
     infoImg,
     info,
   } = departmentData;
+  console.log(departmentData);
   return (
     <Box>
       <Banner banner={banner} bannerImg={bannerImg} />
       <About about={about} aboutImg={aboutImg} />
       <OurFacility facility={facility} facilityImg={facilityImg} />
 
-      <EyeCare
-        services={services}
-        departmentId={departmentId}
-        serviceHeader={serviceHeader}
-      />
+      {services?.length > 0 && (
+        <EyeCare
+          services={services}
+          departmentId={departmentId}
+          serviceHeader={serviceHeader}
+        />
+      )}
       <Box
         mb={-1.25}
         minHeight="43.75rem"

@@ -13,6 +13,18 @@ export const departmentConstants = {
   ORTHO: "ortho",
   PEDIATRICS: "pediatrics",
   GYNO: "gyno",
+  DERMA: "dermatology",
+  INTERNAL_MEDICINE: "internalMedicine",
+  DIBETOLOGY: "dibetology",
+  GEN_SURGERY: "generalSurgery",
+  ENT: "ent",
+  CARDIO: "cardio",
+  NEPHRO: "nephrology",
+  NEURO: "neurology",
+  PHYSIO: "physio",
+  GASTRO: "gastro",
+  RADIO: "radiology",
+  CC: "criticalCare",
 };
 
 const router = createBrowserRouter([
