@@ -32,6 +32,10 @@ import orthpedics from "assets/images/menu/orthopedics.svg";
 import physio from "assets/images/menu/physio.svg";
 import pediatric from "assets/images/menu/pedia.svg";
 
+import { list } from "views/EyeCareDetails/internal-data/otherInternal";
+
+const otherInternalsIds = list.map((item) => item.id);
+
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -233,9 +237,11 @@ const Header = () => {
                 <Grid key={item.id} item xs={6} md={3} onClick={handleClose}>
                   <Link
                     component={RouterLink}
-                    to={`department/${
-                      item.id || departmentConstants.OPTHOMOLOGY
-                    }`}
+                    to={`${
+                      otherInternalsIds.includes(item.id)
+                        ? "department-internal/general"
+                        : "department"
+                    }/${item.id || departmentConstants.OPTHOMOLOGY}`}
                     sx={{
                       textDecoration: "none",
                       display: "flex",

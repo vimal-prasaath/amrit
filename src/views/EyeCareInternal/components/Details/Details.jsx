@@ -51,6 +51,11 @@ const Details = ({ doctorView, data, links, departId }) => {
           ))}
         </Typography>
       ))}
+      {item.summary && (
+        <Typography color="#777" variant="h6" lineHeight="2" mt={2}>
+          {item.summary}
+        </Typography>
+      )}
       {index === 0 && (
         <Box py={4}>
           <img src={internalImg} alt="img" width="100%" />
