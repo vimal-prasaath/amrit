@@ -1,3 +1,10 @@
+import gp from "assets/images/banners/pediaInternal/genralpediatric.jpg";
+import ps from "assets/images/banners/pediaInternal/pediatricsurgery.jpg";
+import pni from "assets/images/banners/pediaInternal/pediatricneutrition.jpg";
+import cp from "assets/images/banners/pediaInternal/childpsycology.jpg";
+import cn from "assets/images/banners/pediaInternal/childrehabitation.jpg";
+import pn from "assets/images/banners/pediaInternal/pediatricneutrition.jpg";
+
 export const list = [
   {
     id: "generalPaediatrics",
@@ -35,6 +42,7 @@ export const internalData = [
   {
     id: "generalPaediatrics",
     label: "General Paediatrics",
+    banner: gp,
     data: [
       {
         header: "What is General Paediatrics?",
@@ -79,6 +87,8 @@ export const internalData = [
   {
     id: "paediatricsSurgery",
     label: "Paediatrics Surgery",
+    banner: ps,
+
     data: [
       {
         header: "What is Paediatric Surgery?",
@@ -125,6 +135,7 @@ export const internalData = [
   {
     id: "paediatricsAndNeonatalICU",
     label: "Paediatrics and Neonatal ICU",
+    banner: pni,
     data: [
       {
         header: "What is Paediatric and Neonatal ICU?",
@@ -172,6 +183,7 @@ export const internalData = [
   {
     id: "childPsychology",
     label: "Child Psychology",
+    banner: cp,
     data: [
       {
         header: "Understanding Child Psychology",
@@ -219,6 +231,7 @@ export const internalData = [
   {
     id: "childRehabilitation",
     label: "Child Rehabilitation",
+    banner: cn,
     data: [
       {
         header: "What is Child Rehabilitation?",
@@ -266,6 +279,7 @@ export const internalData = [
   {
     id: "paediatricsNutrition",
     label: "Paediatrics Nutrition",
+    banner: pn,
     data: [
       {
         header: "What is Paediatric Nutrition?",

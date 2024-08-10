@@ -69,7 +69,7 @@ export const list = [
 export const internalData = [
   {
     id: "internalMedicine",
-    label: "Department of Internal Medicine",
+    label: "Department of || Internal Medicine",
     banner: diabetology,
     data: [
       {
@@ -97,7 +97,7 @@ export const internalData = [
   },
   {
     id: "dermatology",
-    label: "Department of Dermatology",
+    label: "Department of || Dermatology",
     banner: dermatologist,
     data: [
       {
@@ -125,7 +125,7 @@ export const internalData = [
   },
   {
     id: "diabetology",
-    label: "Department of Diabetology",
+    label: "Department of || Diabetology",
     banner: diabetology,
     data: [
       {
@@ -152,7 +152,7 @@ export const internalData = [
   },
   {
     id: "generalSurgery",
-    label: "Department of General Surgery and Laparoscopic",
+    label: "Department of || General Surgery and Laparoscopic",
     banner: generalSurgery,
     data: [
       {
@@ -180,7 +180,7 @@ export const internalData = [
   },
   {
     id: "ent",
-    label: "Department of ENT",
+    label: "Department of || ENT",
     banner: ent,
     data: [
       {
@@ -208,7 +208,7 @@ export const internalData = [
   },
   {
     id: "cardiology",
-    label: "Department of Cardiology",
+    label: "Department of || Cardiology",
     banner: cardio,
     data: [
       {
@@ -236,7 +236,7 @@ export const internalData = [
   },
   {
     id: "nephrology",
-    label: "Department of Nephrology",
+    label: "Department of || Nephrology",
     banner: nephrology,
     data: [
       {
@@ -264,7 +264,7 @@ export const internalData = [
   },
   {
     id: "physiotherapy",
-    label: "Department of Physiotherapy",
+    label: "Department of || Physiotherapy",
     banner: psiyo,
     data: [
       {
@@ -292,7 +292,7 @@ export const internalData = [
   },
   {
     id: "gastroenterology",
-    label: "Department of Gastroenterology",
+    label: "Department of || Gastroenterology",
     banner: gastro,
     data: [
       {
@@ -320,7 +320,7 @@ export const internalData = [
   },
   {
     id: "neurology",
-    label: "Department of Neurology",
+    label: "Department of || Neurology",
     banner: nerurology,
     data: [
       {
@@ -348,7 +348,7 @@ export const internalData = [
   },
   {
     id: "radiology",
-    label: "Department of Radiology",
+    label: "Department of || Radiology",
     banner: radio,
     data: [
       {

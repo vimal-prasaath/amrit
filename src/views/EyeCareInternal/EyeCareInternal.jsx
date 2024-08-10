@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Banner, Details } from "./components";
 import { useParams } from "react-router";
 import { departmentinternal } from "views/EyeCareDetails/internal-data";
@@ -9,9 +9,36 @@ const EyeCareInternal = ({ doctorView }) => {
   const { internalData, list } = departmentinternal[departId];
   const pageData = internalData.find((item) => item.id === id);
 
+  const [label1, label2] = pageData?.label?.split("||").reverse();
+
   return (
     <Box>
-      <Banner text={pageData.label} bannerImg={pageData?.banner} />
+      <Box position={"relative"}>
+        <Banner text={pageData.label} bannerImg={pageData?.banner} />
+
+        <Typography
+          fontSize="3.125rem"
+          fontWeight={600}
+          position="absolute"
+          color={"white"}
+          sx={{
+            top: "50%",
+            transform: "translateY(-50%)",
+            left: "5rem",
+            filter: "drop-shadow(2px 4px 6px black)",
+          }}
+        >
+          <Typography
+            component={"span"}
+            fontSize={"2.50rem"}
+            fontWeight={600}
+            display={"block"}
+          >
+            {label2}
+          </Typography>
+          {label1}
+        </Typography>
+      </Box>
       <Details
         data={pageData.data}
         doctorView={doctorView}
