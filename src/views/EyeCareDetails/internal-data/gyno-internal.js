@@ -1,3 +1,18 @@
+import child from "assets/images/banners/gynoInternal/childbirth.jpg";
+import critical from "assets/images/banners/gynoInternal/24hrcriticalcare.jpg";
+import infert from "assets/images/banners/gynoInternal/infertilitytreatment.jpg";
+import tube from "assets/images/banners/gynoInternal/tubectomy.jpg";
+import hyst from "assets/images/banners/gynoInternal/histerectomy.jpg";
+import lap from "assets/images/banners/gynoInternal/laproscopicsterilization.jpg";
+import lapHy from "assets/images/banners/gynoInternal/laproscopichysterectoy.jpg";
+import lapCy from "assets/images/banners/gynoInternal/laproscopicovariencystectomy.jpg";
+
+import poly from "assets/images/banners/gynoInternal/papsmear.jpg";
+import papSmear from "assets/images/banners/gynoInternal/papsmear.jpg";
+import labservice from "assets/images/banners/gynoInternal/24hrlabservice&dedicatedultrasound.jpg";
+import pc from "assets/images/banners/gynoInternal/psycologicalcouncelling.jpg";
+import vacc from "assets/images/banners/gynoInternal/vaccination.jpg";
+
 export const list = [
   {
     id: "childBirth",
@@ -70,6 +85,7 @@ export const internalData = [
   {
     id: "childBirth",
     label: "Child Birth (Normal / Cesarean)",
+    banner: child,
     data: [
       {
         header: "Understanding Normal Child Birth and a Cesarean Section",
@@ -101,6 +117,8 @@ export const internalData = [
   {
     id: "criticalCare",
     label: "24 Hours Critical Care",
+    banner: critical,
+
     data: [
       {
         header: "What is 24 Hours Critical Care?",
@@ -133,6 +151,7 @@ export const internalData = [
   {
     id: "infertilityTreatment",
     label: "Infertility Treatment",
+    banner: infert,
     data: [
       {
         header: "What is Infertility Treatment?",
@@ -165,6 +184,8 @@ export const internalData = [
   {
     id: "tubectomy",
     label: "Tubectomy (Family Planning)",
+    banner: tube,
+
     data: [
       {
         header: "What is Tubectomy?",
@@ -197,6 +218,8 @@ export const internalData = [
   {
     id: "hysterectomy",
     label: "Hysterectomy",
+    banner: hyst,
+
     data: [
       {
         header: "What is Hysterectomy?",
@@ -230,6 +253,8 @@ export const internalData = [
   {
     id: "laparoscopicSterilisation",
     label: "Laparoscopic Sterilisation",
+    banner: lap,
+
     data: [
       {
         header: "What is Laparoscopic Sterilisation?",
@@ -263,6 +288,8 @@ export const internalData = [
   {
     id: "laparoscopicHysterectomy",
     label: "Laparoscopic Hysterectomy",
+    banner: lapHy,
+
     data: [
       {
         header: "What is Laparoscopic Hysterectomy?",
@@ -296,6 +323,8 @@ export const internalData = [
   {
     id: "laparoscopicOvarianCystectomy",
     label: "Laparoscopic Ovarian Cystectomy",
+    banner: lapCy,
+
     data: [
       {
         header: "What is Laparoscopic Ovarian Cystectomy?",
@@ -329,6 +358,8 @@ export const internalData = [
   {
     id: "polypectomy",
     label: "Polypectomy and D&C",
+    banner: poly,
+
     data: [
       {
         header: "What is Polypectomy and D&C?",
@@ -362,6 +393,8 @@ export const internalData = [
   {
     id: "vaccinations",
     label: "Vaccinations",
+    banner: vacc,
+
     data: [
       {
         header: "What are Vaccinations?",
@@ -395,6 +428,8 @@ export const internalData = [
   {
     id: "papSmear",
     label: "Pap Smear",
+    banner: papSmear,
+
     data: [
       {
         header: "What is a Pap Smear Test?",
@@ -428,6 +463,8 @@ export const internalData = [
   {
     id: "labServicesAndUltrasound",
     label: "24/7 Lab Services and Ultrasound",
+    banner: labservice,
+
     data: [
       {
         header: "What are 24/7 Lab Services and Ultrasound?",
@@ -462,6 +499,8 @@ export const internalData = [
   {
     id: "psychologicalCounselling",
     label: "Psychological Counselling",
+    banner: pc,
+
     data: [
       {
         header: "What is Psychological Counselling?",

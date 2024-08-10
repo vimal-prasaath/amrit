@@ -1,3 +1,14 @@
+import ent from "assets/images/banners/internalDepartment/ENT.jpg";
+import dermatologist from "assets/images/banners/internalDepartment/dermatology.jpg";
+import nerurology from "assets/images/banners/internalDepartment/neurology.jpg";
+import nephrology from "assets/images/banners/internalDepartment/nephrology.jpg";
+import diabetology from "assets/images/banners/internalDepartment/diabetology.jpg";
+import generalSurgery from "assets/images/banners/internalDepartment/gensurgery&laproscopic.jpg";
+import cardio from "assets/images/banners/internalDepartment/cardiology.jpg";
+import psiyo from "assets/images/banners/internalDepartment/physio.jpg";
+import gastro from "assets/images/banners/internalDepartment/gastrointerology.jpg";
+import radio from "assets/images/banners/internalDepartment/diabetology.jpg";
+
 export const list = [
   {
     id: "dermatology",
@@ -59,6 +70,7 @@ export const internalData = [
   {
     id: "internalMedicine",
     label: "Department of Internal Medicine",
+    banner: diabetology,
     data: [
       {
         header: "Internal Medicine: Comprehensive Healthcare Management",
@@ -86,6 +98,7 @@ export const internalData = [
   {
     id: "dermatology",
     label: "Department of Dermatology",
+    banner: dermatologist,
     data: [
       {
         header: "Understanding Dermatological Conditions",
@@ -113,6 +126,7 @@ export const internalData = [
   {
     id: "diabetology",
     label: "Department of Diabetology",
+    banner: diabetology,
     data: [
       {
         header: "Advanced Diabetology Care",
@@ -139,6 +153,7 @@ export const internalData = [
   {
     id: "generalSurgery",
     label: "Department of General Surgery and Laparoscopic",
+    banner: generalSurgery,
     data: [
       {
         header: "Advanced and Minimally Invasive Surgeries",
@@ -166,6 +181,7 @@ export const internalData = [
   {
     id: "ent",
     label: "Department of ENT",
+    banner: ent,
     data: [
       {
         header: "ENT (Ear Nose Throat)",
@@ -193,6 +209,7 @@ export const internalData = [
   {
     id: "cardiology",
     label: "Department of Cardiology",
+    banner: cardio,
     data: [
       {
         header: "Comprehensive Cardiac Care",
@@ -220,6 +237,7 @@ export const internalData = [
   {
     id: "nephrology",
     label: "Department of Nephrology",
+    banner: nephrology,
     data: [
       {
         header: "Advanced Kidney Care",
@@ -247,6 +265,7 @@ export const internalData = [
   {
     id: "physiotherapy",
     label: "Department of Physiotherapy",
+    banner: psiyo,
     data: [
       {
         header: "Restoring Movement and Function",
@@ -274,6 +293,7 @@ export const internalData = [
   {
     id: "gastroenterology",
     label: "Department of Gastroenterology",
+    banner: gastro,
     data: [
       {
         header: "Comprehensive Digestive Care",
@@ -301,6 +321,7 @@ export const internalData = [
   {
     id: "neurology",
     label: "Department of Neurology",
+    banner: nerurology,
     data: [
       {
         header: "Expert Neurological Care",
@@ -328,6 +349,7 @@ export const internalData = [
   {
     id: "radiology",
     label: "Department of Radiology",
+    banner: radio,
     data: [
       {
         header: "Advanced Imaging Services",

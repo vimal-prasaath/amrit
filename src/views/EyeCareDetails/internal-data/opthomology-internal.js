@@ -1,7 +1,20 @@
+import smile from "assets/images/banners/eyeInternal/smilepro.jpg";
+import contoura from "assets/images/banners/eyeInternal/specremoval.jpg";
+import catract from "assets/images/banners/eyeInternal/catract.jpg";
+import gulcoma from "assets/images/banners/eyeInternal/glaucoma.jpg";
+import cornea from "assets/images/banners/eyeInternal/cornea&karetoconous.jpg";
+import pedia from "assets/images/banners/eyeInternal/pediatricopthalmology.jpg";
+import retina from "assets/images/banners/eyeInternal/retina.jpg";
+import oculo from "assets/images/banners/eyeInternal/oculoplastyandcosmaticenhancement.jpg";
+import contace from "assets/images/banners/eyeInternal/contactlenses.jpg";
+import neuro from "assets/images/banners/eyeInternal/neuroopthamology.jpg";
+import lowvision from "assets/images/banners/eyeInternal/lowvisionsyndrome.jpg";
+
 export const internalData = [
   {
     id: "smileProSurgery",
     label: "Smile Pro Surgery",
+    banner: smile,
     data: [
       {
         header: "What is Smile Pro Surgery",
@@ -33,6 +46,7 @@ export const internalData = [
   {
     id: "contouraVision",
     label: "Contoura Vision - Specs Removal",
+    banner: contoura,
     data: [
       {
         header: "What is Contoura Vision Surgery?",
@@ -65,6 +79,7 @@ export const internalData = [
   {
     id: "cataract",
     label: "Cataract",
+    banner: catract,
     data: [
       {
         header: "What is Cataract Surgery?",
@@ -98,6 +113,7 @@ export const internalData = [
   {
     id: "glaucoma",
     label: "Glaucoma",
+    banner: gulcoma,
     data: [
       {
         header: "What is Glaucoma?",
@@ -131,6 +147,7 @@ export const internalData = [
   {
     id: "corneaAndKeratoconus",
     label: "Cornea and Keratoconus",
+    banner: cornea,
     data: [
       {
         header: "What is Cornea and Keratoconus Care?",
@@ -163,6 +180,7 @@ export const internalData = [
   {
     id: "pediatricOphthalmology",
     label: "Pediatric Ophthalmology",
+    banner: pedia,
     data: [
       {
         header: "What is Pediatric Ophthalmology?",
@@ -195,6 +213,7 @@ export const internalData = [
   {
     id: "retina",
     label: "Retina",
+    banner: retina,
     data: [
       {
         header: "What is Retina Ophthalmology?",
@@ -227,6 +246,7 @@ export const internalData = [
   {
     id: "oculoplastyAndCosmeticEnhancement",
     label: "Oculoplasty and Cosmetic Enhancement",
+    banner: oculo,
     data: [
       {
         header: "What is Oculoplasty and Cosmetic Enhancement?",
@@ -259,6 +279,7 @@ export const internalData = [
   {
     id: "contactLenses",
     label: "Contact Lenses",
+    banner: contace,
     data: [
       {
         header: "What is Contact Lens Care?",
@@ -291,6 +312,7 @@ export const internalData = [
   {
     id: "neuroOphthalmology",
     label: "Neuro Ophthalmology",
+    banner: neuro,
     data: [
       {
         header: "What is Neuro Ophthalmology?",
@@ -323,6 +345,7 @@ export const internalData = [
   {
     id: "lowVisionSyndrome",
     label: "Low Vision Syndrome",
+    banner: lowvision,
     data: [
       {
         header: "What is Low Vision Syndrome?",

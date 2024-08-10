@@ -11,7 +11,7 @@ const EyeCareInternal = ({ doctorView }) => {
 
   return (
     <Box>
-      <Banner text={pageData.label} />
+      <Banner text={pageData.label} bannerImg={pageData?.banner} />
       <Details
         data={pageData.data}
         doctorView={doctorView}
