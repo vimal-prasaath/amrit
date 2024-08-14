@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, IconButton } from "@mui/material";
+import { Box, Typography, Grid, IconButton, Link } from "@mui/material";
 import phone from "assets/images/phone.svg";
 import email from "assets/images/email.svg";
 import location from "assets/images/location.svg";
@@ -7,26 +7,50 @@ import fb from "assets/images/fb.svg";
 import pin from "assets/images/pinterest.svg";
 import linkedIn from "assets/images/linkedin.svg";
 import twitter from "assets/images/twitter.svg";
+import { departmentConstants } from "routes";
+import { Link as RouterLink } from "react-router-dom";
+
+import { list } from "views/EyeCareDetails/internal-data/otherInternal";
+
+const otherInternalsIds = list.map((item) => item.id);
 
 const Footer = () => {
   const links = [
-    "Ophthalmology",
-    "Pediatrics & Pediatrics Surgery",
-    "Obstetrics and Gynecology",
-    "Internal Medicine",
-    "Diabetology",
-    "Orthopedics",
-    "General Surgery & Laparoscopic",
-    "ENT",
+    {
+      text: "Ophthalmology",
+
+      id: departmentConstants.OPTHOMOLOGY,
+    },
+    {
+      text: "Pediatrics (Pediatric surgery)",
+
+      id: departmentConstants.PEDIATRICS,
+    },
+    { text: "Gynaecology", id: departmentConstants.GYNO },
+    {
+      text: "Internal Medicine",
+      id: departmentConstants.INTERNAL_MEDICINE,
+    },
+    {
+      text: "Diabetology",
+      id: departmentConstants.DIBETOLOGY,
+    },
+    { text: "Orthopedics", id: departmentConstants.ORTHO },
+    {
+      text: "Gen. Surgery & Laparoscopic",
+      id: departmentConstants.GEN_SURGERY,
+    },
+    { text: "ENT", id: departmentConstants.ENT },
   ];
   const links2 = [
-    "Cardiology",
-    "Nephrology",
-    "Neurology",
-    "Dermatology",
-    "Physiotherapy",
-    "Gastroenteology",
-    "Neonatal ICU",
+    { text: "Cardiology", id: departmentConstants.CARDIO },
+    { text: "Nephrology", id: departmentConstants.NEPHRO },
+    { text: "Neurology", id: departmentConstants.NEURO },
+    { text: "Dermatology", id: departmentConstants.DERMA },
+    { text: "Physio", id: departmentConstants.PHYSIO },
+    { text: "Gastroenterology", id: departmentConstants.GASTRO },
+    { text: "Radiology", id: departmentConstants.RADIO },
+    { text: "Critical care", id: departmentConstants.CC },
   ];
 
   return (
@@ -104,9 +128,20 @@ const Footer = () => {
               Services
             </Typography>
             {links.map((item) => (
-              <Typography key={item} variant="subtitle2" pb={0.75}>
-                {item}
-              </Typography>
+              <Link
+                component={RouterLink}
+                sx={{ textDecoration: "none" }}
+                color={"common.white"}
+                to={`${
+                  otherInternalsIds.includes(item.id)
+                    ? "department-internal/general"
+                    : "department"
+                }/${item.id || departmentConstants.OPTHOMOLOGY}`}
+              >
+                <Typography key={item} variant="subtitle2" pb={0.75}>
+                  {item.text}
+                </Typography>
+              </Link>
             ))}
           </Grid>
           <Grid item xs={12} md={6} lg={2.5}>
@@ -119,9 +154,20 @@ const Footer = () => {
               Services
             </Typography>
             {links2.map((item) => (
-              <Typography key={item} variant="subtitle2" pb={0.75}>
-                {item}
-              </Typography>
+              <Link
+                component={RouterLink}
+                sx={{ textDecoration: "none" }}
+                color={"common.white"}
+                to={`${
+                  otherInternalsIds.includes(item.id)
+                    ? "department-internal/general"
+                    : "department"
+                }/${item.id || departmentConstants.OPTHOMOLOGY}`}
+              >
+                <Typography key={item} variant="subtitle2" pb={0.75}>
+                  {item.text}
+                </Typography>
+              </Link>
             ))}
           </Grid>
           <Grid item xs={12} md={6} lg={3.5}>
@@ -173,7 +219,57 @@ const Footer = () => {
       >
         <img src={logo} alt="logo" />
         <Box display="flex" alignItems="center">
-          <Typography component="span" mr={6}>
+          <Link
+            component={RouterLink}
+            to={`/`}
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={6}>
+              Home
+            </Typography>
+          </Link>
+          <Link
+            component={RouterLink}
+            to={`/department/${departmentConstants.OPTHOMOLOGY}`}
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={6}>
+              Eye Care
+            </Typography>
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/our-doctor"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={6}>
+              Our Doctors
+            </Typography>
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/blog"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={6}>
+              Blog
+            </Typography>
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/contact"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={6}>
+              Contact Us
+            </Typography>
+          </Link>
+          {/* <Typography component="span" mr={6}>
             Home
           </Typography>
           <Typography component="span" mr={6}>
@@ -185,7 +281,7 @@ const Footer = () => {
           <Typography component="span" mr={6}>
             International
           </Typography>
-          <Typography component="span">Contact Us</Typography>
+          <Typography component="span">Contact Us</Typography> */}
         </Box>
       </Box>
       <Typography py={2.25} textAlign="center" variant="body1">

@@ -18,6 +18,9 @@ import physio from "assets/images/department/physio.svg";
 import pediatric from "assets/images/service.svg";
 import { Link as RouterLink } from "react-router-dom";
 import { departmentConstants } from "routes";
+import { list } from "views/EyeCareDetails/internal-data/otherInternal";
+
+const otherInternalsIds = list.map((item) => item.id);
 
 const OurExcellence = () => {
   const services = [
@@ -32,19 +35,31 @@ const OurExcellence = () => {
       id: departmentConstants.PEDIATRICS,
     },
     { text: "Gynaecology", image: gyno, id: departmentConstants.GYNO },
-    { text: "Internal Medicine", image: internalMeds },
-    { text: "Diabetology", image: diabetology },
+    {
+      text: "Internal Medicine",
+      image: internalMeds,
+      id: departmentConstants.INTERNAL_MEDICINE,
+    },
+    {
+      text: "Diabetology",
+      image: diabetology,
+      id: departmentConstants.DIBETOLOGY,
+    },
     { text: "Orthopedics", image: orthpedics, id: departmentConstants.ORTHO },
-    { text: "Gen. Surgery & Laparoscopic", image: genSurgery },
-    { text: "ENT", image: ent },
-    { text: "Cardiology", image: cardio },
-    { text: "Nephrology", image: nephrology },
-    { text: "Neurology", image: nurology },
-    { text: "Dermatology", image: dermatology },
-    { text: "Physio", image: physio },
-    { text: "Gastroenterology", image: gastro },
-    { text: "Neonatal ICU", image: icu },
-    { text: "Critical care", image: criticalCare },
+    {
+      text: "Gen. Surgery & Laparoscopic",
+      image: genSurgery,
+      id: departmentConstants.GEN_SURGERY,
+    },
+    { text: "ENT", image: ent, id: departmentConstants.ENT },
+    { text: "Cardiology", image: cardio, id: departmentConstants.CARDIO },
+    { text: "Nephrology", image: nephrology, id: departmentConstants.NEPHRO },
+    { text: "Neurology", image: nurology, id: departmentConstants.NEURO },
+    { text: "Dermatology", image: dermatology, id: departmentConstants.DERMA },
+    { text: "Physio", image: physio, id: departmentConstants.PHYSIO },
+    { text: "Gastroenterology", image: gastro, id: departmentConstants.GASTRO },
+    { text: "Radiology", image: icu, id: departmentConstants.RADIO },
+    { text: "Critical care", image: criticalCare, id: departmentConstants.CC },
   ];
   return (
     <Box py={4} px={10}>
@@ -59,9 +74,11 @@ const OurExcellence = () => {
           <Grid item xs={6} md={4} lg={3} key={index}>
             <Link
               component={RouterLink}
-              to={`/department/${
-                service.id || departmentConstants.OPTHOMOLOGY
-              }`}
+              to={`${
+                otherInternalsIds.includes(service.id)
+                  ? "department-internal/general"
+                  : "department"
+              }/${service.id || departmentConstants.OPTHOMOLOGY}`}
               sx={{ textDecoration: "none" }}
               color={"common.black"}
             >
