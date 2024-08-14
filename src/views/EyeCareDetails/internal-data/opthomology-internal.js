@@ -14,7 +14,7 @@ export const internalData = [
   {
     id: "smileProSurgery",
     label: "Smile Pro Surgery",
-    banner: smile,
+    img: smile,
     data: [
       {
         header: "What is Smile Pro Surgery",
@@ -46,7 +46,7 @@ export const internalData = [
   {
     id: "contouraVision",
     label: "Contoura Vision - Specs Removal",
-    banner: contoura,
+    img: contoura,
     data: [
       {
         header: "What is Contoura Vision Surgery?",
@@ -79,7 +79,7 @@ export const internalData = [
   {
     id: "cataract",
     label: "Cataract",
-    banner: catract,
+    img: catract,
     data: [
       {
         header: "What is Cataract Surgery?",
@@ -113,7 +113,7 @@ export const internalData = [
   {
     id: "glaucoma",
     label: "Glaucoma",
-    banner: gulcoma,
+    img: gulcoma,
     data: [
       {
         header: "What is Glaucoma?",
@@ -147,7 +147,7 @@ export const internalData = [
   {
     id: "corneaAndKeratoconus",
     label: "Cornea and Keratoconus",
-    banner: cornea,
+    img: cornea,
     data: [
       {
         header: "What is Cornea and Keratoconus Care?",
@@ -180,7 +180,7 @@ export const internalData = [
   {
     id: "pediatricOphthalmology",
     label: "Pediatric Ophthalmology",
-    banner: pedia,
+    img: pedia,
     data: [
       {
         header: "What is Pediatric Ophthalmology?",
@@ -213,7 +213,7 @@ export const internalData = [
   {
     id: "retina",
     label: "Retina",
-    banner: retina,
+    img: retina,
     data: [
       {
         header: "What is Retina Ophthalmology?",
@@ -246,7 +246,7 @@ export const internalData = [
   {
     id: "oculoplastyAndCosmeticEnhancement",
     label: "Oculoplasty and Cosmetic Enhancement",
-    banner: oculo,
+    img: oculo,
     data: [
       {
         header: "What is Oculoplasty and Cosmetic Enhancement?",
@@ -279,7 +279,7 @@ export const internalData = [
   {
     id: "contactLenses",
     label: "Contact Lenses",
-    banner: contace,
+    img: contace,
     data: [
       {
         header: "What is Contact Lens Care?",
@@ -312,7 +312,7 @@ export const internalData = [
   {
     id: "neuroOphthalmology",
     label: "Neuro Ophthalmology",
-    banner: neuro,
+    img: neuro,
     data: [
       {
         header: "What is Neuro Ophthalmology?",
@@ -345,7 +345,7 @@ export const internalData = [
   {
     id: "lowVisionSyndrome",
     label: "Low Vision Syndrome",
-    banner: lowvision,
+    img: lowvision,
     data: [
       {
         header: "What is Low Vision Syndrome?",

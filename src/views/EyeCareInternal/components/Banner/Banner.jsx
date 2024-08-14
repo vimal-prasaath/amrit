@@ -12,7 +12,7 @@ const Banner = ({ text, bannerImg }) => {
         display="flex"
         justifyContent="center"
         flexDirection="column"
-        sx={{ filter: "grayscale(1)" }}
+        // sx={{ filter: "grayscale(1)" }}
       >
         <Typography display={"none"} fontSize="3.125rem" fontWeight={600}>
           {text}

@@ -7,7 +7,7 @@ import { ToggleBtn } from "./ToggleBtn.styled.js";
 import { useState } from "react";
 import check from "assets/images/check.svg";
 
-const Details = ({ doctorView, data, links, departId }) => {
+const Details = ({ doctorView, data, links, departId, img }) => {
   const [view, setView] = useState(doctorView ? 2 : 1);
 
   const handleChange = (event, nextView) => {
@@ -58,7 +58,7 @@ const Details = ({ doctorView, data, links, departId }) => {
       )}
       {index === 0 && (
         <Box py={4}>
-          <img src={internalImg} alt="img" width="100%" />
+          <img src={img || internalImg} alt="img" width="100%" />
         </Box>
       )}
     </Box>

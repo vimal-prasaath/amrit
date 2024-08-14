@@ -85,7 +85,7 @@ export const internalData = [
   {
     id: "childBirth",
     label: "Child Birth (Normal / Cesarean)",
-    banner: child,
+    img: child,
     data: [
       {
         header: "Understanding Normal Child Birth and a Cesarean Section",
@@ -117,7 +117,7 @@ export const internalData = [
   {
     id: "criticalCare",
     label: "24 Hours Critical Care",
-    banner: critical,
+    img: critical,
 
     data: [
       {
@@ -151,7 +151,7 @@ export const internalData = [
   {
     id: "infertilityTreatment",
     label: "Infertility Treatment",
-    banner: infert,
+    img: infert,
     data: [
       {
         header: "What is Infertility Treatment?",
@@ -184,7 +184,7 @@ export const internalData = [
   {
     id: "tubectomy",
     label: "Tubectomy (Family Planning)",
-    banner: tube,
+    img: tube,
 
     data: [
       {
@@ -218,7 +218,7 @@ export const internalData = [
   {
     id: "hysterectomy",
     label: "Hysterectomy",
-    banner: hyst,
+    img: hyst,
 
     data: [
       {
@@ -253,7 +253,7 @@ export const internalData = [
   {
     id: "laparoscopicSterilisation",
     label: "Laparoscopic Sterilisation",
-    banner: lap,
+    img: lap,
 
     data: [
       {
@@ -288,7 +288,7 @@ export const internalData = [
   {
     id: "laparoscopicHysterectomy",
     label: "Laparoscopic Hysterectomy",
-    banner: lapHy,
+    img: lapHy,
 
     data: [
       {
@@ -323,7 +323,7 @@ export const internalData = [
   {
     id: "laparoscopicOvarianCystectomy",
     label: "Laparoscopic Ovarian Cystectomy",
-    banner: lapCy,
+    img: lapCy,
 
     data: [
       {
@@ -358,7 +358,7 @@ export const internalData = [
   {
     id: "polypectomy",
     label: "Polypectomy and D&C",
-    banner: poly,
+    img: poly,
 
     data: [
       {
@@ -393,7 +393,7 @@ export const internalData = [
   {
     id: "vaccinations",
     label: "Vaccinations",
-    banner: vacc,
+    img: vacc,
 
     data: [
       {
@@ -428,7 +428,7 @@ export const internalData = [
   {
     id: "papSmear",
     label: "Pap Smear",
-    banner: papSmear,
+    img: papSmear,
 
     data: [
       {
@@ -463,7 +463,7 @@ export const internalData = [
   {
     id: "labServicesAndUltrasound",
     label: "24/7 Lab Services and Ultrasound",
-    banner: labservice,
+    img: labservice,
 
     data: [
       {
@@ -499,7 +499,7 @@ export const internalData = [
   {
     id: "psychologicalCounselling",
     label: "Psychological Counselling",
-    banner: pc,
+    img: pc,
 
     data: [
       {

@@ -42,7 +42,7 @@ export const internalData = [
   {
     id: "generalPaediatrics",
     label: "General Paediatrics",
-    banner: gp,
+    img: gp,
     data: [
       {
         header: "What is General Paediatrics?",
@@ -87,7 +87,7 @@ export const internalData = [
   {
     id: "paediatricsSurgery",
     label: "Paediatrics Surgery",
-    banner: ps,
+    img: ps,
 
     data: [
       {
@@ -135,7 +135,7 @@ export const internalData = [
   {
     id: "paediatricsAndNeonatalICU",
     label: "Paediatrics and Neonatal ICU",
-    banner: pni,
+    img: pni,
     data: [
       {
         header: "What is Paediatric and Neonatal ICU?",
@@ -183,7 +183,7 @@ export const internalData = [
   {
     id: "childPsychology",
     label: "Child Psychology",
-    banner: cp,
+    img: cp,
     data: [
       {
         header: "Understanding Child Psychology",
@@ -231,7 +231,7 @@ export const internalData = [
   {
     id: "childRehabilitation",
     label: "Child Rehabilitation",
-    banner: cn,
+    img: cn,
     data: [
       {
         header: "What is Child Rehabilitation?",
@@ -279,7 +279,7 @@ export const internalData = [
   {
     id: "paediatricsNutrition",
     label: "Paediatrics Nutrition",
-    banner: pn,
+    img: pn,
     data: [
       {
         header: "What is Paediatric Nutrition?",

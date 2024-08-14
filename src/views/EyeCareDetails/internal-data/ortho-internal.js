@@ -7,7 +7,7 @@ export const internalData = [
   {
     id: "jointReplacement",
     label: "Joint Replacement Surgery",
-    banner: jr,
+    img: jr,
     data: [
       {
         header: "What is Joint Replacement Surgery",
@@ -51,7 +51,7 @@ export const internalData = [
   {
     id: "spineSurgery",
     label: "Spine Surgery",
-    banner: ss,
+    img: ss,
     data: [
       {
         header: "What is Spine Surgery?",
@@ -98,7 +98,7 @@ export const internalData = [
   {
     id: "totalKneeReplacement",
     label: "Total Knee Replacement",
-    banner: tkr,
+    img: tkr,
     data: [
       {
         header: "What is Total Knee Replacement?",
@@ -143,7 +143,7 @@ export const internalData = [
   {
     id: "fractureTreatment",
     label: "Fracture Treatment",
-    banner: ft,
+    img: ft,
     data: [
       {
         header: "Understanding Fracture Treatment",

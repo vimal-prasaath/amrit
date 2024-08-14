@@ -20,12 +20,12 @@ const EyeCareInternal = ({ doctorView }) => {
           fontSize="3.125rem"
           fontWeight={600}
           position="absolute"
-          color={"white"}
+          // color={"white"}
           sx={{
             top: "50%",
             transform: "translateY(-50%)",
             left: "5rem",
-            filter: "drop-shadow(2px 4px 6px black)",
+            // filter: "drop-shadow(2px 4px 6px black)",
           }}
         >
           <Typography
@@ -44,6 +44,7 @@ const EyeCareInternal = ({ doctorView }) => {
         doctorView={doctorView}
         links={list}
         departId={departId}
+        img={pageData.img}
       />
       <Testimonial />
     </Box>
