@@ -6,7 +6,8 @@ import info from "assets/images/banners/info/optho.png";
 export const data = {
   id: "department",
   label: "Ophthalmology",
-  banner: ["Expert Eye Care", "Restoring Vision", "Transforming Lives"],
+  banner: ["Expert Eye Care", "Restoring Vision, Transforming Lives"],
+  bannerSize: ["4.375rem", "2.375rem"],
   bannerImg: eyecare,
   aboutImg: aboutus,
   about: [

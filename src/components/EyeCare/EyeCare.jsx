@@ -9,6 +9,8 @@ const EyeCareCard = ({ data, id, departmentId }) => {
       borderRadius={"1.75rem"}
       boxShadow={"0 0 10px 0 rgba(153, 153, 153, 0.2)"}
       height={"100%"}
+      display={"flex"}
+      flexDirection={"column"}
     >
       <Box
         sx={{
@@ -36,7 +38,7 @@ const EyeCareCard = ({ data, id, departmentId }) => {
       <Typography variant="body2" color="#999">
         {data.content}
       </Typography>
-      <Box textAlign="center" pt={3}>
+      <Box textAlign="center" pt={3} mt={"auto"}>
         <Link
           component={RouterLink}
           to={`/department-internal/${departmentId}/${data.id}`}
@@ -53,14 +55,12 @@ const EyeCareCard = ({ data, id, departmentId }) => {
 const EyeCare = ({ services, departmentId, serviceHeader }) => {
   return (
     <Box py={10} px={8} bgcolor={"#f6f6f6"}>
-      <Typography
-        fontSize={"3.125rem"}
-        fontWeight="bold"
-        mb={2}
-        textAlign="center"
-      >
-        {serviceHeader}
-      </Typography>
+      <Box mb={2} textAlign="center">
+        <Typography fontSize={"3.125rem"} fontWeight="bold" variant="subHeader">
+          {serviceHeader}
+        </Typography>
+      </Box>
+
       <Grid container spacing={4} pt={8}>
         {services.map((item, index) => (
           <Grid key={index + "service"} item xs={6} md={4} lg={3}>

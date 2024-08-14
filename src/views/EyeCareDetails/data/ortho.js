@@ -6,7 +6,9 @@ import info from "assets/images/banners/info/ortho.png";
 export const data = {
   id: "ortho",
   label: "Orthopedic",
-  banner: ["Expert Orthopedic Care", "Restoring Mobility", "Enhancing Lives"],
+  banner: ["Expert Orthopedic Care", "Restoring Mobility, Enhancing Lives"],
+  bannerSize: ["4.375rem", "2.375rem"],
+
   bannerImg: banner,
   aboutImg: aboutus,
   about: [

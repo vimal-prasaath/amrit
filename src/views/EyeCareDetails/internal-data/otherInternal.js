@@ -8,6 +8,8 @@ import cardio from "assets/images/banners/internalDepartment/cardiology.jpg";
 import psiyo from "assets/images/banners/internalDepartment/physio.jpg";
 import gastro from "assets/images/banners/internalDepartment/gastrointerology.jpg";
 import radio from "assets/images/banners/internalDepartment/diabetology.jpg";
+import internalMed from "assets/images/banners/internalDepartment/internalmedicine.jpg";
+import cc from "assets/images/banners/internalDepartment/cc.jpg";
 
 import ent1 from "assets/images/banners/home/ent.png";
 import dermatologist1 from "assets/images/banners/home/derma.png";
@@ -19,6 +21,8 @@ import cardio1 from "assets/images/banners/home/cardio.png";
 import psiyo1 from "assets/images/banners/home/physio.png";
 import gastro1 from "assets/images/banners/home/gastro.png";
 import radio1 from "assets/images/banners/home/radio.png";
+import internalMed1 from "assets/images/banners/home/internalmeds.png";
+import cc1 from "assets/images/banners/home/cc.png";
 
 export const list = [
   {
@@ -75,14 +79,19 @@ export const list = [
     label: "Iternal Medicine",
     content: "datamap",
   },
+  {
+    id: "criticalCare",
+    label: "Critical Care",
+    content: "datamap",
+  },
 ];
 
 export const internalData = [
   {
     id: "internalMedicine",
     label: "Department of || Internal Medicine",
-    banner: diabetology1,
-    img: diabetology,
+    banner: internalMed1,
+    img: internalMed,
     data: [
       {
         header: "Internal Medicine: Comprehensive Healthcare Management",
@@ -393,6 +402,34 @@ export const internalData = [
         ],
         summary:
           "Our radiology department is committed to delivering accurate and detailed imaging results to assist in the diagnosis and treatment of various medical conditions.",
+      },
+    ],
+  },
+  {
+    id: "criticalCare",
+    label: "Department of || Critical Care",
+    banner: cc1,
+    img: cc,
+    data: [
+      {
+        header: "Intensive and Critical Care",
+        content:
+          "The Department of Critical Care at Amrit Hospital provides specialized care for patients with severe, life-threatening conditions that require constant monitoring and intensive treatment. Our team of highly trained intensivists, nurses, and support staff are equipped to handle complex medical emergencies, ensuring comprehensive and compassionate care in a high-tech environment. We focus on stabilizing critical patients and managing complex health issues with precision and expertise. Our critical care unit is equipped with advanced technology to monitor and treat a range of serious conditions, including respiratory failure, cardiac emergencies, and sepsis. We provide 24/7 care for patients in need of intensive medical intervention, including those recovering from major surgeries or severe trauma. Our multidisciplinary approach ensures that each patient receives tailored treatment plans and continuous support to achieve the best possible outcomes.",
+        points: null,
+      },
+      {
+        header: "Symptoms to Look Out For",
+        content: "Seek immediate critical care if you experience:",
+        points: [
+          "Severe shortness of breath or difficulty breathing.",
+          "Chest pain or severe discomfort.",
+          "Sudden loss of consciousness or confusion.",
+          "Persistent high fever with severe symptoms.",
+          "Rapid or irregular heartbeat.",
+          "Severe trauma or injury.",
+        ],
+        summary:
+          "In case of these urgent symptoms, our critical care team is ready to provide advanced interventions and support to stabilize and treat critical conditions effectively.",
       },
     ],
   },

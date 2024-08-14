@@ -8,9 +8,9 @@ export const data = {
   label: "Paediatrics",
   banner: [
     "Expert Paediatrics Care",
-    "Nurturing Wellness",
-    "Brightening Futures",
+    "Nurturing Wellness, Brightening Futures",
   ],
+  bannerSize: ["4.375rem", "2.375rem"],
   bannerImg: eyecare,
   aboutImg: aboutus,
   about: [

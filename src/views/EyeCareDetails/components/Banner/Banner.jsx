@@ -1,7 +1,7 @@
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import { BannerContainer } from "./Banner.styled";
 
-const Banner = ({ banner, bannerImg }) => {
+const Banner = ({ banner, bannerImg, bannerSize }) => {
   return (
     <>
       <BannerContainer
@@ -11,25 +11,20 @@ const Banner = ({ banner, bannerImg }) => {
         justifyContent="center"
         flexDirection="column"
       >
-        {banner.map((item, index) => (
-          <Typography
-            key={index + "banner"}
-            fontSize="4.375rem"
-            fontWeight="bold"
-          >
-            {item}
-          </Typography>
-        ))}
-        {/* <Typography fontSize="3.125rem">BEST EYE CARE</Typography>
-        <Typography fontSize="4.375rem" fontWeight="bold">
-          HOSPITAL IN CHENNAI
-        </Typography>
-        <Typography component="span" fontSize="3.125rem" mr={2}>
-          Freedom from Glasses in 9min.
-        </Typography>
-        <Typography component="span" fontSize="4.375rem" fontWeight="bold">
-          Life Changing Procedure
-        </Typography> */}
+        <Box mb={8}>
+          {banner.map((item, index) => (
+            <Typography
+              key={index + "banner"}
+              fontSize={bannerSize[index] || "4.375rem"}
+              fontWeight={bannerSize[index] !== "2.375rem" ? "bold" : "normal"}
+              textTransform={
+                bannerSize[index] === "2.375rem" ? "uppercase" : "unset"
+              }
+            >
+              {item}
+            </Typography>
+          ))}
+        </Box>
       </BannerContainer>
     </>
   );

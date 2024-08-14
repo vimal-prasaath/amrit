@@ -8,9 +8,10 @@ export const data = {
   label: "Gynaecology",
   banner: [
     "Comprehensive Gynaecology Care",
-    "Empowering Women’s Health",
-    "Enhancing Lives",
+    "Empowering Women’s Health, Enhancing Lives",
   ],
+  bannerSize: ["4.25rem", "2.375rem"],
+
   bannerImg: eyecare,
   aboutImg: aboutus,
   about: [

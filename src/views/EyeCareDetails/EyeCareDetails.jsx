@@ -20,11 +20,16 @@ const EyeCareDetails = () => {
     facilityImg,
     infoImg,
     info,
+    bannerSize,
   } = departmentData;
   console.log(departmentData);
   return (
     <Box>
-      <Banner banner={banner} bannerImg={bannerImg} />
+      <Banner
+        banner={banner}
+        bannerImg={bannerImg}
+        bannerSize={bannerSize || []}
+      />
       <About about={about} aboutImg={aboutImg} />
       <OurFacility facility={facility} facilityImg={facilityImg} />
 
