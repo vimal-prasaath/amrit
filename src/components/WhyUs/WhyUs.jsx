@@ -4,7 +4,7 @@ const WhyUs = ({ icon, text, subText }) => {
   return (
     <Box textAlign="center">
       <img src={icon} alt="experiece" />
-      <Typography fontSize="2rem" py={2}>
+      <Typography fontSize="2rem" py={1}>
         {text}
       </Typography>
       <Typography variant="body2">{subText}</Typography>

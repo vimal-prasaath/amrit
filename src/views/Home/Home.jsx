@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 
 import {
   Banner,
-  JoinUs,
+  // JoinUs,
   OurDoctors,
   OurServices,
   Testimonial,
@@ -19,7 +19,7 @@ const Home = () => {
       <WhyAmrit />
       <OurExcellence />
       <OurDoctors />
-      <JoinUs />
+      {/* <JoinUs /> */}
       <Testimonial />
     </Box>
   );

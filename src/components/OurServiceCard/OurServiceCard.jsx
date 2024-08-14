@@ -9,6 +9,8 @@ const OurServiceCard = ({ header, description, icon }) => {
       height={"calc(100% - 3rem)"}
       borderRadius={"1rem"}
       bgcolor={"common.white"}
+      display={"flex"}
+      flexDirection={"column"}
     >
       <Box
         width="6.25rem"
@@ -32,7 +34,9 @@ const OurServiceCard = ({ header, description, icon }) => {
       <Typography variant="body2" color="#999" py={3.5}>
         {description}
       </Typography>
-      <Button variant="outlined">Read More</Button>
+      <Box mt={"auto"}>
+        <Button variant="outlined">Book Now</Button>
+      </Box>
     </Box>
   );
 };

@@ -1,36 +1,86 @@
 import { Typography, Box } from "@mui/material";
 import { BannerContainer } from "./Banner.styled";
-import homeBanner from "assets/images/banners/home.jpeg";
+// import homeBanner from "assets/images/banners/home.jpeg";
 
 import ambulance from "assets/images/ambulance.svg";
-import pediatricas from "assets/images/pediatrics.svg";
+import icu from "assets/images/icu.svg";
 import { BookAppointment } from "components";
+import Slider from "react-slick";
+
+import img1 from "assets/images/banners/home-carousel/1.png";
+import img2 from "assets/images/banners/home-carousel/2.png";
+import img3 from "assets/images/banners/home-carousel/3.png";
 
 const Banner = () => {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 1000,
+    cssEase: "linear",
+    fade: true,
+  };
+
   return (
     <>
-      <BannerContainer
-        image={homeBanner}
-        px={10}
-        display="flex"
-        justifyContent="center"
-        flexDirection="column"
-      >
-        <Typography fontSize="3.125rem">LIVE A LIFE</Typography>
-        <Typography fontSize="4.375rem" fontWeight="bold">
-          WITHOUT GLASSES
-        </Typography>
-        <Box>
-          <Typography component="span" fontSize="3.125rem" mr={2}>
-            USING
-          </Typography>
-          <Typography component="span" fontSize="4.375rem" fontWeight="bold">
-            SIMPLE PRO
-          </Typography>
-        </Box>
+      <Box className="slider-container">
+        <Slider {...settings}>
+          <Box>
+            <BannerContainer
+              image={img1}
+              px={10}
+              display="flex"
+              justifyContent="center"
+              flexDirection="column"
+            >
+              <Typography fontSize="3.125rem">
+                Your Health, Our Priority
+              </Typography>
+              <Typography fontSize="4.375rem" fontWeight="bold" mb={10}>
+                Multi-Speciality Care
+              </Typography>
+            </BannerContainer>
+          </Box>
 
-        <Typography fontSize="3.125rem">TECHNOLOGY</Typography>
-      </BannerContainer>
+          <Box>
+            <BannerContainer
+              image={img2}
+              px={10}
+              display="flex"
+              justifyContent="center"
+              flexDirection="column"
+            >
+              <Typography fontSize="4.375rem" fontWeight="bold">
+                From Bump to Baby
+              </Typography>
+              <Typography fontSize="3.125rem" mb={10}>
+                Exceptional Gynaecology & Maternal Care
+              </Typography>
+            </BannerContainer>
+          </Box>
+
+          <Box>
+            <BannerContainer
+              image={img3}
+              px={10}
+              display="flex"
+              justifyContent="center"
+              flexDirection="column"
+            >
+              <Typography fontSize="3.125rem">
+                See Clearly Without Specs
+              </Typography>
+              <Typography fontSize="4.375rem" fontWeight="bold" mb={10}>
+                Expert Eye Care
+              </Typography>
+            </BannerContainer>
+          </Box>
+        </Slider>
+      </Box>
       <Box
         bgcolor="secondary.main"
         py={2}
@@ -65,8 +115,9 @@ const Banner = () => {
           textAlign="end"
           pr={6}
           position="relative"
+          width={"50%"}
         >
-          24 hrs Emergency
+          24 hrs Emergency Services
           <img
             src={ambulance}
             width="30"
@@ -79,12 +130,18 @@ const Banner = () => {
             <BookAppointment />
           </Box>
         </Box>
-        <Typography variant="h5" flexGrow={1} pl={6} position="relative">
+        <Typography
+          variant="h5"
+          flexGrow={1}
+          pl={6}
+          position="relative"
+          width={"50%"}
+        >
           <img
-            src={pediatricas}
-            width="25px"
+            src={icu}
+            width="30px"
             alt="pediatricas"
-            style={{ position: "absolute", left: 0, top: "-3px" }}
+            style={{ position: "absolute", left: 0 }}
           />
           24 hrs ICU
         </Typography>

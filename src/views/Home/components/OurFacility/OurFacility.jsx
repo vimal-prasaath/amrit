@@ -17,6 +17,11 @@ const OurFacility = () => {
       }}
       minHeight="31.25rem"
     >
+      <Box textAlign="center" mb={8}>
+        <Typography variant="subHeader">
+          Our Revolutionary Vision Care
+        </Typography>
+      </Box>
       <Box display="flex">
         <Box width="50%" height="37.5rem">
           <img

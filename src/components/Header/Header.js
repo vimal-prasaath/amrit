@@ -4,7 +4,6 @@ import {
   Typography,
   Divider,
   Button,
-  Paper,
   Link,
   Popover,
   Grid,
@@ -90,7 +89,7 @@ const Header = () => {
   ];
 
   return (
-    <Box>
+    <Box position={"sticky"} top={0} zIndex={1000}>
       <Box bgcolor="common.black">
         <Typography
           color="common.white"
@@ -109,6 +108,7 @@ const Header = () => {
         px={10}
         display="flex"
         justifyContent="space-between"
+        bgcolor={"common.white"}
       >
         <Link
           component={RouterLink}
@@ -119,26 +119,42 @@ const Header = () => {
           <img src={logo} alt="logo" />
         </Link>
         <Box display="flex">
-          <Box display="flex" mr={4} alignItems="center">
+          <Link
+            to="tel:+917695957120"
+            display="flex"
+            mr={4}
+            alignItems="center"
+            component={RouterLink}
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
             <img src={watsapp} width="40px" alt="watsapp" />
             <Box display="flex" flexDirection="column" ml={1.5}>
               <Typography variant="subtitle2">Whatsapp</Typography>
               <Typography variant="subtitle2" fontWeight="bold">
-                +91 9600 71 18 18
+                +91 76959 57120
               </Typography>
             </Box>
-          </Box>
+          </Link>
 
           <Divider orientation="vertical" flexItem />
-          <Box display="flex" ml={4} alignItems="center">
+          <Link
+            to="tel:+919600711818"
+            display="flex"
+            ml={4}
+            alignItems="center"
+            component={RouterLink}
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
             <img src={call} width="40px" alt="call" />
             <Box display="flex" flexDirection="column" ml={1.5}>
               <Typography variant="subtitle2">Call Us</Typography>
               <Typography variant="subtitle2" fontWeight="bold">
-                +91 9600 71 18 18
+                +91 9600 711818
               </Typography>
             </Box>
-          </Box>
+          </Link>
         </Box>
       </Box>
       <Box
@@ -146,8 +162,9 @@ const Header = () => {
         px={10}
         display="flex"
         justifyContent="space-between"
-        // boxShadow={"0 4px 15px 0 rgba(153, 153, 153, 0.2)"}
-        component={Paper}
+        boxShadow={"0 4px 15px 0 rgba(153, 153, 153, 0.2)"}
+        bgcolor={"common.white"}
+        // component={Paper}
         // elevation={9}
       >
         <Box display="flex" alignItems="center">
@@ -184,12 +201,12 @@ const Header = () => {
           </Link>
           <Link
             component={RouterLink}
-            to="/"
+            to="/blog"
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
             <Typography component="span" mr={3.5}>
-              International
+              Blog
             </Typography>
           </Link>
           <Link
