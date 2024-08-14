@@ -434,4 +434,6 @@ export const internalData = [
     ],
   },
 ];
-export const general = { list, internalData };
+export const listheader = "Our Services";
+
+export const general = { list, internalData, listheader };

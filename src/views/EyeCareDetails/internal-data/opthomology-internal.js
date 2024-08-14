@@ -435,4 +435,6 @@ export const list = [
   },
 ];
 
-export const opthomologyInternal = { list, internalData };
+export const listheader = "Our Eye Care specialties";
+
+export const opthomologyInternal = { list, internalData, listheader };

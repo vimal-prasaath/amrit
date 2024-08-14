@@ -325,4 +325,6 @@ export const internalData = [
   },
 ];
 
-export const pediatricsInternal = { list, internalData };
+export const listheader = "Our Paediatrics Services";
+
+export const pediatricsInternal = { list, internalData, listheader };

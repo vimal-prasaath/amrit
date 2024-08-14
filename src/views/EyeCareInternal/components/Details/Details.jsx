@@ -6,8 +6,9 @@ import internalReach from "assets/images/background/internal-reach.png";
 import { ToggleBtn } from "./ToggleBtn.styled.js";
 import { useState } from "react";
 import check from "assets/images/check.svg";
+import { list } from "views/EyeCareDetails/internal-data/otherInternal";
 
-const Details = ({ doctorView, data, links, departId, img }) => {
+const Details = ({ doctorView, data, links, departId, img, listheader }) => {
   const [view, setView] = useState(doctorView ? 2 : 1);
 
   const handleChange = (event, nextView) => {
@@ -16,7 +17,7 @@ const Details = ({ doctorView, data, links, departId, img }) => {
     }
   };
 
-  const overviewContent = data.map((item, index) => (
+  const overviewContent = data?.map((item, index) => (
     <Box key={index + "section"}>
       <Typography
         fontSize={index === 0 ? "2.75rem" : "2.25rem"}
@@ -69,7 +70,11 @@ const Details = ({ doctorView, data, links, departId, img }) => {
   return (
     <Box px={10} py={5} display="flex">
       <Box>
-        <VerticalBtnGroup links={links} departId={departId} />
+        <VerticalBtnGroup
+          links={doctorView ? list : links}
+          departId={doctorView ? "general" : departId}
+          listheader={doctorView ? "List of Doctors" : listheader}
+        />
         <Box py={4} maxWidth="24.5rem" minWidth="24.5rem">
           <img src={internalReach} alt="internalReach" width="100%" />
         </Box>

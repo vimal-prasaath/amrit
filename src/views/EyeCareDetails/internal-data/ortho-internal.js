@@ -210,4 +210,6 @@ export const list = [
   },
 ];
 
-export const orthoInternal = { list, internalData };
+export const listheader = "Our Orthopedic Services";
+
+export const orthoInternal = { list, internalData, listheader };

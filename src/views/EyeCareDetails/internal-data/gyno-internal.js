@@ -599,4 +599,7 @@ export const internalData = [
     ],
   },
 ];
-export const gynoInternal = { list, internalData };
+
+export const listheader = "Our  Gynae Care Services";
+
+export const gynoInternal = { list, internalData, listheader };

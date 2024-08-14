@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 import { ToggleBtn } from "./ToggleBtn.styled";
 import { useParams, useNavigate } from "react-router";
 
-const VerticalBtnGroup = ({ links, departId }) => {
+const VerticalBtnGroup = ({ links, departId, listheader }) => {
   const { id } = useParams();
   const [view, setView] = useState(id);
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ const VerticalBtnGroup = ({ links, departId }) => {
         borderColor="#e8e8e8"
         fontWeight={600}
       >
-        Our Eye Care specialties
+        {listheader}
       </Typography>
       <ToggleButtonGroup
         orientation="vertical"
