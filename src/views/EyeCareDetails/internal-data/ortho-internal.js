@@ -3,11 +3,17 @@ import ss from "assets/images/banners/orthoInternal/spinesurgery.jpg";
 import tkr from "assets/images/banners/orthoInternal/totalkneereplacement.jpg";
 import ft from "assets/images/banners/orthoInternal/fracturedtreatement.jpg";
 
+import jrI from "assets/images/banners/orthoInternalBanner/jrs.png";
+import ssI from "assets/images/banners/orthoInternalBanner/ss.png";
+import tkrI from "assets/images/banners/orthoInternalBanner/tkp.png";
+import ftI from "assets/images/banners/orthoInternalBanner/ft.png";
+
 export const internalData = [
   {
     id: "jointReplacement",
     label: "Joint Replacement Surgery",
     img: jr,
+    banner: jrI,
     data: [
       {
         header: "What is Joint Replacement Surgery",
@@ -52,6 +58,7 @@ export const internalData = [
     id: "spineSurgery",
     label: "Spine Surgery",
     img: ss,
+    banner: ssI,
     data: [
       {
         header: "What is Spine Surgery?",
@@ -99,6 +106,7 @@ export const internalData = [
     id: "totalKneeReplacement",
     label: "Total Knee Replacement",
     img: tkr,
+    banner: tkrI,
     data: [
       {
         header: "What is Total Knee Replacement?",
@@ -144,6 +152,7 @@ export const internalData = [
     id: "fractureTreatment",
     label: "Fracture Treatment",
     img: ft,
+    banner: ftI,
     data: [
       {
         header: "Understanding Fracture Treatment",
