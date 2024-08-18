@@ -13,6 +13,20 @@ import labservice from "assets/images/banners/gynoInternal/24hrlabservice&dedica
 import pc from "assets/images/banners/gynoInternal/psycologicalcouncelling.jpg";
 import vacc from "assets/images/banners/gynoInternal/vaccination.jpg";
 
+import childI from "assets/images/banners/gynoInternalBanner/cb.png";
+import criticalI from "assets/images/banners/gynoInternalBanner/ccm.png";
+import hystI from "assets/images/banners/gynoInternalBanner/hy.png";
+import labserviceI from "assets/images/banners/gynoInternalBanner/lab.png";
+import lapHyI from "assets/images/banners/gynoInternalBanner/lh.png";
+import lapI from "assets/images/banners/gynoInternalBanner/ls.png";
+import lapCyI from "assets/images/banners/gynoInternalBanner/lo.png";
+import pcI from "assets/images/banners/gynoInternalBanner/pc.png";
+import polyI from "assets/images/banners/gynoInternalBanner/poly.png";
+import papSmearI from "assets/images/banners/gynoInternalBanner/ps.png";
+import tubeI from "assets/images/banners/gynoInternalBanner/tube.png";
+import vaccI from "assets/images/banners/gynoInternalBanner/vacc.png";
+import infertI from "assets/images/banners/gynoInternalBanner/it.png";
+
 export const list = [
   {
     id: "childBirth",
@@ -86,6 +100,7 @@ export const internalData = [
     id: "childBirth",
     label: "Child Birth (Normal / Cesarean)",
     img: child,
+    banner: childI,
     data: [
       {
         header: "Understanding Normal Child Birth and a Cesarean Section",
@@ -118,6 +133,7 @@ export const internalData = [
     id: "criticalCare",
     label: "24 Hours Critical Care",
     img: critical,
+    banner: criticalI,
 
     data: [
       {
@@ -152,6 +168,8 @@ export const internalData = [
     id: "infertilityTreatment",
     label: "Infertility Treatment",
     img: infert,
+    banner: infertI,
+
     data: [
       {
         header: "What is Infertility Treatment?",
@@ -185,6 +203,7 @@ export const internalData = [
     id: "tubectomy",
     label: "Tubectomy (Family Planning)",
     img: tube,
+    banner: tubeI,
 
     data: [
       {
@@ -219,6 +238,7 @@ export const internalData = [
     id: "hysterectomy",
     label: "Hysterectomy",
     img: hyst,
+    banner: hystI,
 
     data: [
       {
@@ -254,6 +274,7 @@ export const internalData = [
     id: "laparoscopicSterilisation",
     label: "Laparoscopic Sterilisation",
     img: lap,
+    banner: lapI,
 
     data: [
       {
@@ -289,6 +310,7 @@ export const internalData = [
     id: "laparoscopicHysterectomy",
     label: "Laparoscopic Hysterectomy",
     img: lapHy,
+    banner: lapHyI,
 
     data: [
       {
@@ -324,6 +346,7 @@ export const internalData = [
     id: "laparoscopicOvarianCystectomy",
     label: "Laparoscopic Ovarian Cystectomy",
     img: lapCy,
+    banner: lapCyI,
 
     data: [
       {
@@ -359,6 +382,7 @@ export const internalData = [
     id: "polypectomy",
     label: "Polypectomy and D&C",
     img: poly,
+    banner: polyI,
 
     data: [
       {
@@ -394,6 +418,7 @@ export const internalData = [
     id: "vaccinations",
     label: "Vaccinations",
     img: vacc,
+    banner: vaccI,
 
     data: [
       {
@@ -429,6 +454,7 @@ export const internalData = [
     id: "papSmear",
     label: "Pap Smear",
     img: papSmear,
+    banner: papSmearI,
 
     data: [
       {
@@ -464,6 +490,7 @@ export const internalData = [
     id: "labServicesAndUltrasound",
     label: "24/7 Lab Services and Ultrasound",
     img: labservice,
+    banner: labserviceI,
 
     data: [
       {
@@ -500,6 +527,7 @@ export const internalData = [
     id: "psychologicalCounselling",
     label: "Psychological Counselling",
     img: pc,
+    banner: pcI,
 
     data: [
       {
@@ -528,72 +556,6 @@ export const internalData = [
           "Evidence-Based Techniques: Therapeutic methods to help manage stress, anxiety, depression, etc.",
           "Continuous Support: Ongoing support through all stages of your journey.",
           "Compassionate Care: Delivered by experienced professionals.",
-        ],
-      },
-    ],
-  },
-  {
-    id: "colposcopyAndBiopsy",
-    label: "Colposcopy and Biopsy",
-    data: [
-      {
-        header: "What is Colposcopy and Biopsy?",
-        content:
-          "Colposcopy and biopsy are diagnostic procedures used to examine and sample the cervical tissue for abnormal cells. Colposcopy involves the use of a special microscope to closely examine the cervix, while a biopsy involves taking a small tissue sample for further analysis.",
-        points: null,
-      },
-      {
-        header: "Who Benefits from Colposcopy and Biopsy?",
-        content:
-          "Colposcopy and biopsy are suitable for individuals who require a detailed examination of cervical tissue. This approach is ideal if you:",
-        points: [
-          "Have Abnormal Pap Smear Results: Effective for investigating irregularities detected in a Pap smear.",
-          "Show Symptoms: Ideal if you have symptoms such as abnormal bleeding or discharge that need further evaluation.",
-          "Need Diagnostic Information: Suitable if you require a precise diagnosis to guide further treatment or management.",
-        ],
-      },
-      {
-        header: "How is Colposcopy and Biopsy Done?",
-        content:
-          "Colposcopy and biopsy are performed using specialized instruments and techniques to ensure accuracy and patient comfort.",
-        points: [
-          "Colposcopy: A colposcope, a specialized microscope, is used to magnify and illuminate the cervix for detailed examination.",
-          "Biopsy: A small tissue sample is taken from the cervix for further analysis, typically done during the colposcopy procedure.",
-          "Precision and Care: Procedures are conducted with precision to ensure accurate results and minimize discomfort.",
-          "Recovery: Recovery is generally quick, with most patients resuming normal activities shortly after the procedure.",
-        ],
-      },
-    ],
-  },
-  {
-    id: "hysteroscopy",
-    label: "Hysteroscopy",
-    data: [
-      {
-        header: "What is Hysteroscopy?",
-        content:
-          "Hysteroscopy is a minimally invasive procedure used to examine the inside of the uterus. Utilizing a hysteroscope, a thin, lighted tube, this procedure allows for direct visualization and potential treatment of uterine abnormalities, such as polyps or fibroids.",
-        points: null,
-      },
-      {
-        header: "Who Benefits from Hysteroscopy?",
-        content:
-          "Hysteroscopy is suitable for individuals needing a detailed examination of the uterine cavity. It is particularly ideal if you:",
-        points: [
-          "Experience Abnormal Bleeding: Effective for investigating irregular or heavy bleeding.",
-          "Have Uterine Abnormalities: Ideal for diagnosing or treating conditions such as polyps, fibroids, or abnormal growths.",
-          "Require Diagnostic Insight: Suitable if you need a detailed assessment of the uterine lining to guide treatment or management.",
-        ],
-      },
-      {
-        header: "How is Hysteroscopy Done?",
-        content:
-          "Hysteroscopy is performed using a hysteroscope inserted through the vagina and cervix into the uterus. The procedure involves:",
-        points: [
-          "Minimally Invasive: The hysteroscope is inserted through the vaginal canal, requiring no external incisions.",
-          "Detailed Examination: Provides a clear view of the uterine cavity, allowing for accurate diagnosis and potential treatment.",
-          "Expert Care: Performed by experienced professionals with a focus on patient comfort and precision.",
-          "Quick Recovery: Most patients recover swiftly and can return to normal activities within a few days.",
         ],
       },
     ],
