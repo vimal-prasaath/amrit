@@ -19,8 +19,25 @@ const baseTheme = createTheme({
     MuiCssBaseline: {
       styleOverrides: `
       html {
+        font-size: 11px;
+      }
+        @media screen and (min-width: 1280px) {
+          html {
+        font-size: 12px;
+      }
+      }
+      @media screen and (min-width: 1600px) {
+          html {
+        font-size: 14px;
+      }
+      }
+        @media screen and (min-width: 1900px) {
+         html {
         font-size: 16px;
       }
+      }
+
+
       body {
         margin: 0;
         font-family: 'Rubix';
