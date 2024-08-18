@@ -62,65 +62,88 @@ const Footer = () => {
               About Us
             </Typography>
             <Typography variant="subtitle2" width={"75%"}>
-              Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor
-              incididunt labore dolore magna aliqua enim ad minim.
+              Amrit Hospital | Multi-speciality Hospital | Expert Care Across
+              All Specialties Leading Ophthalmology Department Affordable,
+              Quality Healthcare | Chennai
             </Typography>
             <Box pt={3}>
-              <IconButton
-                size="small"
-                sx={{
-                  background: "black",
-                  border: "1px solid",
-                  borderColor: "rgba(255,255,255,0.3)",
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  borderRadius: "2.5rem",
-                  mr: 2,
-                }}
+              <Link
+                component={RouterLink}
+                sx={{ textDecoration: "none" }}
+                to="https://facebook.com/amrithospitalchennai/"
+                target="blank"
               >
-                <img src={fb} alt="fb" />
-              </IconButton>
-              <IconButton
-                size="small"
-                sx={{
-                  background: "black",
-                  border: "1px solid",
-                  borderColor: "rgba(255,255,255,0.3)",
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  borderRadius: "2.5rem",
-                  mr: 2,
-                }}
+                <IconButton
+                  size="small"
+                  sx={{
+                    background: "black",
+                    border: "1px solid",
+                    borderColor: "rgba(255,255,255,0.3)",
+                    width: "2.5rem",
+                    height: "2.5rem",
+                    borderRadius: "2.5rem",
+                    mr: 2,
+                  }}
+                >
+                  <img src={fb} alt="fb" />
+                </IconButton>
+              </Link>
+
+              <Link component={RouterLink} sx={{ textDecoration: "none" }}>
+                <IconButton
+                  size="small"
+                  sx={{
+                    background: "black",
+                    border: "1px solid",
+                    borderColor: "rgba(255,255,255,0.3)",
+                    width: "2.5rem",
+                    height: "2.5rem",
+                    borderRadius: "2.5rem",
+                    mr: 2,
+                  }}
+                >
+                  <img src={twitter} alt="twitter" />
+                </IconButton>
+              </Link>
+
+              <Link
+                component={RouterLink}
+                sx={{ textDecoration: "none" }}
+                to="https://www.linkedin.com/company/amrit-hospital/"
+                target="blank"
               >
-                <img src={twitter} alt="twitter" />
-              </IconButton>
-              <IconButton
-                size="small"
-                sx={{
-                  background: "black",
-                  border: "1px solid",
-                  borderColor: "rgba(255,255,255,0.3)",
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  borderRadius: "2.5rem",
-                  mr: 2,
-                }}
-              >
-                <img src={linkedIn} alt="linkedin" />
-              </IconButton>
-              <IconButton
-                size="small"
-                sx={{
-                  background: "black",
-                  border: "1px solid",
-                  borderColor: "rgba(255,255,255,0.3)",
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  borderRadius: "2.5rem",
-                }}
-              >
-                <img src={pin} alt="pinterest" />
-              </IconButton>
+                <IconButton
+                  size="small"
+                  sx={{
+                    background: "black",
+                    border: "1px solid",
+                    borderColor: "rgba(255,255,255,0.3)",
+                    width: "2.5rem",
+                    height: "2.5rem",
+                    borderRadius: "2.5rem",
+                    mr: 2,
+                  }}
+                >
+                  <img src={linkedIn} alt="linkedin" />
+                </IconButton>
+              </Link>
+
+              <Link component={RouterLink} sx={{ textDecoration: "none" }}>
+                <IconButton
+                  size="small"
+                  sx={{
+                    background: "black",
+                    border: "1px solid",
+                    borderColor: "rgba(255,255,255,0.3)",
+                    width: "2.5rem",
+                    height: "2.5rem",
+                    borderRadius: "2.5rem",
+                    mr: 2,
+                  }}
+                >
+                  <img src={pin} alt="linkedin" />
+                </IconButton>
+              </Link>
             </Box>
           </Grid>
           <Grid item xs={12} md={6} lg={2.5}>
@@ -175,10 +198,10 @@ const Footer = () => {
               Contact Us
             </Typography>
             <Box>
-              <Typography variant="h6" fontWeight="bold">
-                Amrit Medical Centre
+              <Typography variant="h6" fontWeight="bold" pl={4.625}>
+                Amrit Hospital
               </Typography>
-              <Box display="flex" alignItems="center" pt={3}>
+              <Box display="flex" alignItems="center" py={1}>
                 <img src={location} alt="location" />
                 <Box>
                   <Typography variant="subtitle2" ml={2}>
@@ -189,6 +212,22 @@ const Footer = () => {
                   </Typography>
                 </Box>
               </Box>
+
+              <Typography variant="h6" fontWeight="bold" pl={4.625}>
+                Amrit Medical Centre
+              </Typography>
+              <Box display="flex" alignItems="center" py={1}>
+                <img src={location} alt="location" />
+                <Box>
+                  <Typography variant="subtitle2" ml={2}>
+                    73/28, Dr Alagappa Road, Purasaiwakkam,
+                  </Typography>
+                  <Typography variant="subtitle2" ml={2}>
+                    Chennai - 600084, Tamil Nadu, India
+                  </Typography>
+                </Box>
+              </Box>
+
               <Box display="flex" alignItems="center" pt={3}>
                 <img src={phone} alt="phone" />
 

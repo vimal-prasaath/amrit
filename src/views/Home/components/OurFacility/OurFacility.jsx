@@ -1,4 +1,5 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Link } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 import gradient from "assets/images/background/gradientbg.jpeg";
 import ourservice1 from "assets/images/background/ourservice.png";
@@ -44,36 +45,43 @@ const OurFacility = () => {
             mb={2}
             textTransform="uppercase"
           >
-            Specs removal Silk Pro
+            Specs removal Smile Pro
           </Typography>
           <Typography fontSize={"2rem"} textTransform="uppercase" mb={4}>
             Experience Life Without Glasses in 9
           </Typography>
           <Typography variant="h6" color="#777" lineHeight={2}>
-            Seconds Discover the groundbreaking Specs Removal Silk Pro, a swift
+            Seconds Discover the groundbreaking Specs Removal Smile Pro, a swift
             and painless procedure that can change your life in just 9 seconds.
             Say goodbye to glasses and enjoy the freedom of crystal-clear vision
             with this innovative treatment. Transform your daily life with the
-            precision and ease of Silk Pro.
+            precision and ease of Smile Pro.
           </Typography>
           <Box>
-            <Button color="primary" variant="text" sx={{ px: 0 }}>
-              <Box
-                bgcolor={"primary.main"}
-                borderRadius={"0.5rem"}
-                color={"common.white"}
-                p={1}
-                width={"2.5rem"}
-                height={"2.5rem"}
-                display="flex"
-                alignItems={"center"}
-                justifyContent="center"
-                mr={1.5}
-              >
-                <EastIcon fontSize="small" color="inherit" />
-              </Box>
-              Learn more
-            </Button>
+            <Link
+              component={RouterLink}
+              to="/department-internal/opthomology/smileProSurgery"
+              sx={{ textDecoration: "none" }}
+              color={"common.black"}
+            >
+              <Button color="primary" variant="text" sx={{ px: 0 }}>
+                <Box
+                  bgcolor={"primary.main"}
+                  borderRadius={"0.5rem"}
+                  color={"common.white"}
+                  p={1}
+                  width={"2.5rem"}
+                  height={"2.5rem"}
+                  display="flex"
+                  alignItems={"center"}
+                  justifyContent="center"
+                  mr={1.5}
+                >
+                  <EastIcon fontSize="small" color="inherit" />
+                </Box>
+                Learn more
+              </Button>
+            </Link>
           </Box>
         </Box>
       </Box>

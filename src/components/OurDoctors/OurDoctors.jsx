@@ -1,6 +1,7 @@
 import { Box, Typography, Button } from "@mui/material";
 
 import { DoctorCard } from "components";
+import { data } from "./data";
 
 const OurDoctors = ({ detailView }) => {
   const defaultProps = { bgcolor: "#f6f6f6", py: 4, px: 10 };
@@ -22,7 +23,13 @@ const OurDoctors = ({ detailView }) => {
         px={detailView ? 0 : 6}
         py={detailView ? 0 : 5}
       >
-        <Box px={1.5} mb={2}>
+        {data.map((item, index) => (
+          <Box key={index} px={1.5} mb={3}>
+            <DoctorCard data={item} detailView={detailView} />
+          </Box>
+        ))}
+
+        {/* <Box px={1.5} mb={2}>
           <DoctorCard detailView={detailView} />
         </Box>
 
@@ -51,7 +58,7 @@ const OurDoctors = ({ detailView }) => {
 
         <Box px={1.5} mb={2}>
           <DoctorCard detailView={detailView} />
-        </Box>
+        </Box> */}
       </Box>
       {!detailView && (
         <Box textAlign="center">
