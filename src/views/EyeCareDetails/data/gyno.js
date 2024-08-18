@@ -1,6 +1,6 @@
 import eyecare from "assets/images/banners/home/gyno.png";
-import aboutus from "assets/images/banners/about/optho.png";
-import facility from "assets/images/banners/facility/optho.png";
+import aboutus from "assets/images/banners/about/about.png";
+import facility from "assets/images/banners/facility/gyno.png";
 import info from "assets/images/banners/info/gyno.png";
 
 export const data = {

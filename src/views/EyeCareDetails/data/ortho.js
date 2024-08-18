@@ -1,5 +1,5 @@
 import banner from "assets/images/banners/home/ortho.png";
-import aboutus from "assets/images/banners/about/ortho.png";
+import aboutus from "assets/images/banners/about/about.png";
 import facility from "assets/images/banners/facility/ortho.png";
 import info from "assets/images/banners/info/ortho.png";
 
