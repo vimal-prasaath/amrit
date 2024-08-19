@@ -1,14 +1,26 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Link } from "@mui/material";
 
 import { DoctorCard } from "components";
 import { data } from "./data";
+import { useParams } from "react-router";
+import { Link as RouterLink } from "react-router-dom";
 
 const OurDoctors = ({ detailView }) => {
+  const { departId, id } = useParams();
+
+  console.log(departId, id);
+
+  const isGeneral = departId === "general";
+
   const defaultProps = { bgcolor: "#f6f6f6", py: 4, px: 10 };
 
   const containerProps = detailView ? {} : defaultProps;
 
-  const docs = detailView ? data : data.slice(0, 8);
+  const idToMap = isGeneral ? id : departId;
+
+  const docs = detailView
+    ? data.filter((item) => item.id === idToMap)
+    : data.slice(0, 8);
 
   return (
     <Box {...containerProps}>
@@ -25,52 +37,27 @@ const OurDoctors = ({ detailView }) => {
         px={detailView ? 0 : 6}
         py={detailView ? 0 : 5}
       >
-        {docs.map((item, index) => (
+        {(docs?.length ? docs : data).map((item, index) => (
           <Box key={index} px={1.5} mb={3}>
             <DoctorCard data={item} detailView={detailView} />
           </Box>
         ))}
-
-        {/* <Box px={1.5} mb={2}>
-          <DoctorCard detailView={detailView} />
-        </Box>
-
-        <Box px={1.5} mb={2}>
-          <DoctorCard detailView={detailView} />
-        </Box>
-
-        <Box px={1.5} mb={2}>
-          <DoctorCard detailView={detailView} />
-        </Box>
-
-        <Box px={1.5} mb={2}>
-          <DoctorCard detailView={detailView} />
-        </Box>
-        <Box px={1.5} mb={2}>
-          <DoctorCard detailView={detailView} />
-        </Box>
-
-        <Box px={1.5} mb={2}>
-          <DoctorCard detailView={detailView} />
-        </Box>
-
-        <Box px={1.5} mb={2}>
-          <DoctorCard detailView={detailView} />
-        </Box>
-
-        <Box px={1.5} mb={2}>
-          <DoctorCard detailView={detailView} />
-        </Box> */}
       </Box>
       {!detailView && (
         <Box textAlign="center">
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{ mr: 2.5, py: 1.25, minWidth: "12.5rem" }}
+          <Link
+            to="/our-doctor"
+            component={RouterLink}
+            sx={{ textDecoration: "none" }}
           >
-            View All Team
-          </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{ mr: 2.5, py: 1.25, minWidth: "12.5rem" }}
+            >
+              View All Team
+            </Button>
+          </Link>
         </Box>
       )}
     </Box>
