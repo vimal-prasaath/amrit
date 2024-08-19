@@ -10,22 +10,22 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export const departmentConstants = {
-  OPTHOMOLOGY: "opthomology",
-  ORTHO: "ortho",
-  PEDIATRICS: "pediatrics",
-  GYNO: "gyno",
-  DERMA: "dermatology",
-  INTERNAL_MEDICINE: "internalMedicine",
-  DIBETOLOGY: "diabetology",
-  GEN_SURGERY: "generalSurgery",
-  ENT: "ent",
-  CARDIO: "cardiology",
-  NEPHRO: "nephrology",
-  NEURO: "neurology",
-  PHYSIO: "physiotherapy",
-  GASTRO: "gastroenterology",
-  RADIO: "radiology",
-  CC: "criticalCare",
+  OPTHOMOLOGY: "Opthomology",
+  ORTHO: "Ortho",
+  PEDIATRICS: "Pediatrics",
+  GYNO: "Gyno",
+  DERMA: "Dermatology",
+  INTERNAL_MEDICINE: "InternalMedicine",
+  DIBETOLOGY: "Diabetology",
+  GEN_SURGERY: "GeneralSurgery",
+  ENT: "ENT",
+  CARDIO: "Cardiology",
+  NEPHRO: "Nephrology",
+  NEURO: "Neurology",
+  PHYSIO: "Physiotherapy",
+  GASTRO: "Gastroenterology",
+  RADIO: "Radiology",
+  CC: "CriticalCare",
 };
 
 const BookAppointment = () => {
@@ -86,11 +86,7 @@ const BookAppointment = () => {
               </MenuItem>
 
               {Object.values(departmentConstants)?.map((item, index) => (
-                <MenuItem
-                  value={index}
-                  key={index + 1}
-                  sx={{ textTransform: "capitalize" }}
-                >
+                <MenuItem value={index} key={index + 1}>
                   {item}
                 </MenuItem>
               ))}
