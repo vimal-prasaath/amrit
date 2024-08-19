@@ -1,4 +1,4 @@
-import { Box, Typography, Button, Link } from "@mui/material";
+import { Box, Typography, Button, Link, Grid } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
 import gradient from "assets/images/background/gradientbg.jpeg";
@@ -23,8 +23,8 @@ const OurFacility = () => {
           Our Revolutionary Vision Care
         </Typography>
       </Box>
-      <Box display="flex">
-        <Box width="50%" height="37.5rem">
+      <Grid container spacing={4}>
+        <Grid item xs={12} md={6} height="37.5rem">
           <img
             src={ourservice2}
             width="100%"
@@ -32,10 +32,11 @@ const OurFacility = () => {
             alt="service"
             style={{ objectFit: "contain" }}
           />
-        </Box>
-        <Box
-          width="50%"
-          display="flex"
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={6}
           flexDirection="column"
           justifyContent="center"
         >
@@ -83,12 +84,13 @@ const OurFacility = () => {
               </Button>
             </Link>
           </Box>
-        </Box>
-      </Box>
-      <Box display="flex">
-        <Box
-          width="50%"
-          display="flex"
+        </Grid>
+      </Grid>
+      <Grid container spacing={4}>
+        <Grid
+          item
+          xs={12}
+          md={6}
           flexDirection="column"
           justifyContent="center"
         >
@@ -111,26 +113,33 @@ const OurFacility = () => {
             most advanced technology available.
           </Typography>
           <Box>
-            <Button color="primary" variant="text" sx={{ px: 0 }}>
-              <Box
-                bgcolor={"primary.main"}
-                borderRadius={"0.5rem"}
-                color={"common.white"}
-                p={1}
-                width={"2.5rem"}
-                height={"2.5rem"}
-                display="flex"
-                alignItems={"center"}
-                justifyContent="center"
-                mr={1.5}
-              >
-                <EastIcon fontSize="small" color="inherit" />
-              </Box>
-              Learn more
-            </Button>
+            <Link
+              component={RouterLink}
+              to="/department-internal/opthomology/cataract"
+              sx={{ textDecoration: "none" }}
+              color={"common.black"}
+            >
+              <Button color="primary" variant="text" sx={{ px: 0 }}>
+                <Box
+                  bgcolor={"primary.main"}
+                  borderRadius={"0.5rem"}
+                  color={"common.white"}
+                  p={1}
+                  width={"2.5rem"}
+                  height={"2.5rem"}
+                  display="flex"
+                  alignItems={"center"}
+                  justifyContent="center"
+                  mr={1.5}
+                >
+                  <EastIcon fontSize="small" color="inherit" />
+                </Box>
+                Learn more
+              </Button>
+            </Link>
           </Box>
-        </Box>
-        <Box width="50%" height="37.5rem">
+        </Grid>
+        <Grid item xs={12} md={6} height="37.5rem">
           <img
             src={ourservice1}
             width="100%"
@@ -138,8 +147,8 @@ const OurFacility = () => {
             alt="service"
             style={{ objectFit: "contain" }}
           />
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
     </Box>
   );
 };

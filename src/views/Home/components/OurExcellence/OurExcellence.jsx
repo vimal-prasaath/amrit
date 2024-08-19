@@ -71,7 +71,7 @@ const OurExcellence = () => {
 
       <Grid container spacing={2}>
         {services.map((service, index) => (
-          <Grid item xs={6} md={4} lg={3} key={index}>
+          <Grid item xs={12} md={6} lg={3} key={index}>
             <Link
               component={RouterLink}
               to={`${

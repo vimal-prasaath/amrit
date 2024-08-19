@@ -1,8 +1,9 @@
-import { Box, Typography, Grid, TextField, Button } from "@mui/material";
+import { Box, Typography, Grid, TextField, Button, Link } from "@mui/material";
 import { Banner } from "./components";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Link as RouterLink } from "react-router-dom";
 
 const ContactUs = () => {
   return (
@@ -73,31 +74,69 @@ const ContactUs = () => {
                 </Typography>
               </Box>
             </Box>
-            <Box display={"flex"} alignItems={"center"} py={2} width="75%">
-              <Box
-                width={"5rem"}
-                height={"5rem"}
-                bgcolor="#f4f4f4"
-                borderRadius="50%"
-                mr={3}
-                display={"flex"}
-                alignItems={"center"}
-                justifyContent={"center"}
-              >
-                <LocationOnIcon fontSize="large" color="primary" />
+            <Link
+              component={RouterLink}
+              to="https://www.google.com/maps/place/AMRIT+MEDICAL+CENTRE/@13.0811794,80.2494854,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5265df9b770c05:0x3be6fbdc396294a3!8m2!3d13.0811742!4d80.2520603!16s%2Fg%2F11gflt692y?entry=ttu "
+              target="blank"
+              sx={{ textDecoration: "none" }}
+              color={"common.black"}
+            >
+              <Box display={"flex"} alignItems={"center"} py={2} width="75%">
+                <Box
+                  width={"5rem"}
+                  height={"5rem"}
+                  bgcolor="#f4f4f4"
+                  borderRadius="50%"
+                  mr={3}
+                  display={"flex"}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                >
+                  <LocationOnIcon fontSize="large" color="primary" />
+                </Box>
+                <Box textAlign={"left"}>
+                  <Typography fontWeight={"bold"} variant="body2">
+                    362, mint street, opposite to
+                  </Typography>
+                  <Typography fontWeight={"bold"} variant="body2">
+                    Jain temple, Sowcarpet
+                  </Typography>
+                  <Typography fontWeight={"bold"} variant="body2">
+                    Chennai - 600079, Tamil Nadu, India
+                  </Typography>
+                </Box>
               </Box>
-              <Box textAlign={"left"}>
-                <Typography fontWeight={"bold"} variant="body2">
-                  362, mint street, opposite to
-                </Typography>
-                <Typography fontWeight={"bold"} variant="body2">
-                  Jain temple, Sowcarpet
-                </Typography>
-                <Typography fontWeight={"bold"} variant="body2">
-                  Chennai - 600079, Tamil Nadu, India
-                </Typography>
+            </Link>
+            <Link
+              component={RouterLink}
+              to="https://www.google.com/maps/place/Amrit+Hospital/@13.0921776,80.2766416,17z/data=!3m1!4b1!4m6!3m5!1s0x3a526f57a19c437b:0x36fedbe9eaf5a945!8m2!3d13.0921724!4d80.2792165!16s%2Fg%2F1tmcknl7?entry=ttu"
+              target="blank"
+              sx={{ textDecoration: "none" }}
+              color={"common.black"}
+            >
+              <Box display={"flex"} alignItems={"center"} py={2} width="75%">
+                <Box
+                  width={"5rem"}
+                  height={"5rem"}
+                  bgcolor="#f4f4f4"
+                  borderRadius="50%"
+                  mr={3}
+                  display={"flex"}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                >
+                  <LocationOnIcon fontSize="large" color="primary" />
+                </Box>
+                <Box textAlign={"left"}>
+                  <Typography fontWeight={"bold"} variant="body2">
+                    73/28, Dr Alagappa Road, Purasaiwakkam,
+                  </Typography>
+                  <Typography fontWeight={"bold"} variant="body2">
+                    Chennai - 600084, Tamil Nadu, India
+                  </Typography>
+                </Box>
               </Box>
-            </Box>
+            </Link>
           </Grid>
           <Grid item xs={6} md={6}>
             <Grid container spacing={4} pt={2}>

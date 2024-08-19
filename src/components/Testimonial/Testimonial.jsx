@@ -43,6 +43,12 @@ const Testimonial = () => {
       <Box
         className="slider-container"
         textAlign={"center"}
+        sx={(theme) => ({
+          width: "100%",
+          [theme.breakpoints.up("lg")]: {
+            width: "75%",
+          },
+        })}
         width="75%"
         mx="auto"
       >
@@ -64,7 +70,16 @@ const Testimonial = () => {
                 key={i}
                 style={{ display: "inline-block", marginBottom: "1rem" }}
               />
-              <Typography width="50%" margin="auto" fontSize={"1.25rem"}>
+              <Typography
+                sx={(theme) => ({
+                  width: "100%",
+                  [theme.breakpoints.up("lg")]: {
+                    width: "50%",
+                  },
+                })}
+                margin="auto"
+                fontSize={"1.25rem"}
+              >
                 {item.feedback}
               </Typography>
               - {item.author}

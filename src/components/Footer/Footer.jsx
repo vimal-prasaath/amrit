@@ -57,7 +57,7 @@ const Footer = () => {
     <Box bgcolor="common.black" color="common.white">
       <Box px={10} py={5} display="flex" flexWrap="wrap">
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} lg={3.5}>
+          <Grid item xs={12} sm={6} lg={3.5}>
             <Typography variant="h5" mb={3} fontWeight="bold">
               About Us
             </Typography>
@@ -146,7 +146,7 @@ const Footer = () => {
               </Link>
             </Box>
           </Grid>
-          <Grid item xs={12} md={6} lg={2.5}>
+          <Grid item xs={12} sm={6} lg={2.5}>
             <Typography variant="h5" mb={3} fontWeight="bold">
               Services
             </Typography>
@@ -167,7 +167,7 @@ const Footer = () => {
               </Link>
             ))}
           </Grid>
-          <Grid item xs={12} md={6} lg={2.5}>
+          <Grid item xs={12} sm={6} lg={2.5}>
             <Typography
               variant="h5"
               mb={3}
@@ -193,12 +193,12 @@ const Footer = () => {
               </Link>
             ))}
           </Grid>
-          <Grid item xs={12} md={6} lg={3.5}>
+          <Grid item xs={12} sm={6} lg={3.5}>
             <Typography variant="h5" mb={3} fontWeight="bold">
               Contact Us
             </Typography>
             <Box>
-              <Typography variant="h6" fontWeight="bold" pl={4.625}>
+              <Typography variant="h6" fontWeight="bold">
                 Amrit Hospital
               </Typography>
               <Box display="flex" alignItems="center" py={1}>
@@ -213,7 +213,7 @@ const Footer = () => {
                 </Box>
               </Box>
 
-              <Typography variant="h6" fontWeight="bold" pl={4.625}>
+              <Typography variant="h6" fontWeight="bold">
                 Amrit Medical Centre
               </Typography>
               <Box display="flex" alignItems="center" py={1}>
@@ -255,6 +255,11 @@ const Footer = () => {
         margin="auto"
         display="flex"
         justifyContent="space-around"
+        sx={(theme) => ({
+          [theme.breakpoints.down("lg")]: {
+            display: "none",
+          },
+        })}
       >
         <img src={logo} alt="logo" />
         <Box display="flex" alignItems="center">

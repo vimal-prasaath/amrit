@@ -9,6 +9,25 @@ import {
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
+export const departmentConstants = {
+  OPTHOMOLOGY: "opthomology",
+  ORTHO: "ortho",
+  PEDIATRICS: "pediatrics",
+  GYNO: "gyno",
+  DERMA: "dermatology",
+  INTERNAL_MEDICINE: "internalMedicine",
+  DIBETOLOGY: "diabetology",
+  GEN_SURGERY: "generalSurgery",
+  ENT: "ent",
+  CARDIO: "cardiology",
+  NEPHRO: "nephrology",
+  NEURO: "neurology",
+  PHYSIO: "physiotherapy",
+  GASTRO: "gastroenterology",
+  RADIO: "radiology",
+  CC: "criticalCare",
+};
+
 const BookAppointment = () => {
   return (
     <Box
@@ -66,9 +85,15 @@ const BookAppointment = () => {
                 Select A Specialities
               </MenuItem>
 
-              <MenuItem value={1}>Ophthalmology</MenuItem>
-              <MenuItem value={2}>Orthopedics</MenuItem>
-              <MenuItem value={3}>Nephrology</MenuItem>
+              {Object.values(departmentConstants)?.map((item, index) => (
+                <MenuItem
+                  value={index}
+                  key={index + 1}
+                  sx={{ textTransform: "capitalize" }}
+                >
+                  {item}
+                </MenuItem>
+              ))}
             </TextField>
           </Grid>
           <Grid item xs={6} md={6}>

@@ -8,6 +8,8 @@ const OurDoctors = ({ detailView }) => {
 
   const containerProps = detailView ? {} : defaultProps;
 
+  const docs = detailView ? data : data.slice(0, 8);
+
   return (
     <Box {...containerProps}>
       {!detailView && (
@@ -23,7 +25,7 @@ const OurDoctors = ({ detailView }) => {
         px={detailView ? 0 : 6}
         py={detailView ? 0 : 5}
       >
-        {data.map((item, index) => (
+        {docs.map((item, index) => (
           <Box key={index} px={1.5} mb={3}>
             <DoctorCard data={item} detailView={detailView} />
           </Box>

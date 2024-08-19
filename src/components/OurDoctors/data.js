@@ -24,17 +24,30 @@ import d22 from "assets/images/doctors/22.jpg";
 
 export const data = [
   {
-    name: "Dr. Shalini Lalit Kumar",
-    specialist: "Consultant Obstetrics & Gynaecology",
-    hospitals: "Amrit hospitals",
-    img: d20,
-  },
-  {
     name: "Dr. M. Sohanraj",
     specialist: "Senior Ophthalmology",
     hospitals: "Amrit Hospitals",
     img: d2,
   },
+  {
+    name: "Dr. Lalit Kumar S",
+    specialist: "Chief Cataract, Cornea, Refractive Surgeon",
+    hospitals: "Amrit Hospital",
+    img: d16,
+  },
+  {
+    name: "Dr. Vimala Sohanraj",
+    specialist: "Obstetrics & Gynaecology",
+    hospitals: "Amrit Hospitals",
+    img: d9,
+  },
+  {
+    name: "Dr. Shalini Lalit Kumar",
+    specialist: "Consultant Obstetrics & Gynaecology",
+    hospitals: "Amrit hospitals",
+    img: d20,
+  },
+
   {
     name: "Dr. Sonal Rajesh Kumar",
     specialist: "Consultant Physician",
@@ -42,10 +55,29 @@ export const data = [
     img: d21,
   },
   {
-    name: "Dr. Elizabeth",
-    specialist: "Consultant physiotherapist",
-    hospitals: "Amrit medical centre",
-    img: d22,
+    name: "Dr. Chetan Kumar",
+    specialist: "Consultant Pediatrician & Neonatologist",
+    hospitals: "Amrit Hospitals",
+    img: d12,
+  },
+  {
+    name: "Dr. S. Rajesh Kumar",
+    specialist: "FVRS Vitreo - Retinal surgeon",
+    hospitals: "Amrit Hospitals",
+    img: d1,
+  },
+  {
+    name: "Dr. Rakesh Kothari",
+    specialist: "Consultant pediatrician & Neonatologist",
+    hospitals: "Amrit Hospitals",
+    img: d13,
+  },
+
+  {
+    name: "Dr. B. Hugmi",
+    specialist: "Internal medicine, Diabetology, Endocrine",
+    hospitals: "Amrit Medical Centre",
+    img: d2,
   },
   {
     name: "Dr. Ashish Chopra",
@@ -54,11 +86,12 @@ export const data = [
     img: d19,
   },
   {
-    name: "Dr. Rakesh Kothari",
-    specialist: "Consultant pediatrician & Neonatologist",
-    hospitals: "Amrit Hospitals",
-    img: d13,
+    name: "Dr. Elizabeth",
+    specialist: "Consultant physiotherapist",
+    hospitals: "Amrit medical centre",
+    img: d22,
   },
+
   {
     name: "Dr. S Rajesh MBBS, DA, DNB, FIPM",
     specialist:
@@ -72,18 +105,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d14,
   },
-  {
-    name: "Dr. Chetan Kumar",
-    specialist: "Consultant Pediatrician & Neonatologist",
-    hospitals: "Amrit Hospitals",
-    img: d12,
-  },
-  {
-    name: "Dr. Vimala Sohanraj",
-    specialist: "Obstetrics & Gynaecology",
-    hospitals: "Amrit Hospitals",
-    img: d9,
-  },
+
   {
     name: "Dr. Syed",
     specialist: "Consultant Anaesthetic",
@@ -120,12 +142,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d7,
   },
-  {
-    name: "Dr. B. Hugmi",
-    specialist: "Internal medicine, Diabetology, Endocrine",
-    hospitals: "Amrit Medical Centre",
-    img: d2,
-  },
+
   {
     name: "Dr. D. Rajasekaran",
     specialist: "General physician",
@@ -138,18 +155,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d3,
   },
-  {
-    name: "Dr. S. Rajesh Kumar",
-    specialist: "FVRS Vitreo - Retinal surgeon",
-    hospitals: "Amrit Hospitals",
-    img: d1,
-  },
-  {
-    name: "Dr. Lalit Kumar S",
-    specialist: "Chief Cataract, Cornea, Refractive Surgeon",
-    hospitals: "Amrit Hospital",
-    img: d16,
-  },
+
   {
     name: "Dr. Vigneswaran.p",
     specialist: "Pediatric Orthopaedics Deformity correction",

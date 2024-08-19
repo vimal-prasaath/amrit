@@ -33,23 +33,23 @@ const WhyAmrit = () => {
       <Grid container spacing={2} pt={8}>
         {/* <Grid item xs={6} md={4} lg={0.25}></Grid> */}
 
-        <Grid item xs={6} md={4} lg={2.4} borderRight={1}>
+        <Grid item xs={12} sm={6} md={4} lg={2.4} borderRight={1}>
           <WhyUs icon={experience} text={"152 +"} subText={"Beds"} />
         </Grid>
-        <Grid item xs={6} md={4} lg={2.4} borderRight={1}>
+        <Grid item xs={12} sm={6} md={4} lg={2.4} borderRight={1}>
           <WhyUs
             icon={award}
             text={"276,505+"}
             subText={"Surgeries Performed"}
           />
         </Grid>
-        <Grid item xs={6} md={4} lg={2.4} borderRight={1}>
+        <Grid item xs={12} sm={6} md={4} lg={2.4} borderRight={1}>
           <WhyUs icon={doc} text={"92+ "} subText={"Specialized Doctors"} />
         </Grid>
-        <Grid item xs={6} md={4} lg={2.4} borderRight={1}>
+        <Grid item xs={12} sm={6} md={4} lg={2.4} borderRight={1}>
           <WhyUs icon={services} text={"35+"} subText={"Years of Experience"} />
         </Grid>
-        <Grid item xs={6} md={4} lg={2.4}>
+        <Grid item xs={12} sm={6} md={4} lg={2.4}>
           <WhyUs icon={happyface} text={"40 Lac+"} subText={"Happy Patients"} />
         </Grid>
         {/* <Grid item xs={6} md={4} lg={0.25} /> */}
