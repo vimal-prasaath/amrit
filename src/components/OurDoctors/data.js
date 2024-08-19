@@ -1,5 +1,7 @@
 import d1 from "assets/images/doctors/1.jpg";
-import d2 from "assets/images/doctors/23.jpg";
+import d23 from "assets/images/doctors/23.jpg";
+import d2 from "assets/images/doctors/2.jpg";
+
 import d3 from "assets/images/doctors/3.jpg";
 import d4 from "assets/images/doctors/4.jpg";
 import d5 from "assets/images/doctors/5.jpg";
@@ -46,7 +48,7 @@ export const data = [
     name: "Dr. M. Sohanraj",
     specialist: "Senior Ophthalmology",
     hospitals: "Amrit Hospitals",
-    img: d2,
+    img: d23,
     id: departmentConstants.OPTHOMOLOGY,
   },
   {
