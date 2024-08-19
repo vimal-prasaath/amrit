@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { useState } from "react";
 
 export const departmentConstants = {
   OPTHOMOLOGY: "Opthomology",
@@ -28,7 +29,36 @@ export const departmentConstants = {
   CC: "CriticalCare",
 };
 
+const MOBILE = "919962937773";
+
 const BookAppointment = () => {
+  const [inputValues, setInputValues] = useState({});
+
+  const URL = (message) => `https://wa.me/${MOBILE}?text=${encodeURI(message)}`;
+
+  const onInputChange = (e) => {
+    const { name, value } = e.target;
+    setInputValues((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const generateMessageString = () => {
+    let values = Object.keys(inputValues);
+    let message = "";
+    values.forEach(
+      (value) =>
+        (message =
+          message +
+          "\n" +
+          "*" +
+          value.toUpperCase() +
+          "*" +
+          " : " +
+          inputValues[value])
+    );
+    const whatsAppUrl = URL(message);
+    window.open(whatsAppUrl);
+  };
+
   return (
     <Box
       borderRadius={"0.5rem"}
@@ -48,9 +78,11 @@ const BookAppointment = () => {
         <Grid container spacing={4} pt={2}>
           <Grid item xs={6} md={6}>
             <TextField
+              onChange={onInputChange}
               fullWidth
               placeholder="Patient Name"
               variant="outlined"
+              inputProps={{ name: "Patient" }}
               InputProps={{
                 hiddenLabel: true,
                 disableUnderline: true,
@@ -64,9 +96,13 @@ const BookAppointment = () => {
           <Grid item xs={6} md={6}>
             <TextField
               fullWidth
+              onChange={onInputChange}
               variant="outlined"
               placeholder="Select A Specialities"
               select
+              inputProps={{
+                name: "Department",
+              }}
               InputProps={{
                 hiddenLabel: true,
                 disableUnderline: true,
@@ -86,7 +122,7 @@ const BookAppointment = () => {
               </MenuItem>
 
               {Object.values(departmentConstants)?.map((item, index) => (
-                <MenuItem value={index} key={index + 1}>
+                <MenuItem value={item} key={index + 1}>
                   {item}
                 </MenuItem>
               ))}
@@ -96,9 +132,13 @@ const BookAppointment = () => {
             <TextField
               fullWidth
               id="filled-basic"
+              onChange={onInputChange}
               variant="outlined"
               placeholder="Date"
               type="date"
+              inputProps={{
+                name: "Date",
+              }}
               InputProps={{
                 hiddenLabel: true,
                 disableUnderline: true,
@@ -111,10 +151,14 @@ const BookAppointment = () => {
           </Grid>
           <Grid item xs={6} md={6}>
             <TextField
+              onChange={onInputChange}
               fullWidth
               id="filled-basic"
               variant="outlined"
               placeholder="Mobile"
+              inputProps={{
+                name: "Phone",
+              }}
               InputProps={{
                 hiddenLabel: true,
                 disableUnderline: true,
@@ -131,6 +175,7 @@ const BookAppointment = () => {
             variant="contained"
             color="primary"
             sx={{ mt: 2.5, py: 1.25 }}
+            onClick={generateMessageString}
           >
             Book an Appointment
           </Button>

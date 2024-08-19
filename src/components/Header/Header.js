@@ -120,7 +120,8 @@ const Header = () => {
         </Link>
         <Box display="flex">
           <Link
-            to="tel:+917695957120"
+            to="https://wa.me/917695957120"
+            target="_blank"
             display="flex"
             mr={4}
             alignItems="center"
@@ -199,7 +200,7 @@ const Header = () => {
               Our Doctors
             </Typography>
           </Link>
-          <Link
+          {/* <Link
             component={RouterLink}
             to="/blog"
             sx={{ textDecoration: "none" }}
@@ -208,7 +209,7 @@ const Header = () => {
             <Typography component="span" mr={3.5}>
               Blog
             </Typography>
-          </Link>
+          </Link> */}
           <Link
             component={RouterLink}
             to="/contact"

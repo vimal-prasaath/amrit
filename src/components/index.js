@@ -14,3 +14,4 @@ export { default as OurDoctors } from "./OurDoctors";
 export { default as VerticalBtnGroup } from "./VerticalBtnGroup";
 export { default as BookAppointment } from "./BookAppointment";
 export { default as Testimonial } from "./Testimonial";
+export { default as BookAppointmentModel } from "./BookAppointmentModel";

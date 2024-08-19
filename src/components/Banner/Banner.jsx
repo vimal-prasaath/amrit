@@ -1,6 +1,6 @@
 import { Typography, Box } from "@mui/material";
 import { BannerContainer } from "./Banner.styled";
-// import homeBanner from "assets/images/banners/home.jpeg";
+import homeBanner from "assets/images/banners/home.jpeg";
 
 import ambulance from "assets/images/ambulance.svg";
 import icu from "assets/images/icu.svg";
@@ -9,7 +9,7 @@ import Slider from "react-slick";
 
 import img1 from "assets/images/banners/home-carousel/1.png";
 import img2 from "assets/images/banners/home-carousel/2.png";
-import img3 from "assets/images/banners/home-carousel/3.png";
+// import img3 from "assets/images/banners/home-carousel/3.png";
 
 const Banner = () => {
   const settings = {
@@ -65,7 +65,7 @@ const Banner = () => {
 
           <Box>
             <BannerContainer
-              image={img3}
+              image={homeBanner}
               px={10}
               display="flex"
               justifyContent="center"

@@ -91,7 +91,7 @@ const EyeCareDetails = () => {
       </Box>
       <OurDoctors />
       <Testimonial />
-      <Blog />
+      {/* <Blog /> */}
     </Box>
   );
 };

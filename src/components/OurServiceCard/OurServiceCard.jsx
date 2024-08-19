@@ -1,6 +1,13 @@
 import { Box, Typography, Button } from "@mui/material";
+import { BookAppointmentModel } from "components";
+import { useState } from "react";
 
 const OurServiceCard = ({ header, description, icon }) => {
+  const [openModel, setOpenModel] = useState(false);
+
+  const openPopup = () => setOpenModel(true);
+  const closePopup = () => setOpenModel(false);
+
   return (
     <Box
       boxShadow={"0 0 10px 0 rgba(153, 153, 153, 0.2)"}
@@ -35,8 +42,11 @@ const OurServiceCard = ({ header, description, icon }) => {
         {description}
       </Typography>
       <Box mt={"auto"}>
-        <Button variant="outlined">Book Now</Button>
+        <Button variant="outlined" onClick={openPopup}>
+          Book Now
+        </Button>
       </Box>
+      {openModel && <BookAppointmentModel onClose={closePopup} />}
     </Box>
   );
 };

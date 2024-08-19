@@ -86,7 +86,7 @@ const OurFacility = () => {
           </Box>
         </Grid>
       </Grid>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} mt={4}>
         <Grid
           item
           xs={12}

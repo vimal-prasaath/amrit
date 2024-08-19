@@ -4,12 +4,12 @@ import email from "assets/images/email.svg";
 import location from "assets/images/location.svg";
 import logo from "assets/images/logo.svg";
 import fb from "assets/images/fb.svg";
-import pin from "assets/images/pinterest.svg";
+// import pin from "assets/images/pinterest.svg";
 import linkedIn from "assets/images/linkedin.svg";
 import twitter from "assets/images/twitter.svg";
 import { departmentConstants } from "routes";
 import { Link as RouterLink } from "react-router-dom";
-
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { list } from "views/EyeCareDetails/internal-data/otherInternal";
 
 const otherInternalsIds = list.map((item) => item.id);
@@ -89,7 +89,11 @@ const Footer = () => {
                 </IconButton>
               </Link>
 
-              <Link component={RouterLink} sx={{ textDecoration: "none" }}>
+              <Link
+                component={RouterLink}
+                to="https://x.com/amrithospital"
+                sx={{ textDecoration: "none" }}
+              >
                 <IconButton
                   size="small"
                   sx={{
@@ -128,7 +132,12 @@ const Footer = () => {
                 </IconButton>
               </Link>
 
-              <Link component={RouterLink} sx={{ textDecoration: "none" }}>
+              <Link
+                component={RouterLink}
+                sx={{ textDecoration: "none" }}
+                target="blank"
+                to="https://www.instagram.com/amrithospitals/"
+              >
                 <IconButton
                   size="small"
                   sx={{
@@ -139,9 +148,11 @@ const Footer = () => {
                     height: "2.5rem",
                     borderRadius: "2.5rem",
                     mr: 2,
+                    color: "white",
                   }}
                 >
-                  <img src={pin} alt="linkedin" />
+                  <InstagramIcon />
+                  {/* <img src={insta} alt="linkedin" /> */}
                 </IconButton>
               </Link>
             </Box>
@@ -293,7 +304,7 @@ const Footer = () => {
               Our Doctors
             </Typography>
           </Link>
-          <Link
+          {/* <Link
             component={RouterLink}
             to="/blog"
             sx={{ textDecoration: "none" }}
@@ -302,7 +313,7 @@ const Footer = () => {
             <Typography component="span" mr={6}>
               Blog
             </Typography>
-          </Link>
+          </Link> */}
           <Link
             component={RouterLink}
             to="/contact"

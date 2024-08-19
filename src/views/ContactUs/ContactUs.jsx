@@ -42,10 +42,33 @@ const ContactUs = () => {
               >
                 <PhoneIcon fontSize="large" color="primary" />
               </Box>
-              <Box>
-                <Typography fontWeight={"bold"} variant="body2">
-                  044 - 2002002
-                </Typography>
+              <Box display={"flex"}>
+                <Link
+                  to="tel:+919600711818"
+                  display="flex"
+                  alignItems="center"
+                  component={RouterLink}
+                  sx={{ textDecoration: "none" }}
+                  color={"common.black"}
+                >
+                  <Typography fontWeight={"bold"} variant="body2">
+                    +91 96007 11818
+                  </Typography>
+                </Link>
+                <Link
+                  to="https://wa.me/917695957120"
+                  target="_blank"
+                  display="flex"
+                  ml={4}
+                  alignItems="center"
+                  component={RouterLink}
+                  sx={{ textDecoration: "none" }}
+                  color={"common.black"}
+                >
+                  <Typography fontWeight={"bold"} variant="body2">
+                    +91 76959 57120
+                  </Typography>
+                </Link>
               </Box>
             </Box>
             <Box
@@ -138,6 +161,7 @@ const ContactUs = () => {
               </Box>
             </Link>
           </Grid>
+
           <Grid item xs={6} md={6}>
             <Grid container spacing={4} pt={2}>
               <Grid item xs={6} md={6}>
