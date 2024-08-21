@@ -2,17 +2,17 @@ import { Box, Grid, Typography } from "@mui/material";
 
 const AboutItem = ({ text, subtext }) => (
   <Box textAlign="center">
-    <Typography fontSize={"5rem"} mb={0}>
+    <Typography fontSize={{ md: "5rem", xs: "1.5rem" }} mb={0}>
       {text}
     </Typography>
-    <Typography fontSize={"2rem"}>{subtext}</Typography>
+    <Typography fontSize={{ md: "2rem", xs: "0.75rem" }}>{subtext}</Typography>
   </Box>
 );
 
 const About = ({ about, aboutImg }) => {
   return (
     <Box
-      px={10}
+      px={{ md: 10, xs: 2 }}
       sx={{ background: `url(${aboutImg}) no-repeat`, backgroundSize: "cover" }}
       color="common.white"
     >
@@ -20,8 +20,8 @@ const About = ({ about, aboutImg }) => {
         {about.map((item, index) => (
           <Grid
             item
-            xs={6}
-            md={4}
+            xs={3}
+            md={3}
             lg={3}
             borderRight={index !== about.length - 1 ? 1 : 0}
             key={index + "about"}

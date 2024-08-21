@@ -88,7 +88,7 @@ const BookAppointmentModel = ({ onClose }) => {
         <Box
           minWidth={"19rem"}
           color="#ccc"
-          display={"flex"}
+          display={{ md: "flex", xs: "none" }}
           flexDirection={"column"}
           justifyContent={"end"}
           p={1}

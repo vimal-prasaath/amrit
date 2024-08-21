@@ -7,6 +7,8 @@ import {
   Link,
   Popover,
   Grid,
+  IconButton,
+  Drawer,
 } from "@mui/material";
 import logo from "assets/images/logo.svg";
 import watsapp from "assets/images/watsapp.svg";
@@ -30,13 +32,19 @@ import nurology from "assets/images/menu/neurology.svg";
 import orthpedics from "assets/images/menu/orthopedics.svg";
 import physio from "assets/images/menu/physio.svg";
 import pediatric from "assets/images/menu/pedia.svg";
-
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { list } from "views/EyeCareDetails/internal-data/otherInternal";
 
 const otherInternalsIds = list.map((item) => item.id);
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [openDrawer, setOpenDrawer] = React.useState(false);
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpenDrawer(newOpen);
+  };
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -93,7 +101,7 @@ const Header = () => {
       <Box bgcolor="common.black">
         <Typography
           color="common.white"
-          py={1.25}
+          p={1.25}
           textAlign="center"
           variant="body1"
         >
@@ -105,19 +113,33 @@ const Header = () => {
         borderBottom={1}
         borderColor="#f3f3f3"
         py={1.5}
-        px={10}
+        px={{ xs: 2, md: 10 }}
         display="flex"
         justifyContent="space-between"
         bgcolor={"common.white"}
       >
-        <Link
-          component={RouterLink}
-          to="/"
-          sx={{ textDecoration: "none" }}
-          color={"common.black"}
-        >
-          <img src={logo} alt="logo" />
-        </Link>
+        <Box display={"flex"} alignItems={"center"}>
+          <IconButton
+            size="large"
+            onClick={toggleDrawer(true)}
+            sx={(theme) => ({
+              display: "none",
+              [theme.breakpoints.down("md")]: {
+                display: "inline-block",
+              },
+            })}
+          >
+            <MenuIcon fontSize="large" />
+          </IconButton>
+          <Link
+            component={RouterLink}
+            to="/"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <img src={logo} alt="logo" style={{ width: "10rem" }} />
+          </Link>
+        </Box>
         <Box display="flex">
           <Link
             to="https://wa.me/917695957120"
@@ -130,7 +152,16 @@ const Header = () => {
             color={"common.black"}
           >
             <img src={watsapp} width="40px" alt="watsapp" />
-            <Box display="flex" flexDirection="column" ml={1.5}>
+            <Box
+              display="flex"
+              flexDirection="column"
+              ml={1.5}
+              sx={(theme) => ({
+                [theme.breakpoints.down("md")]: {
+                  display: "none",
+                },
+              })}
+            >
               <Typography variant="subtitle2">Whatsapp</Typography>
               <Typography variant="subtitle2" fontWeight="bold">
                 +91 76959 57120
@@ -149,7 +180,16 @@ const Header = () => {
             color={"common.black"}
           >
             <img src={call} width="40px" alt="call" />
-            <Box display="flex" flexDirection="column" ml={1.5}>
+            <Box
+              display="flex"
+              flexDirection="column"
+              ml={1.5}
+              sx={(theme) => ({
+                [theme.breakpoints.down("md")]: {
+                  display: "none",
+                },
+              })}
+            >
               <Typography variant="subtitle2">Call Us</Typography>
               <Typography variant="subtitle2" fontWeight="bold">
                 +91 9600 711818
@@ -161,7 +201,7 @@ const Header = () => {
       <Box
         py={1.5}
         px={10}
-        display="flex"
+        display={{ md: "flex", xs: "none" }}
         justifyContent="space-between"
         boxShadow={"0 4px 15px 0 rgba(153, 153, 153, 0.2)"}
         bgcolor={"common.white"}
@@ -276,6 +316,89 @@ const Header = () => {
           </Grid>
         </Box>
       </Popover>
+      <Drawer
+        open={openDrawer}
+        onClose={toggleDrawer(false)}
+        PaperProps={{
+          sx: { minWidth: "20rem" },
+        }}
+      >
+        <Box px={2} py={1}>
+          <Box textAlign={"right"}>
+            <IconButton onClick={toggleDrawer(false)}>
+              <CloseRoundedIcon />
+            </IconButton>
+          </Box>
+          <Box
+            display="flex"
+            justifyContent="center"
+            flexDirection={"column"}
+            gap={"10px"}
+          >
+            <Typography
+              component="span"
+              mr={3.5}
+              onClick={handleClick}
+              display="inline-block"
+              pb={1}
+              fontWeight={600}
+              sx={{ cursor: "pointer" }}
+            >
+              Centre of excellence
+            </Typography>
+
+            <Link
+              component={RouterLink}
+              to={`/department/${departmentConstants.OPTHOMOLOGY}`}
+              sx={{ textDecoration: "none", pb: 1 }}
+              color={"common.black"}
+            >
+              <Typography component="span" pb={1} fontWeight={600}>
+                Eye Care
+              </Typography>
+            </Link>
+            <Link
+              component={RouterLink}
+              to="/our-doctor"
+              sx={{ textDecoration: "none", pb: 1 }}
+              color={"common.black"}
+            >
+              <Typography component="span" pb={1} fontWeight={600}>
+                Our Doctors
+              </Typography>
+            </Link>
+            {/* <Link
+            component={RouterLink}
+            to="/blog"
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
+          >
+            <Typography component="span" mr={3.5}>
+              Blog
+            </Typography>
+          </Link> */}
+            <Link
+              component={RouterLink}
+              to="/contact"
+              sx={{ textDecoration: "none", pb: 1 }}
+              color={"common.black"}
+            >
+              <Typography component="span" fontWeight={600}>
+                Contact Us
+              </Typography>
+            </Link>
+          </Box>
+          <Box pt={2}>
+            <Button
+              variant="contained"
+              color="secondary"
+              sx={{ py: 1.25, minWidth: "14rem" }}
+            >
+              Emergency Call
+            </Button>
+          </Box>
+        </Box>
+      </Drawer>
     </Box>
   );
 };

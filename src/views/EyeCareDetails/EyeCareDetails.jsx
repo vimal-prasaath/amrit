@@ -50,22 +50,29 @@ const EyeCareDetails = () => {
         display={"flex"}
         alignItems={"center"}
       >
-        <Box width="50%" px={8} lineHeight={1}>
-          <Typography fontSize={"2.5rem"} textTransform={"uppercase"}>
+        <Box
+          width={{ md: "50%", xs: "100%" }}
+          px={{ md: 8, xs: 5 }}
+          lineHeight={1}
+        >
+          <Typography
+            fontSize={{ md: "2.5rem", xs: "1.75rem" }}
+            textTransform={"uppercase"}
+          >
             {info?.heder}
           </Typography>
           <Typography
-            fontSize={"3rem"}
+            fontSize={{ md: "3rem", xs: "2rem" }}
             fontWeight={"bold"}
             textTransform={"uppercase"}
           >
             {info?.subheader}
           </Typography>
-          <Box width="80%" my={2}>
+          <Box width={{ md: "80%", xs: "100%" }} my={2}>
             <Box border={4} borderColor={"black"} textAlign={"center"}>
               <Box bgcolor="black" color="white" textAlign={"center"} py={0.5}>
                 <Typography
-                  fontSize={"2rem"}
+                  fontSize={{ md: "2rem", xs: "1.75rem" }}
                   fontWeight={"bold"}
                   textTransform={"uppercase"}
                   textAlign={"center"}
@@ -75,7 +82,7 @@ const EyeCareDetails = () => {
               </Box>
               <Box textAlign={"center"} py={0.5}>
                 <Typography
-                  fontSize={"2rem"}
+                  fontSize={{ md: "2rem", xs: "1.75rem" }}
                   fontWeight={"bold"}
                   textTransform={"uppercase"}
                   textAlign={"center"}
@@ -85,8 +92,6 @@ const EyeCareDetails = () => {
               </Box>
             </Box>
           </Box>
-
-          <Typography></Typography>
         </Box>
       </Box>
       <OurDoctors />

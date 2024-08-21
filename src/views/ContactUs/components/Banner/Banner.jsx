@@ -7,12 +7,15 @@ const Banner = () => {
     <>
       <BannerContainer
         image={contact}
-        px={10}
+        px={{ md: 10, xs: 5 }}
         display="flex"
         justifyContent="center"
         flexDirection="column"
       >
-        <Typography fontSize="3.125rem" fontWeight={600}>
+        <Typography
+          fontSize={{ md: "3.125rem", xs: "2.25rem" }}
+          fontWeight={600}
+        >
           CONTACT US
         </Typography>
       </BannerContainer>

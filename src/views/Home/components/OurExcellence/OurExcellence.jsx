@@ -62,14 +62,14 @@ const OurExcellence = () => {
     { text: "Critical care", image: criticalCare, id: departmentConstants.CC },
   ];
   return (
-    <Box py={4} px={10}>
+    <Box py={4} px={{ md: 10, xs: 5 }}>
       <Box textAlign="center">
         <Typography variant="subHeader" mb={4}>
           Our Centers of Excellence
         </Typography>
       </Box>
 
-      <Grid container spacing={2}>
+      <Grid container spacing={{ md: 2, xs: 1 }}>
         {services.map((service, index) => (
           <Grid item xs={12} md={6} lg={3} key={index}>
             <Link

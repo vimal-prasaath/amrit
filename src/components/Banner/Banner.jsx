@@ -32,15 +32,19 @@ const Banner = () => {
           <Box>
             <BannerContainer
               image={img1}
-              px={10}
+              px={{ md: 10, xs: 5 }}
               display="flex"
               justifyContent="center"
               flexDirection="column"
             >
-              <Typography fontSize="3.125rem">
+              <Typography fontSize={{ md: "3.125rem", xs: "2rem" }} mt={2}>
                 Your Health, Our Priority
               </Typography>
-              <Typography fontSize="4.375rem" fontWeight="bold" mb={10}>
+              <Typography
+                fontSize={{ md: "4.375rem", xs: "2.375rem" }}
+                fontWeight="bold"
+                mb={{ md: 10, xs: 5 }}
+              >
                 Multi-Speciality Care
               </Typography>
             </BannerContainer>
@@ -49,15 +53,22 @@ const Banner = () => {
           <Box>
             <BannerContainer
               image={img2}
-              px={10}
+              px={{ md: 10, xs: 5 }}
               display="flex"
               justifyContent="center"
               flexDirection="column"
             >
-              <Typography fontSize="4.375rem" fontWeight="bold">
+              <Typography
+                fontSize={{ md: "4.375rem", xs: "2.375rem" }}
+                fontWeight="bold"
+                mt={2}
+              >
                 From Bump to Baby
               </Typography>
-              <Typography fontSize="3.125rem" mb={10}>
+              <Typography
+                fontSize={{ md: "3.125rem", xs: "2rem" }}
+                mb={{ md: 10, xs: 5 }}
+              >
                 Exceptional Gynaecology & Maternal Care
               </Typography>
             </BannerContainer>
@@ -66,15 +77,19 @@ const Banner = () => {
           <Box>
             <BannerContainer
               image={homeBanner}
-              px={10}
+              px={{ md: 10, xs: 5 }}
               display="flex"
               justifyContent="center"
               flexDirection="column"
             >
-              <Typography fontSize="3.125rem">
+              <Typography fontSize={{ md: "3.125rem", xs: "2rem" }} mt={2}>
                 See Clearly Without Specs
               </Typography>
-              <Typography fontSize="4.375rem" fontWeight="bold" mb={10}>
+              <Typography
+                fontSize={{ md: "4.375rem", xs: "2.375rem" }}
+                fontWeight="bold"
+                mb={{ md: 10, xs: 5 }}
+              >
                 Expert Eye Care
               </Typography>
             </BannerContainer>
@@ -85,8 +100,8 @@ const Banner = () => {
         bgcolor="secondary.main"
         py={2}
         color="common.white"
-        px={10}
-        display="flex"
+        px={{ md: 10, xs: 5 }}
+        display={{ md: "flex", xs: "none" }}
         position="relative"
         sx={{
           "&::before": {

@@ -18,10 +18,11 @@ const VerticalBtnGroup = ({ links, departId, listheader }) => {
 
   return (
     <Box
-      maxWidth="24.5rem"
-      minWidth="24.5rem"
+      maxWidth={{ md: "24.5rem", xs: "100%" }}
+      minWidth={{ md: "24.5rem", xs: "100%" }}
       bgcolor="#f4f4f4"
       px={3}
+      my={{ md: 0, xs: 4 }}
       borderRadius="1rem"
     >
       <Typography

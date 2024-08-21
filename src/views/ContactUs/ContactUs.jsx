@@ -9,7 +9,7 @@ const ContactUs = () => {
   return (
     <Box>
       <Banner />
-      <Box py={10} px={18} textAlign="center">
+      <Box py={{ md: 10, xs: 5 }} px={{ md: 18, xs: 6 }} textAlign="center">
         <Typography
           fontSize={"3.125rem"}
           fontWeight="bold"
@@ -21,14 +21,14 @@ const ContactUs = () => {
           Get in touch with us
         </Typography>
         <Grid container spacing={4} pt={2}>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <Box
               display={"flex"}
               alignItems={"center"}
               borderBottom={1}
               borderColor="divider"
               py={2}
-              width="75%"
+              width={{ md: "75%", xs: "100%" }}
             >
               <Box
                 width={"5rem"}
@@ -77,7 +77,7 @@ const ContactUs = () => {
               borderBottom={1}
               borderColor="divider"
               py={2}
-              width="75%"
+              width={{ md: "75%", xs: "100%" }}
             >
               <Box
                 width={"5rem"}
@@ -104,7 +104,12 @@ const ContactUs = () => {
               sx={{ textDecoration: "none" }}
               color={"common.black"}
             >
-              <Box display={"flex"} alignItems={"center"} py={2} width="75%">
+              <Box
+                display={"flex"}
+                alignItems={"center"}
+                py={2}
+                width={{ md: "75%", xs: "100%" }}
+              >
                 <Box
                   width={"5rem"}
                   height={"5rem"}
@@ -137,7 +142,12 @@ const ContactUs = () => {
               sx={{ textDecoration: "none" }}
               color={"common.black"}
             >
-              <Box display={"flex"} alignItems={"center"} py={2} width="75%">
+              <Box
+                display={"flex"}
+                alignItems={"center"}
+                py={2}
+                width={{ md: "75%", xs: "100%" }}
+              >
                 <Box
                   width={"5rem"}
                   height={"5rem"}
@@ -162,7 +172,7 @@ const ContactUs = () => {
             </Link>
           </Grid>
 
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <Grid container spacing={4} pt={2}>
               <Grid item xs={6} md={6}>
                 <TextField

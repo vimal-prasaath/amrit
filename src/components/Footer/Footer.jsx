@@ -55,13 +55,13 @@ const Footer = () => {
 
   return (
     <Box bgcolor="common.black" color="common.white">
-      <Box px={10} py={5} display="flex" flexWrap="wrap">
+      <Box px={{ md: 10, xs: 6 }} py={5} display="flex" flexWrap="wrap">
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} lg={3.5}>
             <Typography variant="h5" mb={3} fontWeight="bold">
               About Us
             </Typography>
-            <Typography variant="subtitle2" width={"75%"}>
+            <Typography variant="subtitle2" width={{ md: "75%" }}>
               Amrit Hospital | Multi-speciality Hospital | Expert Care Across
               All Specialties Leading Ophthalmology Department Affordable,
               Quality Healthcare | Chennai
@@ -157,7 +157,7 @@ const Footer = () => {
               </Link>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} lg={2.5}>
+          <Grid item xs={6} sm={6} lg={2.5}>
             <Typography variant="h5" mb={3} fontWeight="bold">
               Services
             </Typography>
@@ -178,7 +178,7 @@ const Footer = () => {
               </Link>
             ))}
           </Grid>
-          <Grid item xs={12} sm={6} lg={2.5}>
+          <Grid item xs={6} sm={6} lg={2.5}>
             <Typography
               variant="h5"
               mb={3}

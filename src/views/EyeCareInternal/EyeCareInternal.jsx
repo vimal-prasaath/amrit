@@ -18,14 +18,14 @@ const EyeCareInternal = ({ doctorView }) => {
 
         {Boolean(pageData?.label) && (
           <Typography
-            fontSize="3.125rem"
+            fontSize={{ md: "3.125rem", xs: "2.25rem" }}
             fontWeight={600}
             position="absolute"
             // color={"white"}
             sx={{
               top: "50%",
               transform: "translateY(-50%)",
-              left: "5rem",
+              left: { md: "5rem", xs: "1rem" },
               // filter: "drop-shadow(2px 4px 6px black)",
             }}
           >

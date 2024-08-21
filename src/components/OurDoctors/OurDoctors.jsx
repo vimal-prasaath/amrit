@@ -12,7 +12,7 @@ const OurDoctors = ({ detailView }) => {
 
   const isGeneral = departId === "general";
 
-  const defaultProps = { bgcolor: "#f6f6f6", py: 4, px: 10 };
+  const defaultProps = { bgcolor: "#f6f6f6", py: 4, px: { md: 10, xs: 5 } };
 
   const containerProps = detailView ? {} : defaultProps;
 
@@ -34,7 +34,8 @@ const OurDoctors = ({ detailView }) => {
       <Box
         display="flex"
         flexWrap="wrap"
-        px={detailView ? 0 : 6}
+        justifyContent={"center"}
+        px={{ md: detailView ? 0 : 6, xs: 0 }}
         py={detailView ? 0 : 5}
       >
         {(docs?.length ? docs : data).map((item, index) => (

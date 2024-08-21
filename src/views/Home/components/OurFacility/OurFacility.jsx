@@ -10,8 +10,7 @@ import EastIcon from "@mui/icons-material/East";
 const OurFacility = () => {
   return (
     <Box
-      py={10}
-      px={10}
+      p={{ md: 10, xs: 5 }}
       sx={{
         background: `url(${gradient}) no-repeat`,
         backgroundSize: "100% 100%",

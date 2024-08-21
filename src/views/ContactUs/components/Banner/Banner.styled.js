@@ -7,4 +7,8 @@ export const BannerContainer = styled(Box)(({ image }) => ({
   backgroundSize: "cover",
   minHeight: "20.125rem",
   boxShadow: "0 -2px 15px 0 rgba(153, 153, 153, 0.2)",
+  "@media screen and (max-width: 768px)": {
+    minHeight: "10rem",
+    backgroundSize: "contain",
+  },
 }));

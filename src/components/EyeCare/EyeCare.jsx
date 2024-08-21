@@ -54,7 +54,7 @@ const EyeCareCard = ({ data, id, departmentId }) => {
 
 const EyeCare = ({ services, departmentId, serviceHeader }) => {
   return (
-    <Box py={10} px={8} bgcolor={"#f6f6f6"}>
+    <Box py={{ md: 10, xs: 5 }} px={{ md: 8, xs: 6 }} bgcolor={"#f6f6f6"}>
       <Box mb={2} textAlign="center">
         <Typography fontSize={"3.125rem"} fontWeight="bold" variant="subHeader">
           {serviceHeader}
@@ -63,7 +63,7 @@ const EyeCare = ({ services, departmentId, serviceHeader }) => {
 
       <Grid container spacing={4} pt={8}>
         {services.map((item, index) => (
-          <Grid key={index + "service"} item xs={6} md={4} lg={3}>
+          <Grid key={index + "service"} item xs={12} md={4} lg={3}>
             <EyeCareCard
               data={item}
               id={index + 1}

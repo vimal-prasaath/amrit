@@ -68,18 +68,28 @@ const Details = ({ doctorView, data, links, departId, img, listheader }) => {
   const doctors = <OurDoctors detailView />;
 
   return (
-    <Box px={10} py={5} display="flex">
+    <Box
+      px={{ md: 10, xs: 5 }}
+      py={{ md: 5, xs: 2 }}
+      display="flex"
+      flexDirection={{ md: "row", xs: "column" }}
+    >
       <Box>
         <VerticalBtnGroup
           links={doctorView ? list : links}
           departId={doctorView ? "general" : departId}
           listheader={doctorView ? "List of Doctors" : listheader}
         />
-        <Box py={4} maxWidth="24.5rem" minWidth="24.5rem">
+        <Box
+          display={{ md: "block", xs: "none" }}
+          py={4}
+          maxWidth="24.5rem"
+          minWidth="24.5rem"
+        >
           <img src={internalReach} alt="internalReach" width="100%" />
         </Box>
       </Box>
-      <Box pl={5} flexGrow={1}>
+      <Box pl={{ md: 5, xs: 0 }} flexGrow={1}>
         {!doctorView && (
           <ToggleButtonGroup
             value={view}

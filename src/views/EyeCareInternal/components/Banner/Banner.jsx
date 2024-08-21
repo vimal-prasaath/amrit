@@ -8,13 +8,17 @@ const Banner = ({ text, bannerImg }) => {
       <BannerContainer
         image={bannerImg || department}
         largeBanner={Boolean(bannerImg)}
-        px={10}
+        px={{ md: 10, xs: 5 }}
         display="flex"
         justifyContent="center"
         flexDirection="column"
         // sx={{ filter: "grayscale(1)" }}
       >
-        <Typography display={"none"} fontSize="3.125rem" fontWeight={600}>
+        <Typography
+          display={"none"}
+          fontSize={{ md: "3.125rem", xs: "2.25rem" }}
+          fontWeight={600}
+        >
           {text}
         </Typography>
       </BannerContainer>

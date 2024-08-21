@@ -12,9 +12,9 @@ import bgpatternRight from "assets/images/background/bg-pattern-right.png";
 const OurServices = () => {
   return (
     <Box
-      pb={10}
-      pt={26}
-      px={18}
+      pb={{ md: 10, xs: 5 }}
+      pt={{ md: 26, xs: 8 }}
+      px={{ md: 18, xs: 5 }}
       textAlign="center"
       sx={{
         background: `url(${bgpattern}) no-repeat, url(${bgpatternRight}) no-repeat`,
