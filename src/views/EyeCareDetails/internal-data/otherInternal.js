@@ -26,8 +26,9 @@ import cc1 from "assets/images/banners/home/cc.png";
 
 export const list = [
   {
-    id: "dermatology",
-    label: "Dermatology",
+    id: "internalMedicine",
+    label: "Iternal Medicine",
+    content: "datamap",
   },
   {
     id: "diabetology",
@@ -55,30 +56,32 @@ export const list = [
     content: "datamap",
   },
   {
-    id: "physiotherapy",
-    label: "Physiotherapy",
-    content: "datamap",
-  },
-  {
-    id: "gastroenterology",
-    label: "Gastroenterology",
-    content: "datamap",
-  },
-  {
     id: "neurology",
     label: "Neurology",
     content: "datamap",
   },
   {
+    id: "dermatology",
+    label: "Dermatology",
+  },
+  {
+    id: "physiotherapy",
+    label: "Physiotherapy",
+    content: "datamap",
+  },
+
+  {
+    id: "gastroenterology",
+    label: "Gastroenterology",
+    content: "datamap",
+  },
+
+  {
     id: "radiology",
     label: "Radiology",
     content: "datamap",
   },
-  {
-    id: "internalMedicine",
-    label: "Iternal Medicine",
-    content: "datamap",
-  },
+
   {
     id: "criticalCare",
     label: "Critical Care",

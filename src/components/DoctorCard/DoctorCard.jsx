@@ -3,8 +3,14 @@ import { Slope } from "./DoctorCard.styled";
 // import avatar from "assets/images/background/avatar.jpeg";
 import book from "assets/images/background/book.png";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import BookAppointmentModel from "components/BookAppointmentModel";
+import { useState } from "react";
 
 const DoctorCard = ({ detailView, data }) => {
+  const [openModel, setOpenModel] = useState(false);
+
+  const openPopup = () => setOpenModel(true);
+  const closePopup = () => setOpenModel(false);
   return (
     <Box
       width={detailView ? "18.75rem" : "23.75rem"}
@@ -85,7 +91,7 @@ const DoctorCard = ({ detailView, data }) => {
         </Box>
       </Box>
       {detailView && (
-        <Box>
+        <Box onClick={openPopup}>
           <img
             src={book}
             alt="book"
@@ -94,6 +100,7 @@ const DoctorCard = ({ detailView, data }) => {
           />
         </Box>
       )}
+      {openModel && <BookAppointmentModel onClose={closePopup} />}
     </Box>
   );
 };

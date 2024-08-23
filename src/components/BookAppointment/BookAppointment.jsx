@@ -29,7 +29,7 @@ export const departmentConstants = {
   CC: "CriticalCare",
 };
 
-const MOBILE = "919962937773";
+const MOBILE = "917695957120";
 
 const BookAppointment = () => {
   const [inputValues, setInputValues] = useState({});

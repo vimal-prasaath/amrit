@@ -48,7 +48,7 @@ const OurFacility = () => {
             Specs removal Smile Pro
           </Typography>
           <Typography fontSize={"2rem"} textTransform="uppercase" mb={4}>
-            Experience Life Without Glasses in 9
+            Experience Life Without Glasses in 9 seconds
           </Typography>
           <Typography variant="h6" color="#777" lineHeight={2}>
             Seconds Discover the groundbreaking Specs Removal Smile Pro, a swift

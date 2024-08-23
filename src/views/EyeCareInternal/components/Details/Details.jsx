@@ -74,7 +74,7 @@ const Details = ({ doctorView, data, links, departId, img, listheader }) => {
       display="flex"
       flexDirection={{ md: "row", xs: "column" }}
     >
-      <Box>
+      <Box order={{ xs: 2, md: 1 }}>
         <VerticalBtnGroup
           links={doctorView ? list : links}
           departId={doctorView ? "general" : departId}
@@ -89,7 +89,7 @@ const Details = ({ doctorView, data, links, departId, img, listheader }) => {
           <img src={internalReach} alt="internalReach" width="100%" />
         </Box>
       </Box>
-      <Box pl={{ md: 5, xs: 0 }} flexGrow={1}>
+      <Box pl={{ md: 5, xs: 0 }} flexGrow={1} order={{ xs: 1, md: 2 }}>
         {!doctorView && (
           <ToggleButtonGroup
             value={view}
@@ -102,9 +102,11 @@ const Details = ({ doctorView, data, links, departId, img, listheader }) => {
           </ToggleButtonGroup>
         )}
         {view === 1 ? overviewContent : doctors}
-        <Box py={4}>
-          <img src={internalContact} alt="intrnal" width="100%" />
-        </Box>
+        {view === 1 && (
+          <Box py={4}>
+            <img src={internalContact} alt="intrnal" width="100%" />
+          </Box>
+        )}
       </Box>
     </Box>
   );

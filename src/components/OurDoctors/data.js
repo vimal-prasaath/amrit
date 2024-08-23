@@ -23,6 +23,8 @@ import d19 from "assets/images/doctors/19.jpg";
 import d20 from "assets/images/doctors/20.jpg";
 import d21 from "assets/images/doctors/21.jpg";
 import d22 from "assets/images/doctors/22.jpg";
+import d24 from "assets/images/doctors/24.jpg";
+import d25 from "assets/images/doctors/25.jpg";
 
 export const departmentConstants = {
   OPTHOMOLOGY: "opthomology",
@@ -78,7 +80,7 @@ export const data = [
     specialist: "Consultant Physician",
     hospitals: "Amrit Hospitals",
     img: d21,
-    id: departmentConstants.PHYSIO,
+    id: departmentConstants.INTERNAL_MEDICINE,
   },
   {
     name: "Dr. Chetan Kumar",
@@ -107,7 +109,7 @@ export const data = [
     specialist: "Internal medicine, Diabetology, Endocrine",
     hospitals: "Amrit Medical Centre",
     img: d2,
-    id: departmentConstants.DIBETOLOGY,
+    id: departmentConstants.INTERNAL_MEDICINE,
   },
   {
     name: "Dr. Ashish Chopra",
@@ -130,7 +132,7 @@ export const data = [
       "Senior Consultant Anaesthesiologist & Intensivist, Interventional pain management specialist",
     hospitals: "Amrit medical centre",
     img: d15,
-    id: departmentConstants.GEN_SURGERY,
+    id: departmentConstants.CC,
   },
   {
     name: "Dr. Gowri",
@@ -145,7 +147,7 @@ export const data = [
     specialist: "Consultant Anaesthetic",
     hospitals: "Amrit Hospitals",
     img: d11,
-    id: departmentConstants.GEN_SURGERY,
+    id: departmentConstants.CC,
   },
   {
     name: "Dr. Roshan Kumar",
@@ -188,7 +190,7 @@ export const data = [
     specialist: "General physician",
     hospitals: "Amrit Hospitals",
     img: d4,
-    id: departmentConstants.GEN_SURGERY,
+    id: departmentConstants.INTERNAL_MEDICINE,
   },
   {
     name: "Dr. O. Chandrakant",
@@ -204,5 +206,19 @@ export const data = [
     hospitals: "Amrit Medical centre",
     img: d17,
     id: departmentConstants.ORTHO,
+  },
+  {
+    name: "Dr. Roopesh Jain",
+    specialist: "Diabetologist, MBBS, MDRC",
+    hospitals: "Amrit Medical centre",
+    img: d24,
+    id: departmentConstants.DIBETOLOGY,
+  },
+  {
+    name: "Prof.Dr.S.Vinothkanna ",
+    specialist: "Senior Consultant Neurologist, MD.,DM.,(Neuro)",
+    hospitals: "Amrit Medical centre",
+    img: d25,
+    id: departmentConstants.NEURO,
   },
 ];
