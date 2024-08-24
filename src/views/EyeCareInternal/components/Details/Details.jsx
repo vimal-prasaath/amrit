@@ -7,8 +7,13 @@ import { ToggleBtn } from "./ToggleBtn.styled.js";
 import { useState } from "react";
 import check from "assets/images/check.svg";
 import { list } from "views/EyeCareDetails/internal-data/otherInternal";
+import { BookAppointmentModel } from "components";
 
 const Details = ({ doctorView, data, links, departId, img, listheader }) => {
+  const [openModel, setOpenModel] = useState(false);
+
+  const openPopup = () => setOpenModel(true);
+  const closePopup = () => setOpenModel(false);
   const [view, setView] = useState(doctorView ? 2 : 1);
 
   const handleChange = (event, nextView) => {
@@ -74,17 +79,18 @@ const Details = ({ doctorView, data, links, departId, img, listheader }) => {
       display="flex"
       flexDirection={{ md: "row", xs: "column" }}
     >
-      <Box order={{ xs: 2, md: 1 }}>
+      <Box order={{ xs: 2, md: 1 }} display={"flex"} flexDirection={"column"}>
         <VerticalBtnGroup
           links={doctorView ? list : links}
           departId={doctorView ? "general" : departId}
           listheader={doctorView ? "List of Doctors" : listheader}
         />
         <Box
-          display={{ md: "block", xs: "none" }}
+          order={{ xs: -1, md: 2 }}
           py={4}
-          maxWidth="24.5rem"
-          minWidth="24.5rem"
+          maxWidth={{ xs: "100%", md: "24.5rem" }}
+          minWidth={{ xs: "100%", md: "24.5rem" }}
+          onClick={openPopup}
         >
           <img src={internalReach} alt="internalReach" width="100%" />
         </Box>
@@ -108,6 +114,7 @@ const Details = ({ doctorView, data, links, departId, img, listheader }) => {
           </Box>
         )}
       </Box>
+      {openModel && <BookAppointmentModel onClose={closePopup} />}
     </Box>
   );
 };
