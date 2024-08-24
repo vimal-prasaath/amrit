@@ -34,7 +34,7 @@ const OurDoctors = ({ detailView }) => {
       <Box
         display="flex"
         flexWrap="wrap"
-        justifyContent={"center"}
+        justifyContent={!detailView ? "start" : "center"}
         px={{ md: detailView ? 0 : 6, xs: 0 }}
         py={detailView ? 0 : 5}
       >
