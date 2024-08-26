@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { Box, Typography } from "@mui/material";
 import { ToggleBtn } from "./ToggleBtn.styled";
@@ -15,10 +15,14 @@ const VerticalBtnGroup = ({
   callback,
 }) => {
   const { id } = useParams();
-  const [view, setView] = useState(id);
+  const [view, setView] = useState(id || links[0]?.id);
   const navigate = useNavigate();
 
   const getSubLink = (id) => links.find((item) => item.id === id).subLink;
+
+  useEffect(() => {
+    callback && callback(links[0]?.id);
+  }, []);
 
   const handleChange = (event, nextView) => {
     if (nextView !== null) {
