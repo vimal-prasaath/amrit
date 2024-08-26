@@ -40,6 +40,27 @@ const Banner = () => {
         <Slider {...settings}>
           <Box>
             <BannerContainer
+              image={homeBanner}
+              px={{ md: 10, xs: 5 }}
+              display="flex"
+              justifyContent="center"
+              flexDirection="column"
+              mobile={m3}
+            >
+              <Typography fontSize={{ md: "3.125rem", xs: "2rem" }} mt={2}>
+                See Clearly Without Specs
+              </Typography>
+              <Typography
+                fontSize={{ md: "4.375rem", xs: "2.375rem" }}
+                fontWeight="bold"
+                mb={{ md: 10, xs: 5 }}
+              >
+                Expert Eye Care
+              </Typography>
+            </BannerContainer>
+          </Box>
+          <Box>
+            <BannerContainer
               image={img1}
               px={{ md: 10, xs: 5 }}
               display="flex"
@@ -81,28 +102,6 @@ const Banner = () => {
                 mb={{ md: 10, xs: 5 }}
               >
                 Exceptional Gynaecology & Maternal Care
-              </Typography>
-            </BannerContainer>
-          </Box>
-
-          <Box>
-            <BannerContainer
-              image={homeBanner}
-              px={{ md: 10, xs: 5 }}
-              display="flex"
-              justifyContent="center"
-              flexDirection="column"
-              mobile={m3}
-            >
-              <Typography fontSize={{ md: "3.125rem", xs: "2rem" }} mt={2}>
-                See Clearly Without Specs
-              </Typography>
-              <Typography
-                fontSize={{ md: "4.375rem", xs: "2.375rem" }}
-                fontWeight="bold"
-                mb={{ md: 10, xs: 5 }}
-              >
-                Expert Eye Care
               </Typography>
             </BannerContainer>
           </Box>
