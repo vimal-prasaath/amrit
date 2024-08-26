@@ -3,16 +3,25 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { Box, Typography } from "@mui/material";
 import { ToggleBtn } from "./ToggleBtn.styled";
 import { useParams, useNavigate } from "react-router";
+import { list } from "views/EyeCareDetails/internal-data/otherInternal";
 
-const VerticalBtnGroup = ({ links, departId, listheader }) => {
+const otherInternalsIds = list.map((item) => item.id);
+
+const VerticalBtnGroup = ({ links, departId, listheader, isInternalView }) => {
   const { id } = useParams();
   const [view, setView] = useState(id);
   const navigate = useNavigate();
 
+  const getSubLink = (id) => links.find((item) => item.id === id).subLink;
+
   const handleChange = (event, nextView) => {
     if (nextView !== null) {
       setView(nextView);
-      navigate(`/department-internal/${departId}/${nextView}`);
+      const url =
+        isInternalView && !otherInternalsIds.includes(nextView)
+          ? `/department-internal/${nextView}/${getSubLink(nextView)}`
+          : `/department-internal/${departId}/${nextView}`;
+      navigate(url);
     }
   };
 

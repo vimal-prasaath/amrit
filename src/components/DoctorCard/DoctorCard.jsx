@@ -1,15 +1,16 @@
-import { Box, Button, Divider, Typography } from "@mui/material";
+import { Box, Button, Divider, Typography, Link } from "@mui/material";
 import { Slope } from "./DoctorCard.styled";
 // import avatar from "assets/images/background/avatar.jpeg";
 import book from "assets/images/background/book.png";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import BookAppointmentModel from "components/BookAppointmentModel";
 import { useState } from "react";
+import { Link as RouterLink } from "react-router-dom";
 
 const DoctorCard = ({ detailView, data }) => {
   const [openModel, setOpenModel] = useState(false);
 
-  const openPopup = () => setOpenModel(true);
+  const openPopup = () => setOpenModel(data.name);
   const closePopup = () => setOpenModel(false);
   return (
     <Box
@@ -51,21 +52,28 @@ const DoctorCard = ({ detailView, data }) => {
             justifyContent={"space-between"}
           >
             {data?.name}
-            <Button sx={{ p: 0, minWidth: "0", borderRadius: "50%" }}>
-              <Box
-                bgcolor={"primary.main"}
-                borderRadius={"50%"}
-                color={"common.white"}
-                p={1}
-                width={"2rem"}
-                height={"2rem"}
-                display="flex"
-                alignItems={"center"}
-                justifyContent="center"
-              >
-                <ArrowForwardIosIcon fontSize="small" color="inherit" />
-              </Box>
-            </Button>
+            <Link
+              component={RouterLink}
+              to={data?.url || "/"}
+              sx={{ textDecoration: "none" }}
+              color={"common.black"}
+            >
+              <Button sx={{ p: 0, minWidth: "0", borderRadius: "50%" }}>
+                <Box
+                  bgcolor={"primary.main"}
+                  borderRadius={"50%"}
+                  color={"common.white"}
+                  p={1}
+                  width={"2rem"}
+                  height={"2rem"}
+                  display="flex"
+                  alignItems={"center"}
+                  justifyContent="center"
+                >
+                  <ArrowForwardIosIcon fontSize="small" color="inherit" />
+                </Box>
+              </Button>
+            </Link>
           </Typography>
           <Typography
             variant="body2"
@@ -100,7 +108,9 @@ const DoctorCard = ({ detailView, data }) => {
           />
         </Box>
       )}
-      {openModel && <BookAppointmentModel onClose={closePopup} />}
+      {openModel && (
+        <BookAppointmentModel docName={openModel} onClose={closePopup} />
+      )}
     </Box>
   );
 };

@@ -8,8 +8,6 @@ import { Link as RouterLink } from "react-router-dom";
 const OurDoctors = ({ detailView }) => {
   const { departId, id } = useParams();
 
-  console.log(departId, id);
-
   const isGeneral = departId === "general";
 
   const defaultProps = { bgcolor: "#f6f6f6", py: 4, px: { md: 10, xs: 5 } };
@@ -34,7 +32,7 @@ const OurDoctors = ({ detailView }) => {
       <Box
         display="flex"
         flexWrap="wrap"
-        justifyContent={!detailView ? "start" : "center"}
+        justifyContent={detailView ? "start" : "center"}
         px={{ md: detailView ? 0 : 6, xs: 0 }}
         py={detailView ? 0 : 5}
       >

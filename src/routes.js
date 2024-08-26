@@ -6,6 +6,7 @@ import {
   EyeCareInternal,
   Blog,
   ContactUs,
+  Doctors,
 } from "views";
 
 export const departmentConstants = {
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
       },
       {
         path: "our-doctor",
-        element: <EyeCareInternal doctorView />,
+        element: <Doctors doctorView />,
       },
       {
         path: "blog",

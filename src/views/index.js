@@ -4,3 +4,4 @@ export { default as Main } from "./Main";
 export { default as EyeCareInternal } from "./EyeCareInternal";
 export { default as Blog } from "./Blog";
 export { default as ContactUs } from "./ContactUs";
+export { default as Doctors } from "./Doctors";

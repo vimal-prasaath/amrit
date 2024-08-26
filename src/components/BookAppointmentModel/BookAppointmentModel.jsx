@@ -36,7 +36,7 @@ export const departmentConstants = {
 
 const MOBILE = "917695957120";
 
-const BookAppointmentModel = ({ onClose }) => {
+const BookAppointmentModel = ({ onClose, docName }) => {
   const [inputValues, setInputValues] = useState({});
 
   const URL = (message) => `https://wa.me/${MOBILE}?text=${encodeURI(message)}`;
@@ -48,7 +48,7 @@ const BookAppointmentModel = ({ onClose }) => {
 
   const generateMessageString = () => {
     let values = Object.keys(inputValues);
-    let message = "";
+    let message = docName ? "*Doctor*" + " : " + docName + "\n" : "";
     values.forEach(
       (value) =>
         (message =

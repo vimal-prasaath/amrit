@@ -52,6 +52,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d23,
     id: departmentConstants.OPTHOMOLOGY,
+    url: "/department-internal/opthomology/smileProSurgery",
   },
   {
     name: "Dr. Lalit Kumar S",
@@ -59,6 +60,7 @@ export const data = [
     hospitals: "Amrit Hospital",
     img: d16,
     id: departmentConstants.OPTHOMOLOGY,
+    url: "/department-internal/opthomology/cataract",
   },
   {
     name: "Dr. Vimala Sohanraj",
@@ -66,6 +68,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d9,
     id: departmentConstants.GYNO,
+    url: "/department-internal/gyno/childBirth",
   },
   {
     name: "Dr. Shalini Lalit Kumar",
@@ -73,6 +76,7 @@ export const data = [
     hospitals: "Amrit hospitals",
     img: d20,
     id: departmentConstants.GYNO,
+    url: "/department-internal/gyno/childBirth",
   },
 
   {
@@ -81,6 +85,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d21,
     id: departmentConstants.INTERNAL_MEDICINE,
+    url: "/department-internal/general/internalMedicine",
   },
   {
     name: "Dr. Chetan Kumar",
@@ -88,6 +93,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d12,
     id: departmentConstants.PEDIATRICS,
+    url: "department-internal/pediatrics/generalPaediatrics",
   },
   {
     name: "Dr. S. Rajesh Kumar",
@@ -95,6 +101,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d1,
     id: departmentConstants.OPTHOMOLOGY,
+    url: "/department-internal/opthomology/retina",
   },
   {
     name: "Dr. Rakesh Kothari",
@@ -102,6 +109,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d13,
     id: departmentConstants.PEDIATRICS,
+    url: "/department-internal/pediatrics/generalPaediatrics",
   },
 
   {
@@ -110,6 +118,7 @@ export const data = [
     hospitals: "Amrit Medical Centre",
     img: d2,
     id: departmentConstants.INTERNAL_MEDICINE,
+    url: "/department-internal/general/internalMedicine",
   },
   {
     name: "Dr. Ashish Chopra",
@@ -117,6 +126,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d19,
     id: departmentConstants.CARDIO,
+    url: "department-internal/general/cardiology",
   },
   {
     name: "Dr. Elizabeth",
@@ -124,6 +134,7 @@ export const data = [
     hospitals: "Amrit medical centre",
     img: d22,
     id: departmentConstants.PHYSIO,
+    url: "/department-internal/general/physiotherapy",
   },
 
   {
@@ -133,6 +144,7 @@ export const data = [
     hospitals: "Amrit medical centre",
     img: d15,
     id: departmentConstants.CC,
+    url: "/department-internal/general/criticalCare",
   },
   {
     name: "Dr. Gowri",
@@ -140,6 +152,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d14,
     id: departmentConstants.GEN_SURGERY,
+    url: "/department-internal/general/generalSurgery",
   },
 
   {
@@ -148,6 +161,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d11,
     id: departmentConstants.CC,
+    url: "/department-internal/general/criticalCare",
   },
   {
     name: "Dr. Roshan Kumar",
@@ -155,6 +169,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d10,
     id: departmentConstants.GEN_SURGERY,
+    url: "/department-internal/general/generalSurgery",
   },
   {
     name: "Dr. Vikas Chandrakant",
@@ -162,6 +177,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d5,
     id: departmentConstants.GEN_SURGERY,
+    url: "/department-internal/general/generalSurgery",
   },
   {
     name: "Dr. Madhavi Yadav",
@@ -169,6 +185,7 @@ export const data = [
     hospitals: "Amrit medical centre",
     img: d8,
     id: departmentConstants.ENT,
+    url: "/department-internal/general/ent",
   },
   {
     name: "Dr. Bharathi L",
@@ -176,6 +193,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d6,
     id: departmentConstants.ORTHO,
+    url: "/department-internal/ortho/totalKneeReplacement",
   },
   {
     name: "Dr. Suraj J. Babar",
@@ -183,6 +201,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d7,
     id: departmentConstants.ORTHO,
+    url: "/department-internal/ortho/jointReplacement",
   },
 
   {
@@ -191,6 +210,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d4,
     id: departmentConstants.INTERNAL_MEDICINE,
+    url: "/department-internal/general/internalMedicine",
   },
   {
     name: "Dr. O. Chandrakant",
@@ -198,6 +218,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d3,
     id: departmentConstants.GEN_SURGERY,
+    url: "/department-internal/general/generalSurgery",
   },
 
   {
@@ -206,6 +227,7 @@ export const data = [
     hospitals: "Amrit Medical centre",
     img: d17,
     id: departmentConstants.ORTHO,
+    url: "/department-internal/ortho/jointReplacement",
   },
   {
     name: "Dr. Roopesh Jain",
@@ -213,6 +235,7 @@ export const data = [
     hospitals: "Amrit Medical centre",
     img: d24,
     id: departmentConstants.DIBETOLOGY,
+    url: "/department-internal/general/diabetology",
   },
   {
     name: "Prof.Dr.S.Vinothkanna ",
@@ -220,5 +243,6 @@ export const data = [
     hospitals: "Amrit Medical centre",
     img: d25,
     id: departmentConstants.NEURO,
+    url: "department-internal/general/neurology",
   },
 ];

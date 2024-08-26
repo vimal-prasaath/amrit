@@ -262,13 +262,20 @@ const Header = () => {
           </Link>
         </Box>
         <Box>
-          <Button
-            variant="contained"
-            color="secondary"
-            sx={{ py: 1.25, minWidth: "14rem" }}
+          <Link
+            to="tel:+919600711818"
+            component={RouterLink}
+            sx={{ textDecoration: "none" }}
+            color={"common.black"}
           >
-            Emergency Call
-          </Button>
+            <Button
+              variant="contained"
+              color="secondary"
+              sx={{ py: 1.25, minWidth: "14rem" }}
+            >
+              Emergency Call
+            </Button>
+          </Link>
         </Box>
       </Box>
       <Popover
@@ -334,10 +341,12 @@ const Header = () => {
             justifyContent="center"
             flexDirection={"column"}
             gap={"10px"}
+            mt={"10%"}
           >
             <Typography
               component="span"
               mr={3.5}
+              variant="h5"
               onClick={handleClick}
               display="inline-block"
               pb={1}
@@ -353,7 +362,7 @@ const Header = () => {
               sx={{ textDecoration: "none", pb: 1 }}
               color={"common.black"}
             >
-              <Typography component="span" pb={1} fontWeight={600}>
+              <Typography component="span" pb={1} fontWeight={600} variant="h5">
                 Eye Care
               </Typography>
             </Link>
@@ -363,7 +372,7 @@ const Header = () => {
               sx={{ textDecoration: "none", pb: 1 }}
               color={"common.black"}
             >
-              <Typography component="span" pb={1} fontWeight={600}>
+              <Typography component="span" pb={1} fontWeight={600} variant="h5">
                 Our Doctors
               </Typography>
             </Link>
@@ -383,19 +392,26 @@ const Header = () => {
               sx={{ textDecoration: "none", pb: 1 }}
               color={"common.black"}
             >
-              <Typography component="span" fontWeight={600}>
+              <Typography component="span" fontWeight={600} variant="h5">
                 Contact Us
               </Typography>
             </Link>
           </Box>
-          <Box pt={2}>
-            <Button
-              variant="contained"
-              color="secondary"
-              sx={{ py: 1.25, minWidth: "14rem" }}
+          <Box pt={5}>
+            <Link
+              to="tel:+919600711818"
+              component={RouterLink}
+              sx={{ textDecoration: "none" }}
+              color={"common.black"}
             >
-              Emergency Call
-            </Button>
+              <Button
+                variant="contained"
+                color="secondary"
+                sx={{ py: 1.25, minWidth: "14rem" }}
+              >
+                Emergency Call
+              </Button>
+            </Link>
           </Box>
         </Box>
       </Drawer>

@@ -43,7 +43,7 @@ const OurServiceCard = ({ header, description, icon }) => {
       </Typography>
       <Box mt={"auto"}>
         <Button variant="outlined" onClick={openPopup}>
-          Book Now
+          Book Appointment
         </Button>
       </Box>
       {openModel && <BookAppointmentModel onClose={closePopup} />}
