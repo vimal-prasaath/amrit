@@ -7,7 +7,13 @@ import { list } from "views/EyeCareDetails/internal-data/otherInternal";
 
 const otherInternalsIds = list.map((item) => item.id);
 
-const VerticalBtnGroup = ({ links, departId, listheader, isInternalView }) => {
+const VerticalBtnGroup = ({
+  links,
+  departId,
+  listheader,
+  isDoctorView,
+  callback,
+}) => {
   const { id } = useParams();
   const [view, setView] = useState(id);
   const navigate = useNavigate();
@@ -17,11 +23,15 @@ const VerticalBtnGroup = ({ links, departId, listheader, isInternalView }) => {
   const handleChange = (event, nextView) => {
     if (nextView !== null) {
       setView(nextView);
-      const url =
-        isInternalView && !otherInternalsIds.includes(nextView)
-          ? `/department-internal/${nextView}/${getSubLink(nextView)}`
-          : `/department-internal/${departId}/${nextView}`;
-      navigate(url);
+      if (!isDoctorView) {
+        const url =
+          departId === "general" && !otherInternalsIds.includes(nextView)
+            ? `/department-internal/${nextView}/${getSubLink(nextView)}`
+            : `/department-internal/${departId}/${nextView}`;
+        navigate(url);
+      } else {
+        callback && callback(nextView);
+      }
     }
   };
 

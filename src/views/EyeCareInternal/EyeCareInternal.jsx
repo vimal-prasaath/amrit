@@ -3,6 +3,7 @@ import { Banner, Details } from "./components";
 import { useParams } from "react-router";
 import { departmentinternal } from "views/EyeCareDetails/internal-data";
 import { Testimonial } from "components";
+import { list as allList } from "views/EyeCareDetails/internal-data/doctors";
 
 const EyeCareInternal = ({ doctorView }) => {
   const { id, departId } = useParams();
@@ -44,7 +45,7 @@ const EyeCareInternal = ({ doctorView }) => {
       <Details
         data={pageData.data}
         doctorView={doctorView}
-        links={list}
+        links={departId === "general" ? allList : list}
         departId={departId}
         img={pageData.img}
         listheader={listheader}

@@ -5,7 +5,7 @@ import { data } from "./data";
 import { useParams } from "react-router";
 import { Link as RouterLink } from "react-router-dom";
 
-const OurDoctors = ({ detailView }) => {
+const OurDoctors = ({ detailView, filterKey }) => {
   const { departId, id } = useParams();
 
   const isGeneral = departId === "general";
@@ -14,7 +14,7 @@ const OurDoctors = ({ detailView }) => {
 
   const containerProps = detailView ? {} : defaultProps;
 
-  const idToMap = isGeneral ? id : departId;
+  const idToMap = filterKey ? filterKey : isGeneral ? id : departId;
 
   const docs = detailView
     ? data.filter((item) => item.id === idToMap)
@@ -36,7 +36,7 @@ const OurDoctors = ({ detailView }) => {
         px={{ md: detailView ? 0 : 6, xs: 0 }}
         py={detailView ? 0 : 5}
       >
-        {(docs?.length ? docs : data).map((item, index) => (
+        {docs.map((item, index) => (
           <Box key={index} px={1.5} mb={3}>
             <DoctorCard data={item} detailView={detailView} />
           </Box>

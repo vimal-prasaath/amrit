@@ -17,6 +17,9 @@ const Doctors = () => {
 
   const openPopup = () => setOpenModel(true);
   const closePopup = () => setOpenModel(false);
+
+  const [selectedDoc, setSelectedDoc] = useState("");
+
   return (
     <Box>
       <Box position={"relative"}>
@@ -46,7 +49,8 @@ const Doctors = () => {
             links={list}
             departId={"general"}
             listheader={"List of Doctors"}
-            isInternalView
+            isDoctorView
+            callback={setSelectedDoc}
           />
           <Box
             order={{ xs: -1, md: 2 }}
@@ -59,7 +63,7 @@ const Doctors = () => {
           </Box>
         </Box>
         <Box pl={{ md: 5, xs: 0 }} flexGrow={1} order={{ xs: 1, md: 2 }}>
-          <OurDoctors detailView />
+          <OurDoctors detailView filterKey={selectedDoc} />
         </Box>
         {openModel && <BookAppointmentModel onClose={closePopup} />}
       </Box>
