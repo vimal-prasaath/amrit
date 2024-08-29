@@ -46,7 +46,7 @@ const Doctors = () => {
       >
         <Box order={{ xs: 2, md: 1 }} display={"flex"} flexDirection={"column"}>
           <VerticalBtnGroup
-            links={list}
+            links={[{ id: "all", label: "All Doctors" }, ...list]}
             departId={"general"}
             listheader={"List of Doctors"}
             isDoctorView

@@ -27,7 +27,7 @@ const VerticalBtnGroup = ({
   const handleChange = (event, nextView) => {
     if (nextView !== null) {
       setView(nextView);
-      if (!isDoctorView) {
+      if (!isDoctorView && nextView !== "all") {
         const url =
           departId === "general" && !otherInternalsIds.includes(nextView)
             ? `/department-internal/${nextView}/${getSubLink(nextView)}`

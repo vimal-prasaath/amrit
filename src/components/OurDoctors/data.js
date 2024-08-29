@@ -85,6 +85,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d21,
     id: departmentConstants.INTERNAL_MEDICINE,
+    otherDepart: [departmentConstants.DIBETOLOGY],
     url: "/department-internal/general/internalMedicine",
   },
   {

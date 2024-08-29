@@ -1,8 +1,8 @@
 export const list = [
   { id: "opthomology", label: "Opthalmology", subLink: "smileProSurgery" },
-  { id: "pediatrics", label: "Pediatrics", subLink: "generalPaediatrics" },
-
   { id: "gyno", label: "Gynaecology", subLink: "childBirth" },
+
+  { id: "pediatrics", label: "Pediatrics", subLink: "generalPaediatrics" },
 
   {
     id: "internalMedicine",

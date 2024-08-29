@@ -17,7 +17,12 @@ const OurDoctors = ({ detailView, filterKey }) => {
   const idToMap = filterKey ? filterKey : isGeneral ? id : departId;
 
   const docs = detailView
-    ? data.filter((item) => item.id === idToMap)
+    ? data.filter(
+        (item) =>
+          item.id === idToMap ||
+          item?.otherDepart?.includes(idToMap) ||
+          idToMap === "all"
+      )
     : data.slice(0, 8);
 
   return (
