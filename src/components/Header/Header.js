@@ -377,15 +377,15 @@ const Header = () => {
               </Typography>
             </Link>
             {/* <Link
-            component={RouterLink}
-            to="/blog"
-            sx={{ textDecoration: "none" }}
-            color={"common.black"}
-          >
-            <Typography component="span" mr={3.5}>
-              Blog
-            </Typography>
-          </Link> */}
+              component={RouterLink}
+              to="/blog"
+              sx={{ textDecoration: "none", pb: 1 }}
+              color={"common.black"}
+            >
+              <Typography component="span" pb={1} fontWeight={600} variant="h5">
+                Blog
+              </Typography>
+            </Link> */}
             <Link
               component={RouterLink}
               to="/contact"
