@@ -2,7 +2,7 @@ import { Box, Typography, Button } from "@mui/material";
 import { BookAppointmentModel } from "components";
 import { useState } from "react";
 
-const OurServiceCard = ({ header, description, icon }) => {
+const OurServiceCard = ({ header, description, icon, iconBg }) => {
   const [openModel, setOpenModel] = useState(false);
 
   const openPopup = () => setOpenModel(true);
@@ -25,13 +25,14 @@ const OurServiceCard = ({ header, description, icon }) => {
         borderRadius="0.5rem"
         position="relative"
         top="-5rem"
-        bgcolor="common.white"
+        // bgcolor="common.white"
         p={1.5}
         mx="auto"
         boxShadow={"0 0 12px 0 rgba(153, 153, 153, 0.2)"}
         display="flex"
         alignItems="center"
         justifyContent="center"
+        bgcolor={iconBg || "#FFF"}
       >
         <img src={icon} alt="icon" width={"100%"} />
       </Box>

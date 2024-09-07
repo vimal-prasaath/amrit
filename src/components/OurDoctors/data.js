@@ -25,6 +25,8 @@ import d21 from "assets/images/doctors/21.jpg";
 import d22 from "assets/images/doctors/22.jpg";
 import d24 from "assets/images/doctors/24.jpg";
 import d25 from "assets/images/doctors/25.jpg";
+import d26 from "assets/images/doctors/26.jpg";
+import d27 from "assets/images/doctors/27.jpg";
 
 export const departmentConstants = {
   OPTHOMOLOGY: "opthomology",
@@ -189,7 +191,7 @@ export const data = [
     url: "/department-internal/general/ent",
   },
   {
-    name: "Dr. Bharathi L",
+    name: "Dr. Bharat L",
     specialist: "Knee & Hip Replacement surgeon",
     hospitals: "Amrit Hospitals",
     img: d6,
@@ -239,11 +241,35 @@ export const data = [
     url: "/department-internal/general/diabetology",
   },
   {
-    name: "Prof.Dr.S.Vinothkanna ",
+    name: "Prof.Dr.S.Vinothkanna",
     specialist: "Senior Consultant Neurologist, MD.,DM.,(Neuro)",
     hospitals: "Amrit Medical centre",
     img: d25,
     id: departmentConstants.NEURO,
     url: "department-internal/general/neurology",
+  },
+  {
+    name: "Dr. Hassan",
+    specialist: "Consultant Radiologist",
+    hospitals: "Amrit Medical centre",
+    img: d26,
+    id: departmentConstants.RADIO,
+    url: "department-internal/general/radiology",
+  },
+  {
+    name: "Dr. Aditya Shah",
+    specialist: "D.M., Medical Gastroenterology M.D., General Medicine",
+    hospitals: "Amrit Medical centre",
+    img: d27,
+    id: departmentConstants.GASTRO,
+    url: "department-internal/general/gastroenterology",
+  },
+  {
+    name: "Dr. Raghul M",
+    specialist: "Pediatric Surgeon MS, DNB, FMAS",
+    hospitals: "Amrit Medical centre",
+    img: d27,
+    id: departmentConstants.PEDIATRICS,
+    url: "department-internal/pediatrics/paediatricsSurgery",
   },
 ];

@@ -1,13 +1,20 @@
 import { Box, Typography, Button, Link, Grid } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
-
+import { useState } from "react";
 import gradient from "assets/images/background/gradientbg.jpeg";
 import ourservice1 from "assets/images/background/ourservice.png";
 import ourservice2 from "assets/images/background/ourservice2.png";
 
 import EastIcon from "@mui/icons-material/East";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import { BookAppointmentModel } from "components";
 
 const OurFacility = () => {
+  const [openModel, setOpenModel] = useState(false);
+
+  const openPopup = () => setOpenModel(true);
+  const closePopup = () => setOpenModel(false);
+
   return (
     <Box
       p={{ md: 10, xs: 5 }}
@@ -82,6 +89,28 @@ const OurFacility = () => {
                 Learn more
               </Button>
             </Link>
+            <Button
+              color="primary"
+              variant="text"
+              sx={{ px: 0, ml: 2 }}
+              onClick={openPopup}
+            >
+              <Box
+                bgcolor={"primary.main"}
+                borderRadius={"0.5rem"}
+                color={"common.white"}
+                p={1}
+                width={"2.5rem"}
+                height={"2.5rem"}
+                display="flex"
+                alignItems={"center"}
+                justifyContent="center"
+                mr={1.5}
+              >
+                <CalendarMonthIcon fontSize="small" color="inherit" />
+              </Box>
+              Book Appointment
+            </Button>
           </Box>
         </Grid>
       </Grid>
@@ -136,6 +165,28 @@ const OurFacility = () => {
                 Learn more
               </Button>
             </Link>
+            <Button
+              color="primary"
+              variant="text"
+              sx={{ px: 0, ml: 2 }}
+              onClick={openPopup}
+            >
+              <Box
+                bgcolor={"primary.main"}
+                borderRadius={"0.5rem"}
+                color={"common.white"}
+                p={1}
+                width={"2.5rem"}
+                height={"2.5rem"}
+                display="flex"
+                alignItems={"center"}
+                justifyContent="center"
+                mr={1.5}
+              >
+                <CalendarMonthIcon fontSize="small" color="inherit" />
+              </Box>
+              Book Appointment
+            </Button>
           </Box>
         </Grid>
         <Grid item xs={12} md={6} height="37.5rem">
@@ -148,6 +199,7 @@ const OurFacility = () => {
           />
         </Grid>
       </Grid>
+      {openModel && <BookAppointmentModel onClose={closePopup} />}
     </Box>
   );
 };

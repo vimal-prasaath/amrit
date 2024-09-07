@@ -34,6 +34,8 @@ export const departmentConstants = {
   CC: "CriticalCare",
 };
 
+export const locationList = ["Pursaiwalkam", "Sowcarpet"];
+
 const MOBILE = "917695957120";
 
 const BookAppointmentModel = ({ onClose, docName }) => {
@@ -239,6 +241,42 @@ const BookAppointmentModel = ({ onClose, docName }) => {
                     },
                   }}
                 />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  fullWidth
+                  onChange={onInputChange}
+                  variant="outlined"
+                  placeholder="Select A Specialities"
+                  select
+                  inputProps={{
+                    name: "Location",
+                  }}
+                  InputProps={{
+                    hiddenLabel: true,
+                    disableUnderline: true,
+                    size: "small",
+                    sx: {
+                      borderRadius: "0.5rem",
+                      px: 1,
+                    },
+                  }}
+                  SelectProps={{
+                    displayEmpty: true,
+                    defaultValue: "",
+                    IconComponent: KeyboardArrowDownIcon,
+                  }}
+                >
+                  <MenuItem value="" disabled>
+                    Select Location
+                  </MenuItem>
+
+                  {locationList?.map((item, index) => (
+                    <MenuItem value={item} key={index + 1}>
+                      {item}
+                    </MenuItem>
+                  ))}
+                </TextField>
               </Grid>
             </Grid>
             <Box textAlign="left">

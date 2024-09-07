@@ -29,6 +29,8 @@ export const departmentConstants = {
   CC: "CriticalCare",
 };
 
+export const location = ["Pursaiwalkam", "Sowcarpet"];
+
 const MOBILE = "917695957120";
 
 const BookAppointment = () => {
@@ -169,17 +171,55 @@ const BookAppointment = () => {
               }}
             />
           </Grid>
+          <Grid item xs={6} md={6}>
+            <TextField
+              fullWidth
+              onChange={onInputChange}
+              variant="outlined"
+              placeholder="Select A Specialities"
+              select
+              inputProps={{
+                name: "Location",
+              }}
+              InputProps={{
+                hiddenLabel: true,
+                disableUnderline: true,
+                sx: {
+                  borderRadius: "0.5rem",
+                  px: 1,
+                },
+              }}
+              SelectProps={{
+                displayEmpty: true,
+                defaultValue: "",
+                IconComponent: KeyboardArrowDownIcon,
+              }}
+            >
+              <MenuItem value="" disabled>
+                Select Location
+              </MenuItem>
+
+              {location?.map((item, index) => (
+                <MenuItem value={item} key={index + 1}>
+                  {item}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+
+          <Grid item xs={6} md={6}>
+            <Box textAlign="center">
+              <Button
+                variant="contained"
+                color="primary"
+                sx={{ mt: 1 }}
+                onClick={generateMessageString}
+              >
+                Book an Appointment
+              </Button>
+            </Box>
+          </Grid>
         </Grid>
-        <Box textAlign="center">
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{ mt: 2.5, py: 1.25 }}
-            onClick={generateMessageString}
-          >
-            Book an Appointment
-          </Button>
-        </Box>
       </Box>
     </Box>
   );

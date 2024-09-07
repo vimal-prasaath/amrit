@@ -25,7 +25,7 @@ const DoctorCard = ({ detailView, data }) => {
       <Box
         sx={{
           background: `url(${data.img}) no-repeat`,
-          backgroundSize: "100%",
+          backgroundSize: "cover",
           backgroundPositionY: "top",
           boxShadow: "0 0 12px 0 rgba(153, 153, 153, 0.2)",
           borderRadius: "0.75rem",

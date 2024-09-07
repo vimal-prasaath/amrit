@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Link } from "@mui/material";
 import { Banner } from "views/EyeCareInternal/components";
 import {
   Testimonial,
@@ -11,6 +11,7 @@ import { list } from "views/EyeCareDetails/internal-data/doctors";
 
 import internalReach from "assets/images/background/internal-reach.png";
 import { useState } from "react";
+import { Link as RouterLink } from "react-router-dom";
 
 const Doctors = () => {
   const [openModel, setOpenModel] = useState(false);
@@ -57,9 +58,30 @@ const Doctors = () => {
             py={4}
             maxWidth={{ xs: "100%", md: "24.5rem" }}
             minWidth={{ xs: "100%", md: "24.5rem" }}
-            onClick={openPopup}
+            position={"relative"}
           >
-            <img src={internalReach} alt="internalReach" width="100%" />
+            <img
+              src={internalReach}
+              alt="internalReach"
+              width="100%"
+              onClick={openPopup}
+              style={{ cursor: "pointer" }}
+            />
+            <Link
+              to="tel:+919600711818"
+              alignItems="center"
+              component={RouterLink}
+              sx={{
+                textDecoration: "none",
+                width: "100%",
+                height: "30px",
+                display: "block",
+                position: "absolute",
+                bottom: "33%",
+                zIndex: 1,
+              }}
+              color={"common.black"}
+            ></Link>
           </Box>
         </Box>
         <Box pl={{ md: 5, xs: 0 }} flexGrow={1} order={{ xs: 1, md: 2 }}>

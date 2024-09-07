@@ -27,7 +27,7 @@ import cc1 from "assets/images/banners/home/cc.png";
 export const list = [
   {
     id: "internalMedicine",
-    label: "Iternal Medicine",
+    label: "Internal Medicine",
     content: "datamap",
   },
   {

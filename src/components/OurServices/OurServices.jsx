@@ -5,6 +5,7 @@ import { OurServiceCard } from "components";
 import opinon from "assets/images/opinon.svg";
 import checkup from "assets/images/health.svg";
 import eye from "assets/images/eye.svg";
+import med from "assets/images/med.svg";
 
 import bgpattern from "assets/images/background/bg-pattern.png";
 import bgpatternRight from "assets/images/background/bg-pattern-right.png";
@@ -28,7 +29,8 @@ const OurServices = () => {
       <Grid container spacing={4} pt={8}>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <OurServiceCard
-            icon={opinon}
+            icon={med}
+            iconBg={"#2EAD9F"}
             header={"Medical Consultation"}
             description="Receive personalized and thorough consultations from our experienced medical specialists, ensuring you get the best possible care and advice."
           />

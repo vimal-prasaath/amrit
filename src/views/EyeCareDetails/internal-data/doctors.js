@@ -6,7 +6,7 @@ export const list = [
 
   {
     id: "internalMedicine",
-    label: "Iternal Medicine",
+    label: "Internal Medicine",
     subLink: "jointReplacement",
   },
   {
