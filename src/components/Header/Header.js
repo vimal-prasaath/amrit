@@ -330,7 +330,7 @@ const Header = () => {
           sx: { minWidth: "20rem" },
         }}
       >
-        <Box px={2} py={1}>
+        <Box px={2} py={1} onClick={toggleDrawer(false)}>
           <Box textAlign={"right"}>
             <IconButton onClick={toggleDrawer(false)}>
               <CloseRoundedIcon />

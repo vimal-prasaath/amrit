@@ -5,7 +5,7 @@ import { data } from "./data";
 import { useParams } from "react-router";
 import { Link as RouterLink } from "react-router-dom";
 
-const OurDoctors = ({ detailView, filterKey }) => {
+const OurDoctors = ({ detailView, filterKey, departmentPage }) => {
   const { departId, id } = useParams();
 
   const isGeneral = departId === "general";
@@ -16,14 +16,17 @@ const OurDoctors = ({ detailView, filterKey }) => {
 
   const idToMap = filterKey ? filterKey : isGeneral ? id : departId;
 
-  const docs = detailView
-    ? data.filter(
-        (item) =>
-          item.id === idToMap ||
-          item?.otherDepart?.includes(idToMap) ||
-          idToMap === "all"
-      )
-    : data.slice(0, 8);
+  console.log(idToMap);
+
+  const docs =
+    detailView || departmentPage
+      ? data.filter(
+          (item) =>
+            item.id === idToMap ||
+            item?.otherDepart?.includes(idToMap) ||
+            idToMap === "all"
+        )
+      : data.slice(0, 8);
 
   return (
     <Box {...containerProps}>
@@ -37,7 +40,7 @@ const OurDoctors = ({ detailView, filterKey }) => {
       <Box
         display="flex"
         flexWrap="wrap"
-        justifyContent={detailView ? "start" : "center"}
+        justifyContent={{ md: detailView ? "start" : "center", xs: "center" }}
         px={{ md: detailView ? 0 : 6, xs: 0 }}
         py={detailView ? 0 : 5}
       >

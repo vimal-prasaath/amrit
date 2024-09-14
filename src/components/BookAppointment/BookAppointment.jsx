@@ -38,6 +38,14 @@ const BookAppointment = () => {
 
   const URL = (message) => `https://wa.me/${MOBILE}?text=${encodeURI(message)}`;
 
+  const date = new Date();
+  let month = date.getMonth() + 1;
+  month = month > 9 ? month : `0${month}`;
+  let year = date.getFullYear();
+  let day = date.getDate();
+
+  const currentDate = `${year}-${month}-${day}`;
+
   const onInputChange = (e) => {
     const { name, value } = e.target;
     setInputValues((prev) => ({ ...prev, [name]: value }));
@@ -140,6 +148,7 @@ const BookAppointment = () => {
               type="date"
               inputProps={{
                 name: "Date",
+                min: currentDate,
               }}
               InputProps={{
                 hiddenLabel: true,

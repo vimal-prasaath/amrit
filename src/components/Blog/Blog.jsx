@@ -28,8 +28,18 @@ const DetailedBlog = () => {
 
 const BlogItem = ({ img, title, text }) => {
   return (
-    <Box display="flex" mb={3}>
-      <Box pr={3} minWidth={"18.75rem"} maxWidth={"18.75rem"}>
+    <Box
+      display="flex"
+      flexDirection={{ xs: "column", md: "row" }}
+      mb={3}
+      alignItems={{ xs: "center", md: "start" }}
+    >
+      <Box
+        pr={3}
+        minWidth={"18.75rem"}
+        maxWidth={"18.75rem"}
+        textAlign={{ xs: "center", md: "start" }}
+      >
         <img
           src={img}
           alt="blog"
@@ -50,7 +60,7 @@ const BlogItem = ({ img, title, text }) => {
 
 const Blog = () => {
   return (
-    <Box py={10} px={18} bgcolor="#f6f6f6">
+    <Box py={{ md: 10, xs: 4 }} px={{ md: 18, xs: 4 }} bgcolor="#f6f6f6">
       <Typography
         fontSize={"3.125rem"}
         fontWeight="bold"
@@ -59,11 +69,11 @@ const Blog = () => {
       >
         Latest Blog & News
       </Typography>
-      <Box display="flex">
-        <Box width="50%" px={2}>
+      <Box display="flex" flexWrap={"wrap"}>
+        <Box width={{ lg: "50%", xs: "100%" }} p={2}>
           <DetailedBlog />
         </Box>
-        <Box width="50%" px={2}>
+        <Box width={{ lg: "50%", xs: "100%" }} p={2}>
           <BlogItem
             img={img2}
             title="The Importance of Regular Eye Check-Ups"

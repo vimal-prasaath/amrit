@@ -27,6 +27,7 @@ import d24 from "assets/images/doctors/24.jpg";
 import d25 from "assets/images/doctors/25.jpg";
 import d26 from "assets/images/doctors/26.jpg";
 import d27 from "assets/images/doctors/27.jpg";
+import d28 from "assets/images/doctors/28.jpg";
 
 export const departmentConstants = {
   OPTHOMOLOGY: "opthomology",
@@ -59,7 +60,7 @@ export const data = [
   {
     name: "Dr. Lalit Kumar S",
     specialist: "Chief Cataract, Cornea, Refractive Surgeon",
-    hospitals: "Amrit Hospital",
+    hospitals: "Amrit Hospitals",
     img: d16,
     id: departmentConstants.OPTHOMOLOGY,
     url: "/department-internal/opthomology/cataract",
@@ -96,7 +97,7 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d12,
     id: departmentConstants.PEDIATRICS,
-    url: "department-internal/pediatrics/generalPaediatrics",
+    url: "/department-internal/pediatrics/generalPaediatrics",
   },
   {
     name: "Dr. S. Rajesh Kumar",
@@ -118,7 +119,7 @@ export const data = [
   {
     name: "Dr. B. Hugmi",
     specialist: "Internal medicine, Diabetology, Endocrine",
-    hospitals: "Amrit Medical Centre",
+    hospitals: "Amrit Hospitals",
     img: d2,
     id: departmentConstants.INTERNAL_MEDICINE,
     url: "/department-internal/general/internalMedicine",
@@ -129,22 +130,22 @@ export const data = [
     hospitals: "Amrit Hospitals",
     img: d19,
     id: departmentConstants.CARDIO,
-    url: "department-internal/general/cardiology",
+    url: "/department-internal/general/cardiology",
   },
   {
     name: "Dr. Elizabeth",
     specialist: "Consultant physiotherapist",
-    hospitals: "Amrit medical centre",
+    hospitals: "Amrit Hospitals",
     img: d22,
     id: departmentConstants.PHYSIO,
     url: "/department-internal/general/physiotherapy",
   },
 
   {
-    name: "Dr. S Rajesh MBBS, DA, DNB, FIPM",
+    name: "Dr. S Rajesh",
     specialist:
-      "Senior Consultant Anaesthesiologist & Intensivist, Interventional pain management specialist",
-    hospitals: "Amrit medical centre",
+      "Anaesthesiologist & Intensivist Interventional pain management specialist",
+    hospitals: "Amrit Hospitals",
     img: d15,
     id: departmentConstants.CC,
     url: "/department-internal/general/criticalCare",
@@ -185,7 +186,7 @@ export const data = [
   {
     name: "Dr. Madhavi Yadav",
     specialist: "ENT surgeon",
-    hospitals: "Amrit medical centre",
+    hospitals: "Amrit Hospitals",
     img: d8,
     id: departmentConstants.ENT,
     url: "/department-internal/general/ent",
@@ -227,7 +228,7 @@ export const data = [
   {
     name: "Dr. Vigneswaran.p",
     specialist: "Pediatric Orthopaedics Deformity correction",
-    hospitals: "Amrit Medical centre",
+    hospitals: "Amrit Hospitals",
     img: d17,
     id: departmentConstants.ORTHO,
     url: "/department-internal/ortho/jointReplacement",
@@ -235,7 +236,7 @@ export const data = [
   {
     name: "Dr. Roopesh Jain",
     specialist: "Diabetologist, MBBS, MDRC",
-    hospitals: "Amrit Medical centre",
+    hospitals: "Amrit Hospitals",
     img: d24,
     id: departmentConstants.DIBETOLOGY,
     url: "/department-internal/general/diabetology",
@@ -243,33 +244,33 @@ export const data = [
   {
     name: "Prof.Dr.S.Vinothkanna",
     specialist: "Senior Consultant Neurologist, MD.,DM.,(Neuro)",
-    hospitals: "Amrit Medical centre",
+    hospitals: "Amrit Hospitals",
     img: d25,
     id: departmentConstants.NEURO,
-    url: "department-internal/general/neurology",
+    url: "/department-internal/general/neurology",
   },
   {
     name: "Dr. Hassan",
     specialist: "Consultant Radiologist",
-    hospitals: "Amrit Medical centre",
+    hospitals: "Amrit Hospitals",
     img: d26,
     id: departmentConstants.RADIO,
-    url: "department-internal/general/radiology",
+    url: "/department-internal/general/radiology",
   },
   {
     name: "Dr. Aditya Shah",
     specialist: "D.M., Medical Gastroenterology M.D., General Medicine",
-    hospitals: "Amrit Medical centre",
+    hospitals: "Amrit Hospitals",
     img: d27,
     id: departmentConstants.GASTRO,
-    url: "department-internal/general/gastroenterology",
+    url: "/department-internal/general/gastroenterology",
   },
   {
     name: "Dr. Raghul M",
     specialist: "Pediatric Surgeon MS, DNB, FMAS",
-    hospitals: "Amrit Medical centre",
-    img: d27,
+    hospitals: "Amrit Hospitals",
+    img: d28,
     id: departmentConstants.PEDIATRICS,
-    url: "department-internal/pediatrics/paediatricsSurgery",
+    url: "/department-internal/pediatrics/paediatricsSurgery",
   },
 ];

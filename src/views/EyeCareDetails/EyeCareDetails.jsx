@@ -22,7 +22,9 @@ const EyeCareDetails = () => {
     info,
     bannerSize,
   } = departmentData;
-  console.log(departmentData);
+
+  console.log(departmentId);
+
   return (
     <Box>
       <Banner
@@ -94,7 +96,7 @@ const EyeCareDetails = () => {
           </Box>
         </Box>
       </Box>
-      <OurDoctors />
+      <OurDoctors filterKey={departmentId} departmentPage />
       <Testimonial />
       <Blog />
     </Box>
