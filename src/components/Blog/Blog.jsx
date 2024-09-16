@@ -71,30 +71,82 @@ const Blog = () => {
       </Typography>
       <Box display="flex" flexWrap={"wrap"}>
         <Box width={{ lg: "50%", xs: "100%" }} p={2}>
-          <DetailedBlog />
+          <Link
+            component={RouterLink}
+            to="/blog/1"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <DetailedBlog />
+          </Link>
         </Box>
         <Box width={{ lg: "50%", xs: "100%" }} p={2}>
-          <BlogItem
-            img={img2}
-            title="The Importance of Regular Eye Check-Ups"
-            text="The Importance of Regular Eye Check-Ups: How Amrit Hospital's Ophthalmology Department Ensures Clear Vision for Life"
-          />
-          <BlogItem
-            img={img3}
-            title="Navigating Multi-Specialty Healthcare"
-            text="Navigating Multi-Specialty Healthcare: Why Amrit Hospital Is Your One-Stop Solution for All Medical Needs"
-          />
-          <BlogItem
-            img={img4}
-            title="Cataracts are one of the leading causes of vision impairment, particularly in older adults."
-            text="Cataracts occur when the eye’s natural lens becomes cloudy, leading to blurred vision, difficulty with glare, and eventually, significant vision impairment. "
-          />
+          <Link
+            component={RouterLink}
+            to="/blog/2"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img2}
+              title="The Importance of Regular Eye Check-Ups"
+              text="The Importance of Regular Eye Check-Ups: How Amrit Hospital's Ophthalmology Department Ensures Clear Vision for Life"
+            />
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/blog/3"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img3}
+              title="Navigating Multi-Specialty Healthcare"
+              text="Navigating Multi-Specialty Healthcare: Why Amrit Hospital Is Your One-Stop Solution for All Medical Needs"
+            />
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/blog/4"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img4}
+              title="Cataracts are one of the leading causes of vision impairment, particularly in older adults."
+              text="Cataracts occur when the eye’s natural lens becomes cloudy, leading to blurred vision, difficulty with glare, and eventually, significant vision impairment. "
+            />
+          </Link>
         </Box>
       </Box>
       <Box textAlign="center" pt={3}>
         <Link
           component={RouterLink}
-          to="/blog"
+          to="/blog/1"
           sx={{ textDecoration: "none" }}
           color={"common.black"}
         >

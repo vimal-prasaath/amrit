@@ -240,16 +240,16 @@ const Header = () => {
               Our Doctors
             </Typography>
           </Link>
-          {/* <Link
+          <Link
             component={RouterLink}
-            to="/blog"
+            to="/blog/1"
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
             <Typography component="span" mr={3.5}>
-              Blog
+              Blogs
             </Typography>
-          </Link> */}
+          </Link>
           <Link
             component={RouterLink}
             to="/contact"
@@ -376,16 +376,16 @@ const Header = () => {
                 Our Doctors
               </Typography>
             </Link>
-            {/* <Link
+            <Link
               component={RouterLink}
-              to="/blog"
+              to="/blog/1"
               sx={{ textDecoration: "none", pb: 1 }}
               color={"common.black"}
             >
               <Typography component="span" pb={1} fontWeight={600} variant="h5">
-                Blog
+                Blogs
               </Typography>
-            </Link> */}
+            </Link>
             <Link
               component={RouterLink}
               to="/contact"

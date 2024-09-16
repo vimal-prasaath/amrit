@@ -304,16 +304,16 @@ const Footer = () => {
               Our Doctors
             </Typography>
           </Link>
-          {/* <Link
+          <Link
             component={RouterLink}
-            to="/blog"
+            to="/blog/1"
             sx={{ textDecoration: "none" }}
             color={"common.black"}
           >
             <Typography component="span" mr={6}>
-              Blog
+              Blogs
             </Typography>
-          </Link> */}
+          </Link>
           <Link
             component={RouterLink}
             to="/contact"
