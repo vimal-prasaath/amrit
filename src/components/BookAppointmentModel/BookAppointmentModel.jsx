@@ -14,6 +14,7 @@ import HighlightOffRoundedIcon from "@mui/icons-material/HighlightOffRounded";
 import location from "assets/images/location.svg";
 import { useState } from "react";
 // import phone from "assets/images/phone.svg";
+import axios from "axios";
 
 export const departmentConstants = {
   OPTHOMOLOGY: "Opthomology",
@@ -63,7 +64,34 @@ const BookAppointmentModel = ({ onClose, docName }) => {
           inputValues[value])
     );
     const whatsAppUrl = URL(message);
+    postData({
+      patientName: inputValues.Patient,
+      patientMobileNo: Number(inputValues.Phone),
+      patientApptDate: new Date(inputValues.Date).toISOString(),
+    });
+    console.log(inputValues);
     window.open(whatsAppUrl);
+  };
+
+  const postData = async (payload) => {
+    try {
+      const response = await axios.post(
+        "http://210.18.187.203:8080/shc/onlineappointment",
+        payload,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      console.log("Response:", response.data);
+    } catch (error) {
+      console.error(
+        "Error:",
+        error.response ? error.response.data : error.message
+      );
+    }
   };
 
   return (
