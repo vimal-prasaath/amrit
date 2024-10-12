@@ -81,6 +81,7 @@ const BookAppointmentModel = ({ onClose, docName }) => {
         {
           headers: {
             "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": true,
           },
         }
       );
