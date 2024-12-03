@@ -21,7 +21,7 @@ import cardio from "assets/images/menu/cardio.svg";
 import criticalCare from "assets/images/menu/critica-care.svg";
 import dermatology from "assets/images/menu/dermtology.svg";
 import diabetology from "assets/images/menu/dibetology.svg";
-import ent from "assets/images/menu/dibetology.svg";
+import ent from "assets/images/menu/ent.svg";
 import gastro from "assets/images/menu/gastro.svg";
 import genSurgery from "assets/images/menu/gen-surgery.svg";
 import gyno from "assets/images/menu/gynecology.svg";

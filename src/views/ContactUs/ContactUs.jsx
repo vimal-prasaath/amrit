@@ -99,7 +99,7 @@ const ContactUs = () => {
             </Box>
             <Link
               component={RouterLink}
-              to="https://www.google.com/maps/place/AMRIT+MEDICAL+CENTRE/@13.0811794,80.2494854,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5265df9b770c05:0x3be6fbdc396294a3!8m2!3d13.0811742!4d80.2520603!16s%2Fg%2F11gflt692y?entry=ttu "
+              to="https://www.google.com/maps/place/Amrit+Hospital/@13.0921776,80.2766416,17z/data=!3m1!4b1!4m6!3m5!1s0x3a526f57a19c437b:0x36fedbe9eaf5a945!8m2!3d13.0921724!4d80.2792165!16s%2Fg%2F1tmcknl7?entry=ttu"
               target="blank"
               sx={{ textDecoration: "none" }}
               color={"common.black"}
@@ -137,7 +137,7 @@ const ContactUs = () => {
             </Link>
             <Link
               component={RouterLink}
-              to="https://www.google.com/maps/place/Amrit+Hospital/@13.0921776,80.2766416,17z/data=!3m1!4b1!4m6!3m5!1s0x3a526f57a19c437b:0x36fedbe9eaf5a945!8m2!3d13.0921724!4d80.2792165!16s%2Fg%2F1tmcknl7?entry=ttu"
+              to="https://www.google.com/maps/place/Amrit+Medical+Centre/@13.0812049,80.2495037,17z/data=!3m1!4b1!4m6!3m5!1s0x3a526700708a823f:0x6fa3f92cb170a588!8m2!3d13.0811997!4d80.2520786!16s%2Fg%2F11wj00p75w?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
               target="blank"
               sx={{ textDecoration: "none" }}
               color={"common.black"}

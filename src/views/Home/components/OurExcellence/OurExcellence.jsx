@@ -5,7 +5,7 @@ import cardio from "assets/images/department/cardio.svg";
 import criticalCare from "assets/images/department/critica-care.svg";
 import dermatology from "assets/images/department/dermtology.svg";
 import diabetology from "assets/images/department/dibetology.svg";
-import ent from "assets/images/department/dibetology.svg";
+import ent from "assets/images/department/ent.svg";
 import gastro from "assets/images/department/gastro.svg";
 import genSurgery from "assets/images/department/gen-surgery.svg";
 import gyno from "assets/images/department/gynecology.svg";
