@@ -13,6 +13,11 @@ import img2 from "assets/images/blog/2.jpg";
 import img3 from "assets/images/blog/3.jpg";
 import img4 from "assets/images/blog/4.jpg";
 
+import img5 from "assets/images/blog/5.jpg";
+import img6 from "assets/images/blog/6.jpg";
+import img7 from "assets/images/blog/7.jpg";
+import img8 from "assets/images/blog/8.jpg";
+
 const BlogItem = ({ img, title }) => {
   return (
     <Box display="flex" mb={3} alignItems={{ xs: "center", md: "start" }}>
@@ -77,6 +82,21 @@ const Details = () => {
             <Typography color="#777" variant="h6" mb={3}>
               {item.text}
             </Typography>
+            {item.text2 && (
+              <Typography color="#777" variant="h6" mb={3}>
+                {item.text2}
+              </Typography>
+            )}
+            {item.text3 && (
+              <Typography color="#777" variant="h6" mb={3}>
+                {item.text3}
+              </Typography>
+            )}
+            {item.text4 && (
+              <Typography color="#777" variant="h6" mb={3}>
+                {item.text4}
+              </Typography>
+            )}
           </Box>
         ))}
       </Box>
@@ -169,6 +189,75 @@ const Details = () => {
               img={img4}
               title="Cataracts are one of the leading causes of vision impairment, particularly in older adults."
               text="Cataracts occur when the eye’s natural lens becomes cloudy, leading to blurred vision, difficulty with glare, and eventually, significant vision impairment. "
+            />
+          </Link>
+
+          <Link
+            component={RouterLink}
+            to="/blog/5"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img5}
+              title="5 Cataract Surgery Side Effects & How to Recover"
+            />
+          </Link>
+
+          <Link
+            component={RouterLink}
+            to="/blog/6"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem img={img6} title="5 Best Foods for Eye Health" />
+          </Link>
+
+          <Link
+            component={RouterLink}
+            to="/blog/7"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img7}
+              title="Femto Laser Cataract Surgery: Revolutionizing Modern Cataract Treatment"
+            />
+          </Link>
+
+          <Link
+            component={RouterLink}
+            to="/blog/8"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img8}
+              title="Post Cataract Surgery Precautions & Recovery"
             />
           </Link>
         </Box>
