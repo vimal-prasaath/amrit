@@ -5,6 +5,7 @@ import {
   BookAppointmentModel,
   VerticalBtnGroup,
   OurDoctors,
+  Blog,
 } from "components";
 import department from "assets/images/banners/internal.png";
 import { list } from "views/EyeCareDetails/internal-data/doctors";
@@ -90,6 +91,7 @@ const Doctors = () => {
         {openModel && <BookAppointmentModel onClose={closePopup} />}
       </Box>
       <Testimonial />
+      <Blog />
     </Box>
   );
 };

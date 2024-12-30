@@ -6,6 +6,7 @@ import {
   OurDoctors,
   OurServices,
   Testimonial,
+  Blog,
 } from "components";
 
 import { WhyAmrit, OurExcellence, OurFacility } from "./components";
@@ -21,6 +22,7 @@ const Home = () => {
       <OurDoctors />
       {/* <JoinUs /> */}
       <Testimonial />
+      <Blog />
     </Box>
   );
 };
