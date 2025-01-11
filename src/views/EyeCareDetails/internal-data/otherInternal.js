@@ -7,7 +7,7 @@ import generalSurgery from "assets/images/banners/internalDepartment/gensurgery&
 import cardio from "assets/images/banners/internalDepartment/cardiology.jpg";
 import psiyo from "assets/images/banners/internalDepartment/physio.jpg";
 import gastro from "assets/images/banners/internalDepartment/gastrointerology.jpg";
-import radio from "assets/images/banners/internalDepartment/diabetology.jpg";
+import radio from "assets/images/banners/internalDepartment/radio.jpg";
 import internalMed from "assets/images/banners/internalDepartment/internalmedicine.jpg";
 import cc from "assets/images/banners/internalDepartment/cc.jpg";
 

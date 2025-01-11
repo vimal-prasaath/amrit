@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { BannerContainer } from "./Banner.styled";
 import department from "assets/images/banners/internal.png";
 
-const Banner = ({ text, bannerImg }) => {
+const Banner = ({ text, bannerImg, isDoctorView }) => {
   return (
     <>
       <BannerContainer
@@ -12,6 +12,7 @@ const Banner = ({ text, bannerImg }) => {
         display="flex"
         justifyContent="center"
         flexDirection="column"
+        isDoctorView={isDoctorView}
         // sx={{ filter: "grayscale(1)" }}
       >
         <Typography

@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { BookAppointmentButton } from "components";
 
 const OurFacility = ({ facility, facilityImg }) => {
   return (
@@ -45,6 +46,7 @@ const OurFacility = ({ facility, facilityImg }) => {
           <Typography variant="h6" color="#777" lineHeight={2}>
             {facility.content}
           </Typography>
+          <BookAppointmentButton />
         </Box>
       </Box>
     </Box>

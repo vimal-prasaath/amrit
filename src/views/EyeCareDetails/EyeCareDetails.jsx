@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { About, Blog, EyeCare, OurDoctors, Testimonial } from "components";
+import { Blog, EyeCare, OurDoctors, Testimonial } from "components";
 import { Banner, OurFacility } from "./components";
 
 import { department } from "./data";
@@ -11,19 +11,17 @@ const EyeCareDetails = () => {
   const departmentData = department[departmentId];
   const {
     banner,
-    about,
+    // about,
     facility,
     services,
     serviceHeader,
     bannerImg,
-    aboutImg,
+    // aboutImg,
     facilityImg,
     infoImg,
     info,
     bannerSize,
   } = departmentData;
-
-  console.log(departmentId);
 
   return (
     <Box>
@@ -32,7 +30,7 @@ const EyeCareDetails = () => {
         bannerImg={bannerImg}
         bannerSize={bannerSize || []}
       />
-      <About about={about} aboutImg={aboutImg} />
+      {/* <About about={about} aboutImg={aboutImg} /> */}
       <OurFacility facility={facility} facilityImg={facilityImg} />
 
       {services?.length > 0 && (

@@ -65,7 +65,13 @@ const Details = ({ doctorView, data, links, departId, img, listheader }) => {
       )}
       {index === 0 && (
         <Box py={4}>
-          <img src={img || internalImg} alt="img" width="100%" />
+          <img
+            src={img || internalImg}
+            alt="img"
+            width="100%"
+            height={"550px"}
+            style={{ objectFit: "cover" }}
+          />
         </Box>
       )}
     </Box>

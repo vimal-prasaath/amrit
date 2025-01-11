@@ -1,5 +1,6 @@
 import { Typography, Box } from "@mui/material";
 import { BannerContainer } from "./Banner.styled";
+import { BookAppointmentStrip } from "components";
 
 const Banner = ({ banner, bannerImg, bannerSize }) => {
   return (
@@ -32,6 +33,9 @@ const Banner = ({ banner, bannerImg, bannerSize }) => {
           ))}
         </Box>
       </BannerContainer>
+      <Box mb={{ md: "10rem", xs: "2.5rem" }}>
+        <BookAppointmentStrip />
+      </Box>
     </>
   );
 };

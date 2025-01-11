@@ -15,3 +15,5 @@ export { default as VerticalBtnGroup } from "./VerticalBtnGroup";
 export { default as BookAppointment } from "./BookAppointment";
 export { default as Testimonial } from "./Testimonial";
 export { default as BookAppointmentModel } from "./BookAppointmentModel";
+export { default as BookAppointmentStrip } from "./BookAppointmentStrip";
+export { default as BookAppointmentButton } from "./BookAppointmentButton";

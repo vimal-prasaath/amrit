@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { departmentinternal } from "views/EyeCareDetails/internal-data";
 import { Testimonial } from "components";
 import { list as allList } from "views/EyeCareDetails/internal-data/doctors";
+import { BookAppointmentStrip } from "components";
 
 const EyeCareInternal = ({ doctorView }) => {
   const { id, departId } = useParams();
@@ -41,6 +42,9 @@ const EyeCareInternal = ({ doctorView }) => {
             {label1}
           </Typography>
         )}
+      </Box>
+      <Box mb={{ md: "10rem", xs: "2.5rem" }}>
+        <BookAppointmentStrip />
       </Box>
       <Details
         data={pageData.data}

@@ -13,6 +13,7 @@ import { list } from "views/EyeCareDetails/internal-data/doctors";
 import internalReach from "assets/images/background/internal-reach.png";
 import { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
+import { BookAppointmentStrip } from "components";
 
 const Doctors = () => {
   const [openModel, setOpenModel] = useState(false);
@@ -25,7 +26,10 @@ const Doctors = () => {
   return (
     <Box>
       <Box position={"relative"}>
-        <Banner bannerImg={department} />
+        <Banner bannerImg={department} isDoctorView={true} />
+        <Box mb={{ md: "10rem", xs: "2.5rem" }}>
+          <BookAppointmentStrip />
+        </Box>
         <Typography
           fontSize={{ md: "3.125rem", xs: "2.25rem" }}
           fontWeight={600}
