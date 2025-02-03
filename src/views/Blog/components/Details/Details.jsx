@@ -1,7 +1,5 @@
 import { Box, Typography, Link } from "@mui/material";
-import blog from "assets/images/background/blog-xl.png";
 import internalReach from "assets/images/background/internal-reach.png";
-import blogImg from "assets/images/background/blogImg.png";
 import { useParams } from "react-router";
 import { Link as RouterLink } from "react-router-dom";
 import { blogs } from "views/Blog/data";
@@ -17,6 +15,12 @@ import img5 from "assets/images/blog/5.jpg";
 import img6 from "assets/images/blog/6.jpg";
 import img7 from "assets/images/blog/7.jpg";
 import img8 from "assets/images/blog/8.jpg";
+
+import img9 from "assets/images/blog/9.jpg";
+import img10 from "assets/images/blog/10.jpg";
+import img11 from "assets/images/blog/11.jpg";
+import img12 from "assets/images/blog/12.jpg";
+import img13 from "assets/images/blog/13.jpg";
 
 const BlogItem = ({ img, title }) => {
   return (
@@ -258,6 +262,94 @@ const Details = () => {
             <BlogItem
               img={img8}
               title="Post Cataract Surgery Precautions & Recovery"
+            />
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/blog/9"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img9}
+              title="5 Important Stages of Child Growth and Development"
+            />
+          </Link>
+          <Link
+            component={RouterLink}
+            to="/blog/10"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img10}
+              title="10 Foods That Increase Fertility in Women"
+            />
+          </Link>
+
+          <Link
+            component={RouterLink}
+            to="/blog/11"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img11}
+              title="Apple Cider Vinegar During Pregnancy: Good or Bad?"
+            />
+          </Link>
+
+          <Link
+            component={RouterLink}
+            to="/blog/12"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img12}
+              title="Cosmetic Gynaecology: Everything You Need to Know"
+            />
+          </Link>
+
+          <Link
+            component={RouterLink}
+            to="/blog/13"
+            textDecoration="none"
+            color="common.black"
+            sx={{
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "none",
+              },
+            }}
+          >
+            <BlogItem
+              img={img13}
+              title="Normal Delivery Tips: What to Do to Avoid a C-Section"
             />
           </Link>
         </Box>

@@ -8,6 +8,12 @@ import b6 from "assets/images/blog/6.jpg";
 import b7 from "assets/images/blog/7.jpg";
 import b8 from "assets/images/blog/8.jpg";
 
+import b9 from "assets/images/blog/9.jpg";
+import b10 from "assets/images/blog/10.jpg";
+import b11 from "assets/images/blog/11.jpg";
+import b12 from "assets/images/blog/12.jpg";
+import b13 from "assets/images/blog/13.jpg";
+
 export const blogs = [
   {
     id: "1",
@@ -345,6 +351,360 @@ export const blogs = [
         text: "After cataract surgery, healing is not immediate, and you should pay much attention to what the doctor is advising you and follow any recommendations given to the letter on the diet, manner of living, and so on. Post-cataract surgery precautions that are recommended should be followed aggressively; adequate rest and eye protection, together with timing your medications appropriately, will help in avoiding complications during your healing process. ",
         text2:
           "When it comes to this period, it means modifying some daily routines or, taking the necessary measures, individuals can make a difference. Keep in mind that the vision is priceless and the money that will be spent to restore it will bring you a better and clearer tomorrow.",
+      },
+    ],
+  },
+  {
+    id: "9",
+    img: b9,
+    header: "5 Important Stages of Child Growth and Development",
+    data: [
+      {
+        subheader: "Introduction:",
+        text: "Understanding the stages of growth and development is crucial for parents, educators, and healthcare professionals. Children's growth is a dynamic process influenced by genetics, environment, and nutrition. Proper knowledge of child growth and development helps children achieve their full potential. Recognising the specific developmental stages allows for timely interventions and the provision of appropriate support to promote healthy progress.",
+        text2:
+          "In this blog, we'll talk about the 5 stages of growth and development and their significance. Every stage provides specific physical, cognitive, and emotional developments, all of which will help determine the overall success and well-being of the children.",
+      },
+      {
+        subheader: "Infancy (0-2 Years)",
+        text: "The infancy stage marks the beginning of pediatric growth and development, characterized by rapid physical and cognitive changes. Babies grow at an astonishing rate, doubling their birth weight within the first six months. Key milestones during this stage include rapid increases in height and weight, developing control over head movements, rolling over, crawling, and eventually walking. Proper nutrition and responsive caregiving play a crucial role in supporting the infant's development.",
+        text2:
+          "Cognitive development includes recognizing familiar faces, responding to stimuli, and beginning to explore surroundings. Emotional development involves forming attachment bonds with parents and caregivers. The importance of growth and development during infancy lies in building a strong foundation for future learning and social interactions. Encouraging sensory experiences and consistent routines help infants thrive during this crucial stage.",
+      },
+      {
+        subheader: "Early Childhood (2-6 Years)",
+        text: "This period is critical to a child's growth and development stages. It is considered the preschool years when children start gaining independence and develop their motor skills. This is a time for rapid vocabulary increase and basic sentence formation, interactions with peers, learning to share, and beginning to understand another's feelings through empathy. A play-based approach to learning develops creativity and intellectual abilities.",
+        text2:
+          "Cognitive development involves knowledge of simple ideas like colours, shapes, and numbers. Fine and gross motor skills are achieved through climbing, running, drawing, and using utensils.",
+        text3:
+          "At this age, creativity and exploration should be encouraged for holistic development. A safe and stimulating environment provides better learning opportunities and social skills.",
+      },
+      {
+        subheader: "Middle Childhood (6-12 Years)",
+        text: "During middle childhood, children experience steady growth and develop a sense of identity. Learning to read and write and solving simple mathematical calculations are all about this stage. Socialization makes them understand other people's attitudes. They continue to develop the habit of being good at their studies and make time for outside activities that generally assist in their development.",
+        text2:
+          "Physical development sees improved coordination and participation in sports. Emotional growth includes developing self-esteem and coping mechanisms for challenges. This period emphasizes the importance of growth and development through a balanced routine of physical activities, academics, and social interactions. Encouraging problem-solving skills and resilience is vital for future success.",
+      },
+      {
+        subheader: "Adolescence (12-18 Years)",
+        text: "Adolescence is one of the most transformative child growth and development stages, with significant physical, emotional, and social changes. Key aspects of this stage include hormonal changes leading to physical maturity, enhanced critical thinking and decision-making abilities, managing mood swings, self-identity exploration, and peer pressure. Providing emotional support and open communication helps adolescents navigate challenges effectively.",
+        text2:
+          "Autonomy-seeking and building on future expectations characterize adolescents. This is when the parents or the educators will help the adolescent face these transitions by providing direction and support in leading a healthy life and keeping one's mind mentally healthy.",
+      },
+      {
+        subheader: "Young Adulthood: 18-21 years",
+        text: "Though not traditionally considered part of childhood, young adulthood is an extension of pediatric growth and development, focusing on independence and responsibility. Key developments include making educational and professional choices, understanding relationships and self-awareness, contributing to society, and building long-term relationships. Young adults need encouragement to set personal and professional goals.",
+        text2:
+          "The individual also has to learn to manage personal finances and personal responsibilities. The stage of transition to adulthood provides great chances for growth and development. Thus well-prepared to face life boldly. Healthy habits, lifelong learning, and securing the chances of success are indispensable in this period.",
+      },
+      {
+        subheader: "Conclusion",
+        text: "Understanding the 5 stages of growth and development allows parents and caregivers to provide appropriate support and interventions at each phase. Monitoring child growth and development ensures that children meet their milestones and develop into well-rounded individuals.",
+        text2:
+          "Encouraging a nurturing environment throughout all child growth and development stages can significantly impact a child’s future success and well-being. By recognizing the unique needs of each stage, caregivers can foster a positive and enriching developmental journey.",
+        text3:
+          "Get your child the best advice on growth and development at Amrit Hospital, where children can receive proper care under skilled pediatric specialists to maintain their health at every step of life. Choose our services to help your little ones grow up healthy under the guidance of medical professionals with a healthy future outlook.",
+      },
+    ],
+  },
+  {
+    id: "10",
+    img: b10,
+    header: "10 Foods That Increase Fertility in Women",
+    data: [
+      {
+        subheader: "Introduction:",
+        text: "Food intake plays an important role in fertility boosters and chances of conception. Balanced and nutritious dieting helps control your hormonal health, supports ovulation, and improves the quality of eggs in the ovaries. If one wants to take the natural approach to fertility, one can start by focusing on foods that boost fertility. In this post, we’ll explore 10 foods that increase fertility in women.",
+      },
+      {
+        subheader: "Leafy Greens: A powerhouse of nutrition",
+        text: "Leafy greens such as spinach, kale, and Swiss chard are a good source of folate, a B vitamin essential for fertility. Food for ovulation must therefore include these nutrient-dense vegetables to help facilitate regular menstrual cycles and healthy egg development. Folate also helps in DNA synthesis, which is critical for the healthy development of the fetus once you conceive.",
+      },
+      {
+        subheader: "Berries: Rich in Antioxidants",
+        text: "Berries, for example, blueberries, strawberries, and raspberries, are filled with antioxidants. Oxidative stress has been proven to damage eggs and sperm, so berry intake is a great way toward better female egg quality. Eating foods that increase fertility in females, like berries, every day helps enhance the health of your reproductive system and thereby improves fertility in females.",
+      },
+      {
+        subheader: "Eggs: Nature's Fertility Superfood",
+        text: "Eggs are known to be good sources of proteins, healthy fats, and vitamin D, among other foods that are very fundamental for reproductive health. The presence of proteins can support the formation of hormones; vitamin D improves menstrual cycles and boosts ovulation.",
+      },
+      {
+        subheader: "Nuts and Seeds: A Healthy Source of Fat",
+        text: "Nuts and seeds, like almonds, walnuts, and flaxseeds, are excellent sources of omega-3 fatty acids, which have been proven to improve the quality of eggs and balance hormonal levels. Incorporating these healthy fats into your diet can aid foods that boost ovulation and be very helpful for women trying to maximize their fertility.",
+      },
+      {
+        subheader: "Full-Fat Dairy: A Boost for Ovulation",
+        text: "Full-fat dairy, including milk, yoghurt, and cheese, may help women with fertility issues. Full-fat dairy has been found to support better ovulatory function and more conception chances compared to low-fat dairy. Rich in calcium, vitamin D, and healthy fats, dairy supports a healthy reproductive system and aids in foods that increase fertility in women.",
+      },
+      {
+        subheader: "Avocados: Fertility-Boosting Fats",
+        text: "Avocados are another rich source of healthy fats, particularly monounsaturated fats, which aid in hormone regulation and increase fertility. Additionally, avocados contain folate, which is essential for the proper functioning of the reproductive system. Adding avocados to your diet supports the foods to increase ovulation and creates a fertile environment.",
+      },
+      {
+        subheader: "Salmon: Rich in Omega-3 Fatty Acids",
+        text: "Salmon, along with other fatty fish like mackerel and sardines, is an excellent source of omega-3 fatty acids. These healthy fats can improve egg quality, reduce inflammation, and regulate hormones, all of which are essential for foods that increase fertility in females. Including fatty fish like salmon in your meals can boost your chances of conception by supporting overall reproductive health.",
+      },
+      {
+        subheader: "Legumes: A Plant-Based Fertility Powerhouse",
+        text: "Legumes such as beans, lentils, and chickpeas are packed with protein, fibre, and essential nutrients like folate. These nutrients help support hormonal balance, which is key for ovulation and fertility. Legumes are also a great source of iron, which is necessary for maintaining healthy egg quality. Including these foods to improve female egg quality can improve your chances of conception.",
+      },
+      {
+        subheader: "Citrus Fruits: Rich in Vitamin C",
+        text: "Citrus fruits, such as oranges, grapefruits, and lemons, are high in vitamin C, a powerful antioxidant that supports immune function and helps regulate the menstrual cycle. Vitamin C also plays a role in hormone production, which is critical for ovulation. By adding these foods to help conceive to your diet, you can boost your fertility and improve overall reproductive health.",
+      },
+      {
+        subheader: "Whole Grains: Supporting Hormonal Balance",
+        text: "Whole grains like quinoa, brown rice, and oats are rich in B vitamins and fibre, which help stabilize blood sugar levels and regulate hormones. Maintaining balanced blood sugar levels is important for fertility because fluctuations can negatively impact ovulation. Whole grains are essential for a fertility-boosting diet, providing steady energy and supporting food that boosts ovulation.",
+      },
+      {
+        subheader: "Conclusion",
+        text: "Improving fertility and increasing your chances of conception involves more than just taking supplements or medications—it’s about nourishing your body with the right nutrients. The foods that increase fertility in women listed above can help regulate hormones, support ovulation, and improve the quality of your eggs. By incorporating these nutrient-rich foods into your diet, you're taking an important step toward a healthier reproductive system and better fertility outcomes.",
+        text2:
+          "Seeking a boost in fertility and a journey into parenthood? Amrit Hospital's expert team offers personal care and advanced treatments for your reproductive health. Contact us today to start your journey toward parenthood with confidence.",
+      },
+    ],
+  },
+  {
+    id: "11",
+    img: b11,
+    header: "Apple Cider Vinegar During Pregnancy: Good or Bad?",
+    data: [
+      {
+        subheader: "Introduction:",
+        text: "Apple cider vinegar has recently gained much attention for its various health benefits. But when it comes to pregnancy, all expectant mothers have the following query: Is it safe for pregnant women to drink apple cider vinegar? Or is apple cider vinegar good for pregnancy? This article covers the benefits and risks of ACV during pregnancy so that you may make an informed decision.",
+      },
+      {
+        subheader: "What is Apple Cider Vinegar?",
+        text: "ACV, or apple cider vinegar, is a fermented liquid made from crushed apples by some yeast and bacteria. It has acetic acid, which makes it sour and could also be beneficial for health. Very rich in antioxidants and beneficial enzymes, ACV is used by most people to support digestion, weight management, and blood sugar regulation.",
+      },
+      {
+        subheader: "Possible Benefits of Apple Cider Vinegar During Pregnancy",
+        text: "Most pregnant women seek out the possible health benefits of apple cider vinegar. These include:",
+      },
+      {
+        subheader: "1. Supports Digestion",
+        text: "Pregnancy causes digestive problems, such as bloating and indigestion. ACV improves the gut's health by increasing beneficial bacteria growth. This will ensure easier digestion and higher nutrient intake.",
+      },
+      {
+        subheader: "2. Regulates Blood Sugar",
+        text: "ACV may help regulate blood sugar levels by improving the sensitivity of insulin, which may be beneficial for pregnant women who are at risk of developing gestational diabetes. It should not, however, replace medical advice or prescribed treatment.",
+      },
+      {
+        subheader: "3. Boosts Immunity",
+        text: "ACV is endowed with antimicrobial properties that help enhance the immune system. This can therefore protect pregnant women from the risks of infection. Organic acids and enzymes within ACV activate natural body immunity in pregnant women.",
+      },
+      {
+        subheader: "4. Reduces Morning Sickness",
+        text: "Many women suffer nausea and morning sickness in the first trimester. Diluted ACV has been used as anecdotal evidence to balance the stomach acid level, relieving nausea and discomfort.",
+      },
+      {
+        subheader: "5. Encourages Healthy Urinary Tract",
+        text: "UTIs are common during pregnancy. The antimicrobial property of the ACV will not favour the proliferation of harmful bacteria in any environment, thus promoting the overall health of the urinary tract and good bladder functions.",
+      },
+      {
+        subheader: "6. Helps in Healthy Weight Gain",
+        text: "Pregnancy is not something one loses weight for; instead, one must gain weight healthily. So, ACV supports cravings and fullness, creating a fine balance toward weight gain.",
+      },
+      {
+        subheader:
+          "Risks and Precautions of Taking Apple Cider Vinegar During Pregnancy",
+        text: "Though apple cider vinegar contains various benefits, there are a few risks that should be considered while consuming it:",
+      },
+      {
+        subheader: "1. Acidic Nature",
+        text: "ACV is very acidic. If consumed in high concentration, then it erodes the tooth enamel and irritates the stomach lining. Therefore, pregnant women are forbidden to take it undiluted because it may cause heartburn and acid reflux due to irritation.",
+      },
+      {
+        subheader: "2. Effects on Potassium Level",
+        text: "An apple cider vinegar overdose results in a lack of potassium. Potassium is needed for the normal functioning of muscles and nerves during pregnancy. Potassium deficiency causes muscle cramps and weakness.",
+      },
+      {
+        subheader: "3. Gastrointestinal Upset",
+        text: "There are those women who feel bloated or uncomfortable in the stomach after drinking ACV. Dosage should thus be taken in small quantities and there is a need to observe how the body reacts.",
+      },
+      {
+        subheader: "4. Raw ACV and Pasteurised ACV",
+        text: "The unpasteurised apple cider vinegar should be avoided by pregnant women due to harmful bacteria that can prove dangerous to the mother and her baby. Hence, pasteurised versions can be chosen, which are safe from pathogens.",
+      },
+      {
+        subheader: "5. Interaction with Other Medications",
+        text: "ACV may interact with some drugs, like insulin or diuretics. Women who are pregnant and on medications should consult their doctor before taking apple cider vinegar.",
+      },
+      {
+        subheader: "How to Take Apple Cider Vinegar Safely During Pregnancy",
+        text: "If you have decided to take apple cider vinegar during pregnancy, here are the safe practices to consider:",
+      },
+      {
+        subheader: "1. Dilution is the Key",
+        text: "Dilute ACV in water before consumption. One tablespoon in a large glass of water is commonly recommended.",
+      },
+      {
+        subheader: "2. Moderation is the Key",
+        text: "Avoid excessive intake. Stick to small amounts to avoid side effects.",
+      },
+      {
+        subheader: "3. Consult Your Doctor",
+        text: "Talk to your healthcare provider before incorporating ACV into your diet to ensure it aligns with your health needs.",
+      },
+      {
+        subheader: "4. Use in Cooking",
+        text: "Use ACV in salad dressings or marinades for more enjoyable and safer consumption of its benefits.",
+      },
+      {
+        subheader: "Conclusion",
+        text: "So, is apple cider vinegar good for pregnancy? While ACV may offer certain benefits, such as aiding digestion, supporting immunity, and managing blood sugar levels, it is important to consume it in moderation and under medical guidance.",
+        text2:
+          "If you're considering incorporating apple cider vinegar during pregnancy, always consult your doctor to ensure it is suitable for your unique health condition. Stay informed and prioritise your well-being for a smooth and healthy pregnancy journey.",
+        text3:
+          "For expert guidance on maintaining a healthy pregnancy, consult the specialists at Amrit Hospital. Our dedicated team is here to provide you with the best prenatal care and personalised health advice. Book an appointment today to ensure a safe and happy pregnancy.",
+      },
+    ],
+  },
+  {
+    id: "12",
+    img: b12,
+    header: "Cosmetic Gynaecology: Everything You Need to Know",
+    data: [
+      {
+        subheader: "Introduction:",
+        text: "Cosmetic gynaecology has become very popular as women seek treatments that enhance the look and function of their intimate areas. These treatments address a variety of issues ranging from aesthetic enhancement to physical relief, providing remedies that can elevate self-esteem and sexual well-being for many women.",
+        text2:
+          "Such treatments may be targeted to concerns like vaginal laxity, labial size, and colour of the skin in the genital area. Cosmetic gynaecology provides cosmetic treatments that make women confident and comfortable with their bodies for aesthetic improvement or relief. This article explores some of the most common procedures and their benefits.",
+      },
+      {
+        subheader: "What is Cosmetic Gynaecology?",
+        text: "Cosmetic gynaecology is a combination of procedures designed to improve the appearance, functionality, and health of the female genital area. Aesthetic treatments would be those procedures that enhance the look of the vulva and improve comfort as well as sexual satisfaction. While traditional gynaecology is more concerned with medical issues, cosmetic gynaecology involves procedures that serve both functional and cosmetic purposes, thus enabling women to attain holistic reproductive health.",
+      },
+      {
+        subheader: "Common Cosmetic Gynaecology Procedures",
+        text: "These are some of the most popular cosmetic gynaecology procedures that women opt for:",
+      },
+      {
+        subheader: "1. Vaginal Rejuvenation",
+        text: "This is one of the cosmetic gynaecological procedures most common to tighten muscles and tissues that have loosened due to birth or old age. It deals with problems like vaginal laxity, dryness, and pain, which transform the female reproductive organ to not only look more attractive but also function better.",
+        text2:
+          "Laser vaginal rejuvenation is a non-surgical procedure that encourages the production of collagen, reconstructing the walls of the vagina and its associated sensations. This minimally invasive procedure has a fast recovery time and minimizes downtime, giving most women an easy option to gain tightness and comfort in the vagina.",
+      },
+      {
+        subheader: "2. Labia Reduction (Labiaplasty)",
+        text: "Aesthetic gynaecology often includes labiaplasty, which is a reduction in the size of the labia minora, that is, the inner lips of the vulva. It is mainly done to attain a more balanced or youthful appearance. Other reasons for performing labiaplasty include physical activities and sexual intercourse.",
+      },
+      {
+        subheader: "3. Vaginal Bleaching",
+        text: " This non-surgical method of vaginal bleaching lightens the skin around the vaginal area. Some women seek this treatment so that the appearance of the genital region can again be more uniform and youthful. While vaginal bleaching may not be medically required, it improves a woman's confidence as it enhances her perception of her body.",
+      },
+      {
+        subheader: "4. Hymenoplasty",
+        text: "Hymenoplasty is a reconstructive surgical procedure restoring the hymen. The procedure may be undertaken for cultural, religious, or personal reasons. It is essentially the surgical reconstitution of the hymen to its pre-existing state. Although it does not affect sexual function, it is an alternative for those wishing to restore the look of their genital area for reasons of culture or personal belief.",
+      },
+      {
+        subheader: "Advantages of Cosmetic Gynaecology",
+        text: "Women opt for cosmetic gynaecology for various reasons, including:",
+      },
+      {
+        subheader: "1. Improving their self-esteem:",
+        text: "It enhances body image and confidence level in appearance.",
+      },
+      {
+        subheader: "2. Improving Comfort:",
+        text: "This removes discomfort due to large labia or vaginal laxity.",
+      },
+      {
+        subheader: "3. Improving Sexual Function:",
+        text: "It improves sensation and makes the vaginal area appear much more youthful and functional in its appearance.",
+      },
+      {
+        subheader: "4. Postpartum Restoration:",
+        text: "The aim is the restoration of the genital area back to its former appearance and function post-delivery.",
+        text2:
+          "These treatments give women various physical and psychological benefits that aim to improve aesthetic and functional changes.",
+      },
+      {
+        subheader: "Is Cosmetic Gynaecology Safe?",
+        text: "Cosmetic gynaecology, like any other medical procedure, has its risks; however, they are efficiently minimized if handled by an experienced professional. Some of the treatments or procedures that are not invasive include laser vaginal rejuvenation, which has minimal risks and nearly no downtime.",
+        text2:
+          "Like all surgeries, labiaplasty can be associated with risks like infection or scarring. The best way to achieve this while minimizing most risks is to select a practitioner who is professionally trained in aesthetic gynaecology. Consulting with your practitioner on expectations, diagnosis, potential complications, and post-treatment care is of utmost importance.",
+      },
+      {
+        subheader: "Conclusion",
+        text: "Cosmetic gynaecology offers women a range of treatments to build confidence, comfort, and satisfaction with their bodies. It can either be the rejuvenation of the cosmetic aspect of the vulva or the enhancement and facilitation of sexual function; the procedures are relevant for women with several personal concerns. Therefore, if you are considering a procedure, find a trusted professional who will lead you through options and give you a knowledgeable choice.",
+        text2:
+          "Amrit Hospital provides individualized attention and a variety of cosmetic gynaecology treatments to suit your specific requirements. Whether you are looking for aesthetic improvement or physical comfort, the staff is there to help you. Contact us today to schedule your consultation and take the first step toward a more confident and comfortable you.",
+      },
+    ],
+  },
+  {
+    id: "13",
+    img: b13,
+    header: "Normal Delivery Tips: What to Do to Avoid a C-Section",
+    data: [
+      {
+        subheader: "Introduction:",
+        text: "Pregnancy is indeed one of the most exciting times; however, most expectant mothers fear whether they will have a normal delivery or will require a C-section. Although both are safe options, most women prefer a vaginal birth for quicker recovery and a more natural experience.",
+      },
+      {
+        subheader: "Understanding Normal Delivery and C-Section",
+        text: "Before we move on to tips and exercises, let us make a difference between normal delivery and a C-section. Normal delivery means that the baby is delivered vaginally. A C-section involves a surgical procedure whereby the baby may be delivered from an incision in the mother's abdomen and uterus. Usually, normal delivery is preferred; however, there are some circumstances under which a C-section becomes necessary, such as complications with fetal position or labour progression.",
+      },
+      {
+        subheader: "Pregnancy Exercises for Normal Delivery",
+        text: "An active lifestyle during pregnancy is the key to preparing for healthy delivery. Some of these pregnancy exercises for normal delivery can strengthen one's body and improve flexibility.",
+      },
+      {
+        subheader: "• Pelvic Tilts",
+        text: "These can help strengthen the core muscles and remove lower back pain while helping in positioning the baby for birth.",
+      },
+      {
+        subheader: "• Squats",
+        text: "Squatting helps open up your pelvis and prepares your body for a smoother delivery.",
+      },
+      {
+        subheader: "• Kegel Exercises",
+        text: "The strengthening of pelvic floor muscles prepares you for labour and can also help with recovery afterwards.",
+      },
+      {
+        subheader: "• Walking",
+        text: "Walking is one of the simplest and most effective exercises, which may help the baby settle into a proper position while also improving overall stamina for labour.",
+      },
+      {
+        subheader: "The Importance of Staying Hydrated and Eating Well",
+        text: "What you put inside your body makes a difference. A healthy diet full of fibre, protein, and all the foods your body needs keeps your energy up and flowing well with the labour process. Hydration is also key—the contractions become stalling if the patient becomes dehydrated, increasing the risk of a C-section. Drinking plenty of water ensures your body has what it needs for the demands of labour.",
+      },
+      {
+        subheader: "Consider Prenatal Yoga",
+        text: "Prenatal yoga can be an excellent method for preparing the body for a normal delivery. Stretching and breathing techniques of yoga enhance flexibility, release tension, and induce relaxation. Many positions, such as the cat-cow stretch, can help to open the pelvis, making it easier for a baby to move through it. Mindfulness practices in yoga also reduce anxiety and enhance one's ability to manage pain when in labour.",
+      },
+      {
+        subheader: "Stay Active, But Mind Your Position",
+        text: "How you move and position your body during labour matters. Avoid lying flat on your back, as this can hinder the birth process. Try positions like standing, walking, or kneeling on all fours that encourage the baby to move into the optimal position for normal delivery.",
+      },
+      {
+        subheader: "Exercises to Avoid If You Have a C-section",
+        text: "If you end up needing a C-section, then recovery is your top priority. Stay away from high-impact exercises such as running or heavy lifting until your doctor clears you. Opt for gentle exercises such as walking or pelvic floor exercises, which restore your strength gradually and progress your recovery.",
+      },
+      {
+        subheader: "Best Exercises for Normal Delivery",
+        text: "These exercises, when done regularly, prepare the body for the physical demands of labour and delivery.",
+      },
+      {
+        subheader: "• Pelvic Floor Exercises (Kegels)",
+        text: "Strong pelvic muscles are important for labour support and postpartum recovery.",
+      },
+      {
+        subheader: "• Prenatal Swimming",
+        text: "Prenatal swimming is a low-impact activity, thereby engaging the muscles and providing endurance without imposing unnecessary pressure on joints.",
+      },
+      {
+        subheader: "• Birthing Ball Exercises",
+        text: "Sitting on a birthing ball and gently bouncing can help align your pelvis, and rotating on it can assist in the baby's descent.",
+      },
+      {
+        subheader: "Conclusion: Preparing for a Safe, Normal Delivery",
+        text: "A normal delivery is an empowering experience but also requires preparation and proactivity. Regular pregnancy exercises for normal delivery, maintaining a balanced diet, adequate hydration, and optimal positions during labour can increase the chances of having a natural birth.",
+        text2:
+          "Every pregnancy is unique. Flexibility is key; sometimes a C-section is required for safety, but with the right care and guidance, choices can be made that best support your goals for labour and delivery.",
+        text3:
+          "At Amrit Hospital, we strive to ensure that your journey of pregnancy is as smooth and healthy as possible. Our expert team will provide personal care, guide you, and support you towards the best birth experience. So, don't wait; instead, contact us today to book a consultation and begin the journey for a safe and empowering delivery with you and your baby.",
       },
     ],
   },
